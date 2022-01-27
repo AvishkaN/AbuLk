@@ -6,15 +6,16 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 
-function Li({className="",title,number}) {
+function Li({className="",title,number,SvgIcon}) {
   return (
     <DIV className={`${className}`}>
+      {console.log(SvgIcon)}
          <div className="Li-wrapper">
-                <h3 className="list-title display-flex align-item-center fw-bold"> 
-                      <span> <Car className='font-2 color-primary text-color-primary '></Car> </span>     
+                <h4 className="list-title display-flex align-item-center fw-bold"> 
+                      <span> {SvgIcon}  </span>     
                        <span className='font-size-inherit ms-1'>{title}</span>  
                       <span className='ms-3 overfloy-y-hidden text-color-grey'>({number})</span>
-                 </h3>
+                 </h4>
 
                  <div className="link-list mt-3">
 

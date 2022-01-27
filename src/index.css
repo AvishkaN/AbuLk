@@ -44,6 +44,12 @@ html{
 
     --page-content-width: 80%;   
 
+    --sm-size:576px;
+    --md-size:768px;
+    --lg-size:992px;
+    --xl-size:1200px;
+    --xxl-size:1400px;
+
 
     /* hover */
 
@@ -68,6 +74,9 @@ h1{
 }
 
 
+.w-45{   
+    width: 45% !important; 
+}
 .w-40{  
     width: 40% !important; 
 }
@@ -104,6 +113,11 @@ h1{
 }
 .font-1-4{
     font-size: 1.4rem;
+}
+
+
+.gy-6{
+    --bs-gutter-y: 4rem;
 }
 
 .font-light{

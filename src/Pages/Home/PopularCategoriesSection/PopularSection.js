@@ -11,7 +11,7 @@ function PopularCategories({className=""}) {
 
                 <div className="popularCategories-ul">
 
-                <ListSection className='mt-3'></ListSection>
+                      <ListSection className='mt-3'></ListSection>
 
 
                 </div>
