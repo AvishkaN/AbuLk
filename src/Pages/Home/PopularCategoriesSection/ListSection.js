@@ -7,10 +7,23 @@ function ListSection({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="ListSection-wrapper">
-                <div className="row">
+                <div className="row justify-content-space-between">
                     <div className="col-md-2">
-                        <ListColumn></ListColumn>
+                        <ListColumn title={"Motors"} number={154}></ListColumn>
                     </div>
+                    <div className="col-md-2">
+                        <ListColumn title={"Motors"} number={154}></ListColumn>
+                    </div>
+                    <div className="col-md-2">
+                        <ListColumn title={"Motors"} number={154}></ListColumn>
+                    </div>
+                    <div className="col-md-2">
+                        <ListColumn title={"Motors"} number={154}></ListColumn>
+                    </div>
+                    <div className="col-md-2">
+                        <ListColumn title={"Motors"} number={154}></ListColumn>
+                    </div>
+                   
                 </div>
          </div>
     </DIV>

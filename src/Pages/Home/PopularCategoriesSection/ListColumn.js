@@ -1,26 +1,33 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
+import LinkComp from '../../../Components/UI/Link/Link';
 import Car from '@mui/icons-material/DirectionsCarFilledOutlined';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 
-function Li({className=""}) {
+function Li({className="",title,number}) {
   return (
     <DIV className={`${className}`}>
          <div className="Li-wrapper">
                 <h3 className="list-title display-flex align-item-center fw-bold"> 
                       <span> <Car className='font-2 color-primary text-color-primary '></Car> </span>     
-                       <span className='font-size-inherit ms-1'>Motors</span>  
-                      <span className='ms-3 overfloy-y-hidden text-color-grey'>(154)</span>
+                       <span className='font-size-inherit ms-1'>{title}</span>  
+                      <span className='ms-3 overfloy-y-hidden text-color-grey'>({number})</span>
                  </h3>
 
-                <div className="fw-light">Used Cars for Sale</div>
-                <div className="">Used Cars for Sale</div>
-                <div className="">Used Cars for Sale</div>
-                <div className="">Used Cars for Sale</div>
-                <div className="">Used Cars for Sale</div>
+                 <div className="link-list mt-3">
 
-                <div className="arrow-row display-flex align-items-center text-color-primary cursor-p">
+                      <LinkComp to="/" text="Used Cars for Sale"></LinkComp>
+                      <LinkComp to="/" text="Motorcycles"></LinkComp>
+                      <LinkComp to="/" text="Auto Accessories & Parts"></LinkComp>
+                      <LinkComp to="/" text="Heavy Vehicles"></LinkComp>
+
+                 </div>
+
+
+
+                <div className="arrow-row display-flex align-items-center text-color-primary cursor-p mt-1">
                         All in Motors  <ArrowForwardIcon className='ms-2 arrow-icon'></ArrowForwardIcon>
                 </div>
          </div>

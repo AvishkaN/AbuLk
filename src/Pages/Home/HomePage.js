@@ -9,7 +9,7 @@ function HomePage({className=""}) {
     <DIV className={`${className}`}>
          <div className="HomePage-wrapper">
          <SearchSectionComp className='mt-5'></SearchSectionComp>
-         <PopularSection></PopularSection>
+         <PopularSection className='mt-3'></PopularSection>
          </div>
     </DIV>
   );

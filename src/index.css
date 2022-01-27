@@ -1,7 +1,12 @@
 /* ---------------CSS DEFUALT START------------------------ */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
 
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
     
@@ -101,6 +106,10 @@ h1{
     font-size: 1.4rem;
 }
 
+.font-light{
+    font-family: 'Roboto', sans-serif !important;
+}
+
 
 
 .display-flex{
@@ -111,10 +120,6 @@ h1{
     justify-content: center;
 }
 
-
-.border-bottom{
-    border-bottom: 1px solid var(--color-grey);
-}
 
 
 
@@ -128,6 +133,11 @@ h1{
 
 .align-item-center{
     align-items: center;
+}
+
+
+.border-bottom{
+    border-bottom: 1px solid var(--color-grey);
 }
 
 .background-primary{
