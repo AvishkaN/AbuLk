@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import SearchSectionComp from './SearchSectionComp';
+import SearchSectionComp from '././SearchSection/SearchSectionComp';
+import PopularSection from '././PopularCategoriesSection/PopularSection';
 
 
 
@@ -8,7 +9,7 @@ function HomePage({className=""}) {
     <DIV className={`${className}`}>
          <div className="HomePage-wrapper">
          <SearchSectionComp className='mt-5'></SearchSectionComp>
-
+         <PopularSection></PopularSection>
          </div>
     </DIV>
   );
