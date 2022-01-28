@@ -30,7 +30,7 @@ function FooterComp({className=""}) {
                     </div>
                 </div>
                 <div className="copyright-text mt-5 text-center text-color-grey">
-                        © dubizzle.com 2022, All Rights Reserved.
+                        ©Blue Line Web Solutions 2022, All Rights Reserved.
                 </div>
          </div>
     </DIV>

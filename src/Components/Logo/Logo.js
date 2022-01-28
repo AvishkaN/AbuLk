@@ -6,7 +6,7 @@ function Logo({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="Logo-wrapper">
-                    <svg width="107px" height="38px" viewBox="0 0 107 38" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg width="107px" height="38px" viewBox="0 0 107 38" xmlns="http://www.w3.org/2000/svg">
                     <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
                     <g>
                         <g transform="translate(6.000000, 5.000000)">
@@ -24,7 +24,12 @@ function Logo({className=""}) {
                         </g>
                     </g>
                     </g>
-                </svg>
+                </svg> */}
+
+
+                <h3 className="fw-bold text-center">
+                        Blue Line Web Solutions
+                </h3>
          </div>
     </DIV>
   );
