@@ -120,6 +120,12 @@ h1{
     --bs-gutter-y: 4rem;
 }
 
+
+.mt-6{
+    margin-top: 7rem!important;
+
+}
+
 .font-light{
     font-family: 'Roboto', sans-serif !important;
 }
