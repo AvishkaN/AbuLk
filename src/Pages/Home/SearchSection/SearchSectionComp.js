@@ -40,17 +40,17 @@ const DIV=styled.div`
     position: relative;
 
 
-    &:before {
+    /* &:before {
         background: rgba(0, 0, 0, 0.1);
         /* rgb(2 1 1 / 11%); */
-        content: "";
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-    }
+        /* content: ""; */
+        /* height: 100%; */
+        /* left: 0; */
+        /* position: absolute; */
+        /* top: 0; */
+        /* width: 100%; */
+        /* z-index: 1; */
+    /* } */ 
 
     .SeachSectionComp-wrapper{
         width: 85%; 

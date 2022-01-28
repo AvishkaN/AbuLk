@@ -239,3 +239,15 @@ h1{
 
 
 
+@media   (max-width: 1329px) {   
+       
+    :root {    
+        --page-content-width: 90%;   
+    }
+}
+@media   (max-width: 1030px) {   
+       
+    :root {     
+        --page-content-width: 93%;   
+    }
+}

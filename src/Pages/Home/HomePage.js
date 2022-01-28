@@ -131,7 +131,7 @@ function HomePage({className=""}) {
     <DIV className={`${className}`}>
          <div className="HomePage-wrapper">
          <SearchSectionComp className='mt-5'></SearchSectionComp>
-         <PopularSection className='mt-3'></PopularSection>
+         <PopularSection className='mt-5'></PopularSection>
 
           <RentPopularSection className="mt-5" title={"Popular in Residential for Rent"} data={data}></RentPopularSection>
           <RentPopularSection className="mt-5" title={"Popular in Used Cars for Sale"} data={data2}></RentPopularSection>
@@ -150,7 +150,8 @@ function HomePage({className=""}) {
 
 const DIV=styled.div`
     width: 100%;
-    margin-top: var(--margin-top-fix-nav);   /*only HomePage */
+    /* margin-top: var(--margin-top-fix-nav);   only HomePage */
+    margin-top: 10rem;   /*only HomePage */ 
     
     .HomePage-wrapper{
       width: var(--page-content-width);
