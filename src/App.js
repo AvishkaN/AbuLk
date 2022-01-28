@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import HomePage from './Pages/Home/HomePage';
 import NavBar from './Components/Nav/NavBar';
+import Footer from './Components/Footer/Footer';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 
@@ -27,6 +28,8 @@ function App() {
                                       <HomePage></HomePage>
                                     } />
                         </Routes>
+
+                        <Footer className='mt-6'></Footer>
                 </div>
 
           </BrowserRouter>

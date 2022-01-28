@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import SearchSection from './SearchSection';
+import SrilankaImg from './../../../assets/img/sriLanka.jpg';
 
 
 
@@ -25,11 +26,31 @@ const DIV=styled.div`
     width: 100%;
     /* margin-top: var(--margin-top-fix-nav);  */  /*only SeachSectionComp */
     
-    background-image: linear-gradient(to right bottom, rgba(126,213,111,0), rgba(40,180,133,0)),url('https://dbzstatic-a.akamaihd.net/dist_957ce2f4cf/images/hero-image/hero_image_7.jpg');
+    /* background-image: linear-gradient(to right bottom, rgba(126,213,111,0), rgba(40,180,133,0)),url('https://dbzstatic-a.akamaihd.net/dist_957ce2f4cf/images/hero-image/hero_image_7.jpg'); */
+    
+    /* background-image:linear-gradient(to right bottom, rgba(126,213,111,0), rgba(40,180,133,0)), url(${SrilankaImg}); */
+    
+    background-image:  url(${SrilankaImg});
+    
     min-height: 40vh;
     background-size: cover; 
     background-repeat: no-repeat; 
-    border-radius: 10px;
+    border-radius: 10px; 
+    background-position: 10% 27%;
+    position: relative;
+
+
+    &:before {
+        background: rgba(0, 0, 0, 0.1);
+        /* rgb(2 1 1 / 11%); */
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
 
     .SeachSectionComp-wrapper{
         width: 85%; 
