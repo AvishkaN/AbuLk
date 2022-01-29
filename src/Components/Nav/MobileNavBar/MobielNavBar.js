@@ -11,11 +11,11 @@ function MobileNavBar({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="MobileNavBar-wrapper display-flex pt-2">
-                <MobileNavItem   SvgIcon={<HomeIcon className='font-2' ></HomeIcon>} text={"Home"}></MobileNavItem>
-                <MobileNavItem   SvgIcon={<SearchIcon className='font-2' ></SearchIcon>} text={"Search"}></MobileNavItem>
-                <MobileNavItem   SvgIcon={<AddIcon className='font-2 post-add-icon text-color-white' ></AddIcon>} text={"Post an ad"}></MobileNavItem>
-                <MobileNavItem   SvgIcon={<ChatBubbleOutlineRoundedIcon className='font-2' ></ChatBubbleOutlineRoundedIcon>} text={"Message"}></MobileNavItem>
-                <MobileNavItem   SvgIcon={<PermIdentitySharpIcon className='font-2' ></PermIdentitySharpIcon>} text={"Profile"}></MobileNavItem>
+                <MobileNavItem   SvgIcon={<HomeIcon className='font-3' ></HomeIcon>} text={"Home"}></MobileNavItem>
+                <MobileNavItem   SvgIcon={<SearchIcon className='font-3' ></SearchIcon>} text={"Search"}></MobileNavItem>
+                <MobileNavItem   SvgIcon={<AddIcon className='font-3 post-add-icon text-color-white' ></AddIcon>} text={"Post an ad"}></MobileNavItem>
+                <MobileNavItem   SvgIcon={<ChatBubbleOutlineRoundedIcon className='font-3' ></ChatBubbleOutlineRoundedIcon>} text={"Message"}></MobileNavItem>
+                <MobileNavItem   SvgIcon={<PermIdentitySharpIcon className='font-3' ></PermIdentitySharpIcon>} text={"Profile"}></MobileNavItem>
          </div>
     </DIV>
   );

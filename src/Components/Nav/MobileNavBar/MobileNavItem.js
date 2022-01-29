@@ -11,7 +11,7 @@ function MobileNavItem({className="",SvgIcon,text}) {
          <div className="MobileNavItem-wrapper text-center text-color-grey">
              <Link to="" className='a'>
                 {SvgIcon}
-                <div className="font-1">{text}</div>
+                <div className="font-1-5">{text}</div>
              </Link>
          </div>
     </DIV>
