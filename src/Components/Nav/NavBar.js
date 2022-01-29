@@ -14,14 +14,14 @@ const data=['Motors','Property for Rent','Propert for Sale','Classified','Furnit
 
 function NavBar({className=""}) {
   return (
-    <DIV className={`${className} pt-4 pb-3 position-fixed`}>
+    <DIV className={`${className}  pb-3 `}>
          <div className="NavBar-wrapper">
              
-             <div className="row-1 border-bottom pb-3">  
+             <div className="row-1 border-bottom pb-3 pt-2 w-100 ">  
                     <div className="row justify-content-space-between align-item-center">
                             <div className="left col-3  col-xl-4">
                                     <Logo className='w-30'></Logo>
-                                    <Select className='w-25 cursor-p ms-3'></Select>
+                                    <Select className='select w-25 cursor-p ms-3'></Select>
                             </div>
                             <div className="right col-8 col-xl-7"> 
                                 <NavRight></NavRight>
@@ -32,7 +32,7 @@ function NavBar({className=""}) {
              </div>
 
 
-             <div className="row-2 border-bottom pt-4 pb-4">
+             <div className="row-2 border-bottom pt-4 pb-4 w-100">
                             <Row2 NavDataLi={data}></Row2> 
              </div>
 
@@ -54,7 +54,7 @@ function NavBar({className=""}) {
 const DIV=styled.div`
     width: 100%;
     background: var(--color-white);
-    z-index:100; 
+  
     /* margin-top: var(--margin-top-fix-nav);  */  /*only NavBar */
     /* position: fixed; */
 
@@ -72,6 +72,9 @@ const DIV=styled.div`
     .NavBar-wrapper{
         
         .row-1{
+            position: fixed;  
+            background: var(--color-white);
+            z-index:100; 
             .row{
                 width: var(--page-content-width);
                 margin-left: auto;
@@ -80,6 +83,19 @@ const DIV=styled.div`
                 display: flex;
                 align-items: flex-end; 
                 /* background-color: green;  */
+
+                @media(max-width:1000px){
+                    width: 90%;   
+                    justify-content: center
+                }
+                
+                .select{
+                    @media(max-width:1000px){
+                        display: none;  
+                        
+                    }
+
+                }
                 
             }
             .right{
@@ -98,6 +114,7 @@ const DIV=styled.div`
                 
                 @media(max-width:1000px){
                     display: flex; 
+                    width: 10%;
 
                 }
             }
@@ -105,9 +122,14 @@ const DIV=styled.div`
         }
 
         .row-2{
+            margin-top: 5rem; 
+            background: var(--color-white);
+            z-index:100; 
             @media(max-width:1000px){
                 display:none; 
             }
+
+            position: fixed; 
         }
         .row-2-small-screen{
             display: none;
