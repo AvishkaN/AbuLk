@@ -3,23 +3,27 @@ import Logo from '../Logo/Logo';
 import Select from '../Select/Select';
 import NavRight from '../Nav/NavRight/NavRight';
 import Row2 from '../Nav/Row2/Row2';
+import SmallScreen from '../Nav/SmallScreen/SmallScreen';
+import MobielNavBar from '../Nav/MobileNavBar/MobielNavBar';
 
 import MenuIcon from '@mui/icons-material/Menu';
+
+const data=['Motors','Property for Rent','Propert for Sale','Classified','Furniture & Garden','Mobile & Tablet','Jobs','Community'];
 
 
 
 function NavBar({className=""}) {
   return (
-    <DIV className={`${className} pt-2 position-fixed`}>
+    <DIV className={`${className} pt-4 pb-3 position-fixed`}>
          <div className="NavBar-wrapper">
              
-             <div className="row-1 border-bottom pb-2">
+             <div className="row-1 border-bottom pb-3">  
                     <div className="row justify-content-space-between align-item-center">
-                            <div className="left col-md-3  col-xl-4">
+                            <div className="left col-3  col-xl-4">
                                     <Logo className='w-30'></Logo>
                                     <Select className='w-25 cursor-p ms-3'></Select>
                             </div>
-                            <div className="right col-md-8 col-xl-7"> 
+                            <div className="right col-8 col-xl-7"> 
                                 <NavRight></NavRight>
                             </div>
 
@@ -27,9 +31,19 @@ function NavBar({className=""}) {
                     </div>
              </div>
 
+
              <div className="row-2 border-bottom pt-4 pb-4">
-                            <Row2></Row2> 
+                            <Row2 NavDataLi={data}></Row2> 
              </div>
+
+
+             <div className="row-2-small-screen">
+                  <SmallScreen></SmallScreen>
+             </div>
+
+             {/* <div className="mobile-nabar">
+                    <MobielNavBar></MobielNavBar>
+             </div> */}
                 
          </div>
     </DIV>
@@ -88,6 +102,18 @@ const DIV=styled.div`
                 }
             }
         }
+        }
+
+        .row-2{
+            @media(max-width:1000px){
+                display:none; 
+            }
+        }
+        .row-2-small-screen{
+            display: none;
+            @media(max-width:1000px){
+                display:flex;   
+            }
         }
 
     }

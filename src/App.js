@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import HomePage from './Pages/Home/HomePage';
 import NavBar from './Components/Nav/NavBar';
+import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
 import Footer from './Components/Footer/Footer';
+import OverlayFull from './Components/Overlay/OverlayFull';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 
@@ -22,6 +24,7 @@ function App() {
 
                 <div className="app-content">
                           <NavBar></NavBar>
+                          <MobielNavBar></MobielNavBar>
                           <div className="clear"></div>
                         <Routes>
                                     <Route path="/" element={ 
@@ -37,6 +40,7 @@ function App() {
 
 
 
+                        {/* <OverlayFull></OverlayFull> */}
 
          </div>
     </DIV>
@@ -48,9 +52,9 @@ const DIV=styled.div`
     width: 100%;
 
     .app-wrapper{
-      position: relative; 
-
+      
       width: 100%;
+      position: relative; 
       
       .app-content{
         width: var(--nav-footer-width);

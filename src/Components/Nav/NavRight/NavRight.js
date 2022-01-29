@@ -8,11 +8,11 @@ function NavRight({className=""}) {
   return (
     <DIV className={`${className} `}>
          <div className="NavRight-wrapper display-flex">
-            <NavRightIconContainer className='w-50'></NavRightIconContainer>
+            <NavRightIconContainer className='w-50 nav-right-item-container'></NavRightIconContainer>
 
-            <div className="w-50 display-flex">
-                  <Button className='fw-bold button-font-size'  text={"Log in or sign up"}></Button>
-                  <Button className='background-primary fw-bold  text-color-white button-font-size'  text={"Place Your Ad"}></Button>
+            <div className="w-50 display-flex nav-right-button-container">
+                  <Button className='nav-right-button  fw-bold button-font-size'  text={"Log in or sign up"}></Button>
+                  <Button className='nav-right-button  background-primary fw-bold  text-color-white button-font-size'  text={"Place Your Ad"}></Button>
 
             </div>
          </div>

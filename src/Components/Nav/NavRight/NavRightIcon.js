@@ -6,7 +6,7 @@ function Icon({className="",text,Icon}) {
     <DIV className={`${className}`}>
          <div className="Icon-wrapper display-flex">
                         <Icon className="nav-right-icon"></Icon>
-                        <span className='font-1-3'>{text}</span>
+                        <span className='nav-right-text font-1-3'>{text}</span>
          </div>
     </DIV>
   );

@@ -151,7 +151,7 @@ function HomePage({className=""}) {
 const DIV=styled.div`
     width: 100%;
     /* margin-top: var(--margin-top-fix-nav);   only HomePage */
-    margin-top: 12rem;   /*only HomePage */ 
+    margin-top: 10rem;   /*only HomePage */ 
     
     .HomePage-wrapper{
       width: var(--page-content-width);

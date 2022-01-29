@@ -9,7 +9,6 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 function Li({className="",title,number,SvgIcon}) {
   return (
     <DIV className={`${className}`}>
-      {console.log(SvgIcon)}
          <div className="Li-wrapper">
                 <h4 className="list-title display-flex align-item-center fw-bold"> 
                       <span> {SvgIcon}  </span>     

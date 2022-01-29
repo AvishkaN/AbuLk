@@ -3,20 +3,18 @@ import RowItem from './RowItem';
 
 
 
-function NavRow2({className=""}) {
+function NavRow2({className="",NavDataLi}) {
   return (
     <DIV className={`${className}`}>
          <div className="NavRow2-wrapper display-flex justify-content-space-around ">
-                <li> <RowItem text={"Motors"}></RowItem></li>
-                <li> <RowItem text={"Property for Rent"}></RowItem></li>
-                <li> <RowItem text={"Propert for Sale"}></RowItem></li>
 
-                <li> <RowItem text={"Classified"}></RowItem></li>
-                <li> <RowItem text={"Furniture & Garden"}></RowItem></li>
-                <li> <RowItem text={"Mobile & Tablet"}></RowItem></li>
+           {NavDataLi.map(navDataItem=>(  
 
-                <li> <RowItem text={"Jobs"}></RowItem></li>
-                <li> <RowItem text={"Community"}></RowItem></li>
+             <li> <RowItem text={navDataItem}></RowItem></li>
+           ))
+
+           }
+
          </div>
     </DIV>
   );
