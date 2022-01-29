@@ -36,6 +36,18 @@ const data=[
   imgSrc:"https://images.dubizzle.com/v1/files/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmbiI6InVpdDlsMTl4Y3J3MDItRFVCSVpaTEUiLCJ3IjpbeyJmbiI6IjVqZXVpN3FmemllNjEtRFVCSVpaTEUiLCJzIjozMCwicCI6ImNlbnRlciwxIiwiYSI6ODB9XX0.VTv3YSgCTYbOGlPzMZTUfYDsUG3I23a7-hB7vHcoNUY/image;p=main",
   nameOrYear:"Al jimi"
   },
+  {
+  nameTag:"New. 7500", 
+  list:['5 Beds','5 Baths'], 
+  imgSrc:"https://images.dubizzle.com/v1/files/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmbiI6Im12ZjhlNWUzOGhxcTItRFVCSVpaTEUiLCJ3IjpbeyJmbiI6IjVqZXVpN3FmemllNjEtRFVCSVpaTEUiLCJzIjowLCJwIjoiY2VudGVyLDEiLCJhIjoxMDB9XX0.NRIhRXwmAoV8ZLK7JU0uSwVXV1vr7SUWwJusmqMAVEg/image;p=main",
+  nameOrYear:"Al jimi"
+  },
+  {
+  nameTag:"New. 7500", 
+  list:['5 Beds','5 Baths'], 
+  imgSrc:"https://images.dubizzle.com/v1/files/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmbiI6InVpdDlsMTl4Y3J3MDItRFVCSVpaTEUiLCJ3IjpbeyJmbiI6IjVqZXVpN3FmemllNjEtRFVCSVpaTEUiLCJzIjozMCwicCI6ImNlbnRlciwxIiwiYSI6ODB9XX0.VTv3YSgCTYbOGlPzMZTUfYDsUG3I23a7-hB7vHcoNUY/image;p=main",
+  nameOrYear:"Al jimi"
+  },
 
   // {
   // nameTag:"RS. 7500", 

@@ -47,7 +47,11 @@ const DIV=styled.div`
             object-fit: cover;
 
 
-            @media(min-width:576px){
+            /* @media(min-width:576px){
+                height: 146px;  
+
+            } */
+            @media(min-width:300px){ 
                 height: 146px;  
 
             }
