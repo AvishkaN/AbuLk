@@ -135,6 +135,7 @@ const DIV=styled.div`
             display: none;
             @media(max-width:1000px){
                 display:flex;   
+                margin-top: 11rem;  
             }
         }
 

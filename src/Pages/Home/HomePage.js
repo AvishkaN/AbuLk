@@ -142,8 +142,8 @@ function HomePage({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="HomePage-wrapper">
-         <SearchSectionComp className='mt-5'></SearchSectionComp>
-         <PopularSection className='mt-5'></PopularSection>
+         <SearchSectionComp className='mt-5  dispaly-none-1000px'></SearchSectionComp>
+         <PopularSection className='mt-5  dispaly-none-600px'></PopularSection>
 
           <RentPopularSection className="mt-5" title={"Popular in Residential for Rent"} data={data}></RentPopularSection>
           <RentPopularSection className="mt-5" title={"Popular in Used Cars for Sale"} data={data2}></RentPopularSection>
@@ -165,10 +165,28 @@ const DIV=styled.div`
     /* margin-top: var(--margin-top-fix-nav);   only HomePage */
     margin-top: 10rem;   /*only HomePage */ 
     
+    
+    @media (max-width: 1000px){
+      margin-top: 1rem;    
+    }  
+    
     .HomePage-wrapper{
       width: var(--page-content-width);
         margin-left: auto;
         margin-right: auto; 
+
+        .dispaly-none-600px{  
+          @media(max-width:600px){ 
+              display : none;  
+
+            }
+        }
+        .dispaly-none-1000px{  
+          @media(max-width:1000px){ 
+              display : none;  
+
+            }
+        }
 
     }
 `;
