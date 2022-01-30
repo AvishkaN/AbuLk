@@ -10,7 +10,7 @@ function NavRow2({className="",NavDataLi}) {
 
            {NavDataLi.map(navDataItem=>(  
 
-             <li> <RowItem text={navDataItem}></RowItem></li>
+             <li className='pb-4'> <RowItem text={navDataItem}></RowItem></li>
            ))
 
            }
@@ -32,6 +32,24 @@ const DIV=styled.div`
 
         li{
             list-style: none; 
+            position: relative;
+ 
+            &::after{
+              content: "";
+              height: 0px;
+              position: absolute;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              background-color: black;
+              transition: height 0.1s ease-out 0s;
+            }
+
+            &:hover:after{    
+              
+                  height: 5px;
+            }
+     
         }
 
     }

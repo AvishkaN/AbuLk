@@ -32,7 +32,7 @@ function NavBar({className=""}) {
              </div>
 
 
-             <div className="row-2 border-bottom pt-4 pb-4 w-100">
+             <div className="row-2 border-bottom pt-4  w-100">
                             <Row2 NavDataLi={data}></Row2> 
              </div>
 
