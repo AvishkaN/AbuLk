@@ -7,6 +7,7 @@ import SmallScreen from '../Nav/SmallScreen/SmallScreen';
 import MobielNavBar from '../Nav/MobileNavBar/MobielNavBar';
 
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 const data=['Motors','Property for Rent','Propert for Sale','Classified','Furniture & Garden','Mobile & Tablet','Jobs','Community'];
 
@@ -20,7 +21,11 @@ function NavBar({className=""}) {
              <div className="row-1 border-bottom pb-3 pt-2 w-100 ">  
                     <div className="row justify-content-space-between align-item-center">
                             <div className="left col-3  col-xl-4">
-                                    <Logo className='w-30'></Logo>
+                                <Link to="/" className='w-30 a'>
+                                    {/* <Logo className='w-100'></Logo> */}
+                                    <h3 className='w-100 fw-bold  text-color-red'>ABU.LK</h3>
+
+                                </Link>
                                     <Select className='select w-25 cursor-p ms-3'></Select>
                             </div>
                             <div className="right col-8 col-xl-7"> 

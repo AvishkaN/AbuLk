@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 
 
-function Input({className="",text}) {
+function Input({className="",text,type="text"}) {
   return (
     <DIV className={`${className}`}>
          <div className="Input-wrapper">
-                <input type="text" placeholder={text}  className='input '/>
+                <input type={type} placeholder={text}  className='input ' />
 
          </div>
     </DIV>

@@ -219,6 +219,9 @@ h1{
 .text-color-white{
     color: var(--color-white);
 }
+.text-color-red{  
+    color: var(--color-red);
+}
 
 
 .font-size-inherit{

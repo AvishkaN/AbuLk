@@ -1,11 +1,16 @@
 import styled from 'styled-components';
-import FilterSelect from './FilterSelect';
+import MinMaxComp from './FilterSelectSection/MinMaxComp';
+import FilterSelect from '../../../../Components/UI/SelectJs/FilterSelect';
 import Input from './../../../../Components/UI/Input/Input';
 import Button from './../../../../Components/UI/Button/Button';
 
 
 
 function SeachFilterRow2({className=""}) {   
+
+
+
+  
   return (
     <DIV className={`${className}`}>
          <div className="SeachFilterRow2-wrapper row display-flex gx-2">
@@ -23,16 +28,18 @@ function SeachFilterRow2({className=""}) {
                             <div className="select-title text-color-white font-1-2">{'Property Type'}</div>
                             <FilterSelect  filterSectionTitle={"Price Range"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}></FilterSelect>
 
+
                         </div>
+
                         <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Price Range'}</div>
-                            <FilterSelect  filterSectionTitle={"Price Range"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}></FilterSelect>
+                            <MinMaxComp priceColVal1={"Min"} priceColVal2={"Max"} IsPriceComp={true}></MinMaxComp>
 
                         </div>
 
                         <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Beds'}</div>
-                            <FilterSelect  filterSectionTitle={"Any"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Any"}></FilterSelect>
+                            <MinMaxComp priceColVal1={"Min bedrooms"} priceColVal2={"Max bedrooms"}   minValuePlaceholder={"1"} maxValuePlaceholder={"2"}></MinMaxComp>
 
                         </div>
                         <div className="col-1">  
@@ -57,7 +64,8 @@ function SeachFilterRow2({className=""}) {
 
 const DIV=styled.div`
     width: 100%;
-    background: var(--color-black);
+    /* background: var(--color-black); */
+    background: #000000a6;           
     border-radius: 10px;   
     /* margin-top: var(--margin-top-fix-nav);  */  /*only SeachFilterRow2 */
     
