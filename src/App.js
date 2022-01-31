@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import HomePage from './Pages/Home/HomePage';
+import PropertPage from './Pages/ProperyPage/PropertPage';
 import NavBar from './Components/Nav/NavBar';
 import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
 import Footer from './Components/Footer/Footer';
@@ -29,6 +30,9 @@ function App() {
                         <Routes>
                                     <Route path="/" element={ 
                                       <HomePage></HomePage>
+                                    } />
+                                    <Route path="/properties" element={ 
+                                      <PropertPage></PropertPage>
                                     } />
                         </Routes>
 

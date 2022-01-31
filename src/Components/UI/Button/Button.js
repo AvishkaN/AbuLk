@@ -12,6 +12,10 @@ function Button({className="",text}) {
 const ButtonComp=styled.button`
     width: 100%;
     /* margin-top: var(--margin-top-fix-nav);  */  /*only Button */
+
+    &:hover{
+      color: var(--color-white);  
+    }
     
     .Button-wrapper{
 

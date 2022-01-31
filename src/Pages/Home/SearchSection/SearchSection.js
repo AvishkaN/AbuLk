@@ -16,7 +16,7 @@ function SearchSection({className=""}) {
                     <div className="row">
                         <div className="col-sm-10">
 
-                                <Input text={"Search for anything.."}></Input>
+                                <Input  className='input' text={"Search for anything.."}></Input>
 
                         </div>
                         <div className="col-sm-2">
@@ -48,6 +48,13 @@ const DIV=styled.div`
     }
 
     .input{
+
+      .Input-wrapper{
+        .input{
+          padding: 1.5rem!important;
+
+        }
+      }
         
     }
 `;

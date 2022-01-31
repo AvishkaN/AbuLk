@@ -6,7 +6,7 @@ function Input({className="",text}) {
   return (
     <DIV className={`${className}`}>
          <div className="Input-wrapper">
-                <input type="text" placeholder={text}  className='input p-4'/>
+                <input type="text" placeholder={text}  className='input '/>
 
          </div>
     </DIV>
