@@ -6,7 +6,7 @@ import Button from './../../../../Components/UI/Button/Button';
 
 
 
-function SeachFilterRow2({className=""}) {   
+function SeachFilterRow2({className="",selectedNav,SetSelectedNav}) {   
 
 
 
@@ -24,12 +24,13 @@ function SeachFilterRow2({className=""}) {
                                 <Input text={"Enter Neighrhood or Building"} className='input border-radius-5'></Input>
 
                         </div>
-                        <div className="col-1">  
+
+                       {(selectedNav==="filter-nav-1" || selectedNav==="filter-nav-2") && ( <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Property Type'}</div>
                             <FilterSelect  filterSectionTitle={"Price Range"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}></FilterSelect>
 
 
-                        </div>
+                        </div>)}
 
                         <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Price Range'}</div>
@@ -37,11 +38,21 @@ function SeachFilterRow2({className=""}) {
 
                         </div>
 
-                        <div className="col-1">  
+
+                       {(selectedNav==="filter-nav-3" || selectedNav==="filter-nav-4")  && (<div className="col-1">  
+                            <div className="select-title text-color-white font-1-2">{'Zoned For'}</div>
+                            <FilterSelect  filterSectionTitle={"Price Range"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}></FilterSelect>
+
+
+                        </div>)}
+
+                       {selectedNav==="filter-nav-1" &&( <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Beds'}</div>
                             <MinMaxComp priceColVal1={"Min bedrooms"} priceColVal2={"Max bedrooms"}   minValuePlaceholder={"1"} maxValuePlaceholder={"2"}></MinMaxComp>
 
-                        </div>
+                        </div>)}
+
+
                         <div className="col-1">  
                             <div className="select-title text-color-white font-1-2 opacity-0">{'.'}</div>
                             <FilterSelect  filterSectionTitle={"Any"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"More"}></FilterSelect>

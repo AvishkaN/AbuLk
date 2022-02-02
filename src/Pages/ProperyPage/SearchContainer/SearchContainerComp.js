@@ -6,9 +6,9 @@ import SearchFilter from './SearchFiler/SearchFilter';
 
 function SearchConatinerComp({className=""}) {
   return (
-    <DIV className={`${className}`}>
+    <DIV className={`${className}   pb-5`}>
          <div className="SearchConatinerComp-wrapper">
-                <div className="title text-center text-color-white">
+                <div className="title text-center text-color-white mt-5">
                      <h2>Buy properties with dubizzle</h2> 
                 </div>
                 <div className="toggle-container ">

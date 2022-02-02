@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import SearchFilterNav from './SearchFilterNav';
 import SearchFilterRow2 from './SearchFilterRow2';
@@ -5,11 +6,14 @@ import SearchFilterRow2 from './SearchFilterRow2';
 
 
 function SearchFilter({className=""}) {
+
+  const [selectedNav,SetSelectedNav]=useState('filter-nav-1');
+
   return (
     <DIV className={`${className}`}>
          <div className="SearchFilter-wrapper">
-                <SearchFilterNav></SearchFilterNav>
-                <SearchFilterRow2 className='pe-3 ps-3 pt-3 pb-3 '></SearchFilterRow2>
+                <SearchFilterNav  selectedNav={selectedNav} SetSelectedNav={SetSelectedNav}></SearchFilterNav>
+                <SearchFilterRow2 className='pe-3 ps-3 pt-3 pb-3 '  selectedNav={selectedNav} SetSelectedNav={SetSelectedNav}></SearchFilterRow2>
          </div>
     </DIV>
   );

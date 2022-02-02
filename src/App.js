@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import HomePage from './Pages/Home/HomePage';
 import PropertPage from './Pages/ProperyPage/PropertPage';
+import ProductItem from './Pages/ProductItem/ProductItem';
 import NavBar from './Components/Nav/NavBar';
 import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
 import Footer from './Components/Footer/Footer';
@@ -31,8 +32,13 @@ function App() {
                                     <Route path="/" element={ 
                                       <HomePage></HomePage>
                                     } />
+
                                     <Route path="/properties" element={ 
                                       <PropertPage></PropertPage>
+                                    } />
+
+                                    <Route path="/product-item" element={ 
+                                      <ProductItem></ProductItem>
                                     } />
                         </Routes>
 

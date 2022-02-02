@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import SearchContainer from './SearchContainer/SearchContainer';
+import Slider from './Slider/Slider';
+import LinkSection from './LinksSection/LinkSection';
 
 
 
@@ -8,6 +10,8 @@ function PropertyPage({className=""}) {
     <DIV className={`${className}`}>
          <div className="PropertyPage-wrapper">
                  <SearchContainer></SearchContainer>
+                 <Slider></Slider>
+                 <LinkSection></LinkSection>
          </div>
     </DIV>
   );

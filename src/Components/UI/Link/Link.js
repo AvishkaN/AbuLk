@@ -3,13 +3,12 @@ import styled from 'styled-components';
 
 
 
-function LinkComp({className="",to="/",text=""}) {
+function LinkComp(props) {
   return (
-      <div className="">
-            <Link to={to} className={`${className} a`}>
-                    {text}
-            </Link>
-      </div>
+    <Link to={props.to} className={`${props.className} a`}>
+                {props.children}  
+
+      </Link>
   );
 }
 

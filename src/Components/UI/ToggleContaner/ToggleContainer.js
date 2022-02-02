@@ -1,13 +1,24 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 
 
-function ToggleContainer({className="",activeNow="sale"}) {    
+function ToggleContainer({className=""}) {    
+
+  const [activeNow,setActiveNow]=useState('Sale');
+
+  const handleClick=(e)=>{
+    // console.log(e);
+    const selectText=e.target.closest('.toggle-btn-2').innerHTML;
+    setActiveNow(selectText);
+  };
+
+
   return (
-    <DIV className={`${className}`}>
+    <DIV className={`${className}`} onClick={handleClick}>
          <div className="ToggleContainer-wrapper display-flex text-white text-center pt-1 pe-1 ps-1 pb-1">
-                <div className={`toggle-btn-2 w-50 pt-1 pb-1 flex-all-center cursor-p font-1-5 ${activeNow==="sale" && 'current-active-toggle'}`}>Sale</div> 
-                <div className={`toggle-btn-2 w-50 pt-1 pb-1 flex-all-center cursor-p font-1-5 ${activeNow==="rent" && 'current-active-toggle'}`}>Rent</div>  
+                <div className={`toggle-btn-2 w-50 pt-1 pb-1 flex-all-center cursor-p font-1-5 ${activeNow==="Sale" && 'current-active-toggle'}`}>Sale</div> 
+                <div className={`toggle-btn-2 w-50 pt-1 pb-1 flex-all-center cursor-p font-1-5 ${activeNow==="Rent" && 'current-active-toggle'}`}>Rent</div>  
          </div>
     </DIV>
   );
@@ -37,6 +48,7 @@ const DIV=styled.div`
             background: var(--color-white); 
             color: red;  
             border-radius: 30px; 
+            transition: all .2s;   
             
         }
 

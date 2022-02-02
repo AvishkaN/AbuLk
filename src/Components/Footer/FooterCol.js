@@ -5,12 +5,12 @@ import Link from '../UI/Link/Link';
 
 function FooterCol({className="",title,list}) {
   return (
-    <DIV className={`${className}`}>
-         <div className="FooterCol-wrapper">
+    <DIV className={`${className} FooterCol`}>
+         <div className="FooterCol-wrapper display-flex">
                 <p className='fw-bold'>{title}</p>
                
                {list.map(li=>(
-                   <Link text={`${li}`} className='footer-link font-light' to="/"></Link>
+                   <Link  className='footer-link font-light  ' to="/">{li}</Link>
                    
                ))}
                
@@ -32,6 +32,7 @@ const DIV=styled.div`
       /* width: var(--FooterCol-content-width);
         margin-left: auto;
         margin-right: auto;  */
+        flex-direction: column; 
 
         .footer-link{
             color: #0C5582;  

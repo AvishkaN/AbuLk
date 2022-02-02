@@ -2,16 +2,33 @@ import styled from 'styled-components';
 
 
 
-function SearchFilterNav({className=""}) {
+function SearchFilterNav({className="",selectedNav,SetSelectedNav}) {
+
+    const handleClick=(e)=>{
+    
+        // console.log(e.target.closest('.filter-nav').classList[1]);     
+        // console.log(e.target.closest('.filter-nav'));     
+        const selectFilterNav=e.target.closest('.filter-nav').classList[1];
+        if(selectFilterNav){
+            SetSelectedNav(selectFilterNav);
+        }
+
+
+    };
+
+
   return (
-    <DIV className={`${className}`}>
+    <DIV className={`${className}`} onClick={handleClick}>
          <div className="SearchFilterNav-wrapper">
                 <div className="row justify-content-center">      
                     <div className="col-8 display-flex  nav-container font-1">
-                        <div className="filter-nav  background-white pt-3 pb-3 pe-2 ps-2  cursor-p filter-nav-active ">Residential for Sale</div>
-                        <div className="filter-nav  background-white pt-3 pb-3 pe-2 ps-2 cursor-p ">Commercial for Sale</div>
-                        <div className="filter-nav  background-white pt-3 pb-3 pe-2 ps-2 cursor-p ">Land for Sale</div>
-                        <div className="filter-nav  background-white pt-3 pb-3 pe-2 ps-2 cursor-p ">Multiple Units for Sale</div>
+                        <div className={`filter-nav  filter-nav-1 background-white pt-3 pb-3 pe-2 ps-2 cursor-p   ${selectedNav==='filter-nav-1' && 'filter-nav-active '}`}>Residential for Sale</div>
+                        <div className={`filter-nav  filter-nav-2 background-white pt-3 pb-3 pe-2 ps-2 cursor-p  ms-2 ${selectedNav==='filter-nav-2' && 'filter-nav-active '}`}>Commercial for Sale</div>
+                        <div className={`filter-nav  filter-nav-3 background-white pt-3 pb-3 pe-2 ps-2 cursor-p  ms-2 ${selectedNav==='filter-nav-3' && 'filter-nav-active '}`}>Land for Sale</div>
+                        <div className={`filter-nav  filter-nav-4 background-white pt-3 pb-3 pe-2 ps-2 cursor-p  ms-2 ${selectedNav==='filter-nav-4' && 'filter-nav-active '}`}>Multiple Units for Sale</div>
+                       
+                       
+                       
                     </div>
                 </div>
          </div>
@@ -40,6 +57,7 @@ const DIV=styled.div`
 
                 .filter-nav-active{
                     background: var(--color-black);
+                    background: #000000a6;            
                     color: var(--color-white);
                 }
             }

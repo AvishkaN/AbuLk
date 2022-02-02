@@ -14,7 +14,7 @@ const ButtonComp=styled.button`
     /* margin-top: var(--margin-top-fix-nav);  */  /*only Button */
 
     &:hover{
-      color: var(--color-white);  
+      /* color: var(--color-white);   */
     }
     
     .Button-wrapper{
