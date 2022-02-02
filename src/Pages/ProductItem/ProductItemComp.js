@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import SliderRow from './Row1/Slider/SliderRow';
+import SliderRow from './1SliderRow/Slider/SliderRow';
+import DetailsRow from './2DetailsRow/DetailsRow';
 
 
 
@@ -9,6 +10,7 @@ function ProductItemComp({className=""}) {
          <div className="ProductItemComp-wrapper">
                  <div className="slider-row">
                     <SliderRow></SliderRow>
+                    <DetailsRow className='w-70'></DetailsRow>
                  </div>
          </div>
     </DIV>

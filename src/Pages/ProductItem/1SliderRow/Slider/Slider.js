@@ -29,12 +29,18 @@ function Slider({className=""}) {
 
 
   const [activeImg,setActiveImg]=useState(0);
+  const [showMobileNumber,setshowMobileNumber]=useState(false);
 
-
+  
+  
   const handleClick=(e)=>{
     
     const iconLeft=e.target.closest('.arrow-icon-left ');
     const iconRight=e.target.closest('.arrow-icon-right   ');  
+    const showMobileNumberBtn=e.target.closest('.show-phone-number-btn');  
+    
+    // console.log(e.target);
+    console.log(showMobileNumberBtn);
     
 
     if(iconRight){
@@ -51,7 +57,6 @@ function Slider({className=""}) {
 
 
     if(iconLeft){
-      console.log(activeImg);
 
 
       if(activeImg==(0)){
@@ -63,6 +68,10 @@ function Slider({className=""}) {
       }
       
 
+    }
+
+    if(showMobileNumberBtn){
+      setshowMobileNumber(!showMobileNumber);
     }
 
 
@@ -94,7 +103,9 @@ function Slider({className=""}) {
                     </div>
                   </div>
 
-                  <Button className='phone-number border-radius-10 pt-3 pb-3 font-1-5 mt-3' text={'Show Phone Number'}></Button>
+                   <Button className='phone-number show-phone-number-btn border-radius-10 pt-3 pb-3 font-1-5 mt-3' 
+                          text={`${showMobileNumber?data[0].phoneNumber  :'Show Phone Number'}`}
+                          ></Button>
                 </div>
         </div>
 
