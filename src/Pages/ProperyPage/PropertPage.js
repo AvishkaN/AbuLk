@@ -12,6 +12,7 @@ function PropertyPage({className=""}) {
                  <SearchContainer></SearchContainer>
                  <Slider></Slider>
                  <LinkSection></LinkSection>
+                
          </div>
     </DIV>
   );

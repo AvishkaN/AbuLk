@@ -15,6 +15,7 @@ const ButtonComp=styled.button`
 
     &:hover{
       /* color: var(--color-white);   */
+     
     }
     
     .Button-wrapper{

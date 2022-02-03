@@ -5,6 +5,10 @@ import styled from 'styled-components';
 function Description({className=""}) {
   return (
     <DIV className={`${className}`}>
+
+        <h2 class="fw-bold font-2-5">Description</h2>
+
+
          <div className="Description-wrapper">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit veniam incidunt culpa optio repudiandae 
                 deleniti placeat harum necessitatibus omnis! Lorem ipsum dolor sit amet consectetur
