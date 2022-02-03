@@ -83,11 +83,12 @@ function Slider({className=""}) {
 
       <div className="row-1 row justify-content-space-around">
 
-         <div className="Slider-wrapper col-8">
-                  <ShowBox data={data[0].images} activeImg={activeImg}></ShowBox>
+         <div className="Slider-wrapper col-lg-8">
+                  <h2 className="title fw-bold">Villas Compound </h2>
+                  <ShowBox className='mt-5' data={data[0].images} activeImg={activeImg}></ShowBox>
          </div>
 
-         <div className="price-container col-3 ">
+         <div className="price-container col-lg-3 ">
                 <div className="price font-2-7 fw-bold text-color-primary">Rs.   {data[0].price}</div>
        
                 <div className="detail-box p-3 mt-3">
@@ -142,18 +143,29 @@ const DIV=styled.div`
       .phone-number{  
         /* background: var(--color-primary); */
         border:2px solid var(--color-primary);
+
+        @media(max-width:992px){
+          width: 50%;    
+        }
       }
 
 
       .price-container{
-          .detail-box{ 
-            /* border: 2px solid var(--color-grey); */
-            box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 0px 3px;
+
+        .detail-box{ 
+          /* border: 2px solid var(--color-grey); */
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 0px 3px;
+              @media(max-width:992px){   
+                margin-right: 1rem !important;  
+                margin-left: 1rem !important;  
+                margin-bottom: 1rem !important;  
+              }
+
+
             .row{
-          }
 
-
-      }
+            }
+         }
 
 
       }

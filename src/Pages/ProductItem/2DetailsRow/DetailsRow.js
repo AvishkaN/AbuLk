@@ -3,23 +3,22 @@ import PropertFirstDescription from './PropertyFirstDescription/PropertFirstDesc
 import Description from '../1SliderRow/Description/Description';
 import Ameties from './Amenties/Ameties';
 import PropertyInfo from './PropertInfo/PropertyInfo';
-import Map from './../Map/Map';
-import Form from '../Form/Form';
+import Map from './Map/Map';
+import Form from '../2DetailsRow/Form/Form';
+import ItemOverview from './ItemOverview/ItemOverview';
 
 
 
 
-const AmetiesList=["Maids Room","Central A/C & Heating","Maid Service","Built in Kitchen Appliances"];
-
-
-function DetailsRow({className=""}) {
+function DetailsRow({className="",product,AmetiesList}) {
   return (
     <DIV className={`${className}`}>
          <div className="DetailsRow-wrapper">
-            <PropertFirstDescription className='mt-6'></PropertFirstDescription>
+              {product[0].property  &&     <PropertFirstDescription className='mt-6'></PropertFirstDescription>}   
+              {product[0].vehicle &&      <ItemOverview className='mt-5'></ItemOverview>}
+            <PropertyInfo  className='mt-6'></PropertyInfo>
             <Description className='mt-6'></Description>
             <Ameties  list={AmetiesList} className='mt-6'></Ameties>
-            <PropertyInfo  className='mt-6'></PropertyInfo>
             <Map  className='mt-6 cusor-p'></Map>
             <Form  className='mt-6 '></Form>
          </div>

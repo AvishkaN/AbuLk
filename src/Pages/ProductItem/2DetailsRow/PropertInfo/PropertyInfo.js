@@ -44,7 +44,7 @@ const DIV=styled.div`
         margin-right: auto;  */
 
         .list{  
-            border: 2px solid var(--color-grey);
+            border: 1px solid rgb(238, 240, 241);
         }
 
     }

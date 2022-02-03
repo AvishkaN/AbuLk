@@ -20,7 +20,7 @@ function ProductItem({className="",svgIcon,text,iconText}) {
 const DIV=styled.div`
     width: 100%;
     /* background: yellow;     */
-    border-bottom:2px solid var(--color-grey);
+    border-bottom: 1px solid rgb(238, 240, 241);
 
     &:last-child{
         border-bottom: 0;
