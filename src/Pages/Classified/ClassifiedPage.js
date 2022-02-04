@@ -20,10 +20,17 @@ const DIV=styled.div`
     margin-top: 12rem;   
     
     .ClassfiedPage-wrapper{   
-        width: var(--page-content-width);
+        /* width: var(--page-content-width); */
+        
+        width: 94%;
         margin-left: auto;
         margin-right: auto; 
         /* background: yellow;  */
+
+
+        @media(max-width:600px){
+          width: 100%;  
+        }
 
     }
 `;

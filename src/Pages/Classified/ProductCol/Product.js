@@ -18,7 +18,7 @@ function Product({className="",image,name,location,price,member=true,verifiedSel
                                     
                                     
                             {verifiedSeller && (  
-                                    <div className="verfied-Seller display-flex align-item-center font-1-4">
+                                    <div className="verfied-Seller display-flex align-item-center font-1-4 ms-2">
                                             <VerifiedUserIcon className='verfiy-icon font-1-4 ms-2'></VerifiedUserIcon>
                                            <div className="">verifiedSeller</div>
                                      </div>
