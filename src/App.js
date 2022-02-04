@@ -2,9 +2,11 @@ import styled from 'styled-components';
 import HomePage from './Pages/Home/HomePage';
 import PropertPage from './Pages/ProperyPage/PropertPage';
 import ProductItem from './Pages/ProductItem/ProductItem';
+import ClassifiedPage from './Pages/Classified/ClassifiedPage';
 import NavBar from './Components/Nav/NavBar';
 import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
 import Footer from './Components/Footer/Footer';
+
 import OverlayFull from './Components/Overlay/OverlayFull';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
@@ -39,6 +41,9 @@ function App() {
 
                                     <Route path="/product-item" element={ 
                                       <ProductItem></ProductItem>
+                                    } />
+                                    <Route path="/classified" element={ 
+                                      <ClassifiedPage></ClassifiedPage>
                                     } />
                         </Routes>
 

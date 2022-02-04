@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 
-function FilterSelect({className="",filterList,filterDefaultSelectedText,ShowListProp}) {
+function FilterSelect({className="",selectedColor="",filterList,filterDefaultSelectedText,ShowListProp}) {
 
     const [showList,setShowList]=useState(false);
     const [selectedName,setSelectedName]=useState(filterDefaultSelectedText);
@@ -31,7 +31,7 @@ function FilterSelect({className="",filterList,filterDefaultSelectedText,ShowLis
     }
 
   return (
-    <DIV className={`${className}`} IsShowList={showList} onClick={ShowListProp? ShowListProp:ShowListFN}>
+    <DIV selectedColor={selectedColor}  className={`${className}`} IsShowList={showList} onClick={ShowListProp? ShowListProp:ShowListFN}>
          <div className="FilterSelect-wrapper " >
 
          <FilterSelectTitle showList={showList}  selectedName={selectedName}></FilterSelectTitle>
@@ -39,7 +39,7 @@ function FilterSelect({className="",filterList,filterDefaultSelectedText,ShowLis
             {
                 showList && ( 
 
-            <DropDownList filterList={filterList}></DropDownList>
+            <DropDownList selectedColor={selectedColor}  selectedName={selectedName}  filterList={filterList}></DropDownList>
                 )
             }
              

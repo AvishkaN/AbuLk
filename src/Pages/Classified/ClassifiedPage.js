@@ -1,0 +1,31 @@
+import styled from 'styled-components';
+import ClassifiedComp from './ClassifiedComp';
+
+
+
+function ClassfiedPage({className=""}) {
+  return (
+    <DIV className={`${className}`}>
+         <div className="ClassfiedPage-wrapper">
+                <ClassifiedComp></ClassifiedComp>
+         </div>
+    </DIV>
+  );
+}
+
+
+const DIV=styled.div`
+    width: 100%;
+    /* margin-top: var(--margin-top-fix-nav);  */  /*only ClassfiedPage */
+    margin-top: 12rem;   
+    
+    .ClassfiedPage-wrapper{   
+        width: var(--page-content-width);
+        margin-left: auto;
+        margin-right: auto; 
+        /* background: yellow;  */
+
+    }
+`;
+
+export default ClassfiedPage;

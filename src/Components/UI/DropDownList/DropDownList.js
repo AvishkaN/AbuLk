@@ -2,14 +2,18 @@ import styled from 'styled-components';
 
 
 
-function DropDownList({className="",filterList=[]}) {
+function DropDownList({className="",filterList=[],selectedName,selectedColor}) {
   return (
-    <DIV className={`${className}`}>
+    <DIV className={`${className}`}  selectedColor={selectedColor}>
+
+            {console.log(selectedName)}
+            {console.log(filterList)}
+
            <div className="custom-list mt-1  border-radius-5 ">  
                         <div>        
                             {
                                 filterList.map(list=>(
-                                    <div className='cursor-p custom-list-item p-2 font-1-3'>{list}</div>
+                                    <div className={`cursor-p custom-list-item p-2 font-1-3  ${(list ==selectedName) && 'active-link'}`}>{list}</div>
 
                                 ))
                             }
@@ -27,7 +31,7 @@ const DIV=styled.div`
 
     
     .custom-list{           
-            height: 30vh;
+            /* height: 30vh; */
             
             .custom-list-item{
                 background: var(--color-white); 
@@ -35,6 +39,11 @@ const DIV=styled.div`
                         background: var(--color-grey-2);  
                     }
             }
+        }
+
+        .active-link{
+                /* background: #80808021 !important;   */
+                background: ${props => props.selectedColor } !important;  
         }
  
 `;
