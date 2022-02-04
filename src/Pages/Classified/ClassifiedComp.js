@@ -46,9 +46,9 @@ function ClassfiedPageComp({className=""}) {
 
              <div className="filter-icon ps-5 cursor-p">
                  <div className="row">
-                        <div className="col">
-                           {  showFilter  && <FilterAltIcon className=' filter-icon-svg font-2-3 text-color-primary'></FilterAltIcon>}
-                            {!showFilter && <FilterAltOffIcon className=' filter-icon-svg font-2-3 text-color-primary'></FilterAltOffIcon>}
+                        <div className="col p-3">
+                           {  showFilter  && <FilterAltIcon className=' filter-icon-svg font-2-7 text-color-primary'></FilterAltIcon>}
+                            {!showFilter && <FilterAltOffIcon className=' filter-icon-svg font-2-7 text-color-primary'></FilterAltOffIcon>}
 
                         </div>
                  </div>
