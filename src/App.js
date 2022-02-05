@@ -7,6 +7,9 @@ import NavBar from './Components/Nav/NavBar';
 import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
 import Footer from './Components/Footer/Footer';
 
+
+import RegisterPage from './Pages/Register/Register';
+
 import OverlayFull from './Components/Overlay/OverlayFull';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
@@ -27,27 +30,69 @@ function App() {
           <BrowserRouter>
 
                 <div className="app-content">
-                          <NavBar></NavBar>
-                          <MobielNavBar></MobielNavBar>
+                          {/* <NavBar></NavBar>
+                          <MobielNavBar></MobielNavBar> */}
                           <div className="clear"></div>
                         <Routes>
                                     <Route path="/" element={ 
+                                      <>
+                                      <NavBar></NavBar>
+                                      <MobielNavBar></MobielNavBar>
+
                                       <HomePage></HomePage>
+                                      <Footer className='mt-6'></Footer>
+
+                                      </>
                                     } />
 
                                     <Route path="/properties" element={ 
+                                      <>
+                                       <NavBar></NavBar>
+                                      <MobielNavBar></MobielNavBar>
+
                                       <PropertPage></PropertPage>
+                                      <Footer className='mt-6'></Footer>
+
+                                      </>
                                     } />
 
                                     <Route path="/product-item" element={ 
+                                      <>
+                                      <NavBar></NavBar>
+                                      <MobielNavBar></MobielNavBar>
+
                                       <ProductItem></ProductItem>
+                                      <Footer className='mt-6'></Footer>
+
+                                      </>
                                     } />
+
+
                                     <Route path="/classified" element={ 
-                                      <ClassifiedPage></ClassifiedPage>
+                                      <>
+                                            <NavBar></NavBar>
+                                          <MobielNavBar></MobielNavBar>
+
+                                        <ClassifiedPage></ClassifiedPage>
+                                        <Footer className='mt-6'></Footer>
+
+                                      </>
                                     } />
+
+
+                                    <Route path="/register" element={ 
+                                      <> 
+
+                                            <RegisterPage></RegisterPage>
+
+                                      </>
+                                    } />
+
+
+
                         </Routes>
 
-                        <Footer className='mt-6'></Footer>
+                        {/* <Footer className='mt-6'></Footer> */}
                 </div>
 
           </BrowserRouter>

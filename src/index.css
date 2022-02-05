@@ -90,6 +90,18 @@ h1{
 .w-50{   
     width: 50% !important; 
 }
+.w-49{   
+    width: 49% !important; 
+}
+.w-48{   
+    width: 48% !important; 
+}
+.w-47{   
+    width: 47% !important; 
+}
+.w-46{   
+    width: 46% !important; 
+}
 .w-45{   
     width: 45% !important; 
 }
@@ -183,6 +195,9 @@ h1{
 }
 .font-1-2{
     font-size: 1.2rem;
+}
+.font-1-1{
+    font-size: 1.1rem;
 }
 .font-1{
     font-size: 1rem;  
