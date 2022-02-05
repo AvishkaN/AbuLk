@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Password from './Password';
-import Input from './Input';
-import Bottom from './Bottom';
+import Password from './../Register/Password';
+import Input from './../Register/Input'; 
+import Bottom from './../Register/Bottom';
 
 
 
@@ -9,15 +9,12 @@ function RegistarPage({className=""}) {
   return (
     <DIV className={`${className} display-flex align-items-center`}>
          <div className="RegistarPage-wrapper pb-5 pt-5 ps-2 pe-2 border-radius-10  ">
-                 <h2 className='text-center fw-bold text-color-primary'>Sign UP</h2>    
+                 <h2 className='text-center fw-bold text-color-primary'>Login</h2>    
 
                  <Input className="input w-100 p-2  ps-3 mt-4" placeholder='email'></Input>  
                  <Password className="input w-100 p-2  ps-3 mt-4"   placeholder='password'></Password>
-                 <Password className="input w-100 p-2  ps-3 mt-4"   placeholder='confirm password'></Password>
-             
-                 <Input className="input w-100 p-2  ps-3 mt-4" placeholder='mobile number'></Input>  
 
-                 <Bottom btnText="SIGN UP" secondText="Login" to="/" ></Bottom>
+                 <Bottom btnText="LOGIN" secondText="Sign Up" to="/" ></Bottom>
          
          </div>
     </DIV>
@@ -32,17 +29,19 @@ const DIV=styled.div`
     
     .RegistarPage-wrapper{
         width: 30%;
+        box-shadow: -2px 5px 11px 0px #b6a2a2;
         margin-left: auto;
         margin-right: auto; 
         /* border:2px solid black; */
-        box-shadow: -2px 5px 11px 0px #b6a2a2;    
 
+        
         @media(max-width:940px){     
                       width: 60%; 
         }
         @media(max-width:528px){     
             width: 94%;  
         }
+
 
         input{
             border:1px solid gray;

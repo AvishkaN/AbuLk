@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+
 import HomePage from './Pages/Home/HomePage';
 import PropertPage from './Pages/ProperyPage/PropertPage';
 import ProductItem from './Pages/ProductItem/ProductItem';
 import ClassifiedPage from './Pages/Classified/ClassifiedPage';
 import NavBar from './Components/Nav/NavBar';
+import Login from './Pages/Login/Login';
 import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
 import Footer from './Components/Footer/Footer';
 
@@ -84,6 +86,13 @@ function App() {
                                       <> 
 
                                             <RegisterPage></RegisterPage>
+
+                                      </>
+                                    } />
+                                    <Route path="/login" element={ 
+                                      <> 
+
+                                            <Login></Login>
 
                                       </>
                                     } />
