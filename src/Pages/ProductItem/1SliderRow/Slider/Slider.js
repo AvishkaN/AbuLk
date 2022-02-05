@@ -83,12 +83,12 @@ function Slider({className=""}) {
 
       <div className="row-1 row justify-content-space-around">
 
-         <div className="Slider-wrapper col-lg-8">
+         <div className="Slider-wrapper col-lg-7">
                   <h2 className="title fw-bold">Villas Compound </h2>
                   <ShowBox className='mt-5' data={data[0].images} activeImg={activeImg}></ShowBox>
          </div>
 
-         <div className="price-container col-lg-3 ">
+         <div className="price-container col-lg-3 mt-sm-5">
                 <div className="price font-2-7 fw-bold text-color-primary">Rs.   {data[0].price}</div>
        
                 <div className="detail-box p-3 mt-3">
@@ -112,7 +112,7 @@ function Slider({className=""}) {
 
       </div>
 
-      <div className="row-2 mt-5">
+      <div className="row-2 mt-5 ms-5">
         
               <Row2 className='w-35' data={data[0].images} activeImg={activeImg}></Row2>
 

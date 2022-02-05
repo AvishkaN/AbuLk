@@ -17,6 +17,11 @@ function ProductItem({className=""}) {
 const DIV=styled.div`
     width: 100%;  
     margin-top: 10rem;   /*only page */
+
+
+    @media(max-width:972px){
+      margin-top: 2rem;   
+    }
     
     .ProductItem-wrapper{
       width: var(--page-content-width);

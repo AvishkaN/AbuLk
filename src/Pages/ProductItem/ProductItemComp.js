@@ -3,12 +3,12 @@ import SliderRow from './1SliderRow/Slider/SliderRow';
 import DetailsRow from './2DetailsRow/DetailsRow';
 
 
-const product=[
+const product=[  
   {
     name:"",
     price:"",
     property:true,
-    vehicle:true,
+    vehicle:false,
   }
 ]
 

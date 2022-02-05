@@ -17,7 +17,7 @@ function RegistarPage({className=""}) {
              
                  <Input className="input w-100 p-2  ps-3 mt-4" placeholder='mobile number'></Input>  
 
-                 <Bottom btnText="SIGN UP" secondText="Login" to="/" ></Bottom>
+                 <Bottom btnText="SIGN UP" secondText="Login" to="/login" ></Bottom>
          
          </div>
     </DIV>

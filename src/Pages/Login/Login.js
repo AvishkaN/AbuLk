@@ -14,7 +14,7 @@ function RegistarPage({className=""}) {
                  <Input className="input w-100 p-2  ps-3 mt-4" placeholder='email'></Input>  
                  <Password className="input w-100 p-2  ps-3 mt-4"   placeholder='password'></Password>
 
-                 <Bottom btnText="LOGIN" secondText="Sign Up" to="/" ></Bottom>
+                 <Bottom btnText="LOGIN" secondText="Sign Up" to="/register" ></Bottom>
          
          </div>
     </DIV>

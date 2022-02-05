@@ -41,18 +41,24 @@ const DIV=styled.div`
       /* width: var(--ShowBox-content-width);
         margin-left: auto;
         margin-right: auto;  */
-        .showBox{
-           height: 85vh;
-            /* background: black;   */
-            position: relative;
-            overflow-y: hidden;
-            /* overflow-y: hidden;    */
+        .showBox{ 
+           height: 65vh;
+           /* background: black;   */
+           position: relative;
+           overflow-y: hidden;
+           /* overflow-y: hidden;    */
+           
+           @media(max-width:700px){
+              height: 42vh;
+
+            }
 
             .img-container{
                 overflow: auto;
                 flex-wrap: nowrap;    
                 overflow-y: hidden; 
                 background: var(--color-black);
+                height: 100%;
 
                 div{   
                     display: none;
