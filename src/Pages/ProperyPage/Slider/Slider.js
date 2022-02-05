@@ -145,6 +145,11 @@ const DIV=styled.div`
     width: 100%;
     
     /* margin-top: var(--margin-top-fix-nav);  */  /*only Slider */
+          
+    @media(max-width:1000px){     
+                      display: none;
+        }
+
     
     .Slider-wrapper{
       /* width: var(--Slider-content-width);

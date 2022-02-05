@@ -11,7 +11,7 @@ function Card({className="",imgSrc,img,nameTag,nameOrYear,list=['5 Beds','5 Bath
                    <div className="nametag text-color-primary fw-bold text-sm-center mt-3">{nameTag} </div>
                    <div className="name display-flex ">
 
-                       {list.map(li=>  <li key={Math.random}  className='w-50'>{li}</li>   )}
+                       {list.map(li=>  <li key={Math.random}  className='w-42 font-1-3 '>{li}</li>   )}
                           
 
                      </div> 
@@ -72,6 +72,15 @@ const DIV=styled.div`
 
 
                li{
+
+                @media(max-width:1279px){     
+                      list-style: none;  
+                    }  
+                @media(max-width:992px){     
+                    list-style: disc;
+                    }  
+
+
                    &:first-child {
                     list-style: none;  
                     }

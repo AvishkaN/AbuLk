@@ -13,15 +13,15 @@ function RentPopularSection({className="",title,data}) {
 
              {
                  data.map(carditem=>(
-                    <div className='col-lg-2    col-sm-6 cursor-p card-item'>
+                    <div className='col-lg-2    col-sm-4 cursor-p card-item'>
                              <Card key={Math.random}  nameTag={carditem.nameTag} list={['5 Beds','5 Baths']}  imgSrc={carditem.imgSrc}  nameOrYear={"Al jimi"}></Card>
                     </div>
                  ))
              }
 
-            <div className='col-lg-2    col-sm-6 cursor-p card-item'>
+            {/* <div className='col-lg-2    col-sm-6 cursor-p card-item'>
                     <Card key={Math.random}  nameTag={`carditem.nameTag`} list={['5 Beds','5 Baths00000']}  imgSrc={`carditem.imgSrc`}  nameOrYear={"Al jimi"}></Card>
-            </div>
+            </div> */}
 
 
 

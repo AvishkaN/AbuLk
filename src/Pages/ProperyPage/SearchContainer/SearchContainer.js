@@ -19,6 +19,13 @@ const DIV=styled.div`
     width: 100%;
     margin-top: 13rem; 
     background-image:  url(${BackgroundImg});
+    
+    @media(max-width:1000px){     
+                      display: none;
+        }  
+
+
+
     /* margin-top: var(--margin-top-fix-nav);  */  /*only SearchContainer */
     
     .SearchContainer-wrapper{
@@ -35,6 +42,10 @@ const DIV=styled.div`
         background-repeat: no-repeat; 
         border-radius: 10px; 
         background-position: 14% 27%;
+
+
+        
+      
 
 
     }
