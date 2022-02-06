@@ -8,14 +8,27 @@ import MobielNavBar from '../Nav/MobileNavBar/MobielNavBar';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { ShowMobileNavFN } from '../../Redux/slices/clickSlice';
 
 const data=['Motors','Property for Rent','Propert for Sale','Classified','Furniture & Garden','Mobile & Tablet','Jobs','Community'];
 
 
 
 function NavBar({className=""}) {
+
+    const dispatch=useDispatch();
+
+
+    const handleCLick=(e)=>{
+        if(e.target.closest('.mobile-nav-icon')){
+            dispatch(ShowMobileNavFN());
+        }
+    };
+
+
   return (
-    <DIV className={`${className}  pb-3 `}>
+    <DIV className={`${className}  pb-3 `} onClick={handleCLick}>
          <div className="NavBar-wrapper">
              
              <div className="row-1 border-bottom pb-3 pt-2 w-100 ">  

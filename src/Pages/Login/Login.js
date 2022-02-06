@@ -8,7 +8,7 @@ import Bottom from './../Register/Bottom';
 function RegistarPage({className=""}) {
   return (
     <DIV className={`${className} display-flex align-items-center`}>
-         <div className="RegistarPage-wrapper pb-5 pt-5 ps-2 pe-2 border-radius-10  ">
+         <div className="RegistarPage-wrapper p-5 border-radius-10  ">
                  <h2 className='text-center fw-bold text-color-primary'>Login</h2>    
 
                  <Input className="input w-100 p-2  ps-3 mt-4" placeholder='email'></Input>  

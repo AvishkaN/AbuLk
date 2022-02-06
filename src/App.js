@@ -14,11 +14,28 @@ import RegisterPage from './Pages/Register/Register';
 
 import OverlayFull from './Components/Overlay/OverlayFull';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { selectClicks } from './Redux/slices/clickSlice';
+import { useEffect } from 'react';
 
 
 
 function App() {
 
+  const clicks=useSelector(selectClicks);
+
+  useEffect(()=>{
+    console.log(`use efect`);
+
+    // scroll to top
+    window.scroll(0, 0);
+
+
+    // turn off scroling opend mobile nav bar
+  const html=document.querySelector('html');
+  html.style.overflowY=`${clicks.showMobileNav?'hidden':'initial'}`;
+
+  },[clicks.showMobileNav])
 
 
 
@@ -104,12 +121,12 @@ function App() {
                         {/* <Footer className='mt-6'></Footer> */}
                 </div>
 
+                       { clicks.showMobileNav &&  <OverlayFull></OverlayFull>}
           </BrowserRouter>
 
 
 
 
-                        {/* <OverlayFull></OverlayFull> */}
 
          </div>
     </DIV>

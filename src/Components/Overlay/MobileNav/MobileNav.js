@@ -52,7 +52,7 @@ const DIV=styled.div`
                                 font-size: 2rem;
                             }
                             .nav-right-text { 
-                                font-size: 2rem;
+                                font-size: 1.6rem;
                                 margin-left: 0.5rem  
 
                             }

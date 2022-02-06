@@ -4,44 +4,26 @@ export const clickSlice=createSlice({
     name:"clicks",
     initialState:{  
         showOverlay:false, 
-        showSingleProjectComponent:false, 
         showMobileNav:false, 
-        nightMode:false, 
-        SelectedProject:null, 
-
 
     },
     reducers:{
-
-        ShowSingleProjectComponentFN:(state)=>{     
-
-            state.showOverlay=true;   
-            state.showSingleProjectComponent=true; 
-        },
         ShowMobileNavFN:(state)=>{     
 
             state.showOverlay=true;   
-            state.showMobileNav=true; 
+            state.showMobileNav=true;   
         },
-        AllComponentHideFN:(state)=>{
-            state.showOverlay=false;
-            state.showSingleProjectComponent=false;
+        HideMobileNavFN:(state)=>{     
 
-        },
-        TurnOnOFFNigtModeFN:(state)=>{
-            state.nightMode=!state.nightMode;
-
-        },
-        SelectProject:(state,action)=>{
-            state.SelectedProject=action.payload;
-
+            state.showOverlay=false;    
+            state.showMobileNav=false;   
         },
     }
 });
 
 
 
-export const {ShowSingleProjectComponentFN,AllComponentHideFN,ShowMobileNavFN,TurnOnOFFNigtModeFN,SelectProject} =clickSlice.actions; 
+export const {ShowMobileNavFN,HideMobileNavFN} =clickSlice.actions; 
 
 //selectors
 export const selectClicks=(state)=>state.clicks;

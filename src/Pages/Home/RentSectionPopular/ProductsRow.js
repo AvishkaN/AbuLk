@@ -14,7 +14,7 @@ function RentPopularSection({className="",title,data}) {
              {
                  data.map(carditem=>(
                     <div className='col-lg-2    col-sm-4 cursor-p card-item'>
-                             <Card key={Math.random}  nameTag={carditem.nameTag} list={['5 Beds','5 Baths']}  imgSrc={carditem.imgSrc}  nameOrYear={"Al jimi"}></Card>
+                             <Card key={Math.random}  {...carditem}></Card>
                     </div>
                  ))
              }

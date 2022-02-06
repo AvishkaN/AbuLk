@@ -1,13 +1,35 @@
+import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
+import { HideMobileNavFN, selectClicks } from '../../Redux/slices/clickSlice';
 import MobileNav from './MobileNav/MobileNav';
 
 
 
 function Overlay({className=""}) {
+
+  const dispatch=useDispatch();
+  const clicks=useSelector(selectClicks);
+
+
+
+  const handleClick=(e)=>{
+    console.log(clicks);
+    
+    const IsSelectOverlay=(e.target.classList[0]=='Overlay-wrapper');
+    
+    console.log(IsSelectOverlay);
+
+    if(IsSelectOverlay){ // hide mobile nav and overlay
+        dispatch(HideMobileNavFN());
+    }
+
+  };
+
+
   return (
-    <DIV className={`${className}`}>
-         <div className="Overlay-wrapper">
-               <MobileNav  className=' w-30  mobile-navv p-3'></MobileNav>
+    <DIV className={`${className}`} onClick={handleClick}>
+         <div className="Overlay-wrapper cursor-p">
+             {clicks.showMobileNav &&  <MobileNav  className=' w-30  mobile-navv p-3'></MobileNav>}
          </div>
     </DIV>
   );
@@ -31,6 +53,19 @@ const DIV=styled.div`
 
         .mobile-navv{
           margin-left: auto;  
+
+          @media(max-width:499px){     
+                      width: 50% !important;
+        }
+
+
+          .nav-right-button{
+            width:100% !important; 
+
+            &:first-child{
+              /* background: red;  */
+            }
+          }
         }
 
      

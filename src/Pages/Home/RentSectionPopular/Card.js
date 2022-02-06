@@ -2,19 +2,23 @@ import styled from 'styled-components';
 
 
 
-function Card({className="",imgSrc,img,nameTag,nameOrYear,list=['5 Beds','5 Baths']}) {
+function Card({className="",imgSrc,img,priceTag,nameOrYear,PropertyInfolist,productCategory}) {
   return (
     <DIV className={`${className}`}>
          <div className="Card-wrapper p-3">
                 <img className='w-100 item-image' src={imgSrc} alt="" />
                 <div className="details">
-                   <div className="nametag text-color-primary fw-bold text-sm-center mt-3">{nameTag} </div>
-                   <div className="name display-flex ">
+                   <div className="price-tag text-color-primary fw-bold text-sm-center mt-3">{priceTag} </div>
+                        {PropertyInfolist &&(  <div className="name display-flex ">
+                            <li key={Math.random}  className='w-42 font-1-3 '>{PropertyInfolist[0]}</li> 
+                            <li key={Math.random}  className='w-42 font-1-3 '>{PropertyInfolist[1]}</li> 
+                            </div> )}
 
-                       {list.map(li=>  <li key={Math.random}  className='w-42 font-1-3 '>{li}</li>   )}
-                          
-
-                     </div> 
+                    {productCategory &&(
+                        <div className="productCategory">
+                                {productCategory}
+                        </div>
+                    )}
                    <div className="country-name text-color-grey"> {nameOrYear}</div>
                 </div>
          </div>
@@ -58,7 +62,7 @@ const DIV=styled.div`
         }
         .details{  
 
-            .nametag{
+            .price-tag{
                 /* background-color: #fff;   */
                 /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);    */
                 /* box-shadow: 5px 5px 15px 5px #000000;  */
@@ -70,15 +74,30 @@ const DIV=styled.div`
 
             .name{
 
+                @media(max-width:438px){     
+                      flex-direction:column;
+                }  
 
                li{
 
                 @media(max-width:1279px){     
                       list-style: none;  
                     }  
+                @media(max-width:1279px){     
+                      list-style: none;  
+                    }  
                 @media(max-width:992px){     
                     list-style: disc;
-                    }  
+                }  
+                @media(max-width:611px){     
+                   width:50% ;  
+                }  
+                
+                @media(max-width:438px){     
+                    width:100% ;  
+                    list-style: none;  
+
+                }  
 
 
                    &:first-child {
