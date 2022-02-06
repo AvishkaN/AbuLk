@@ -3,6 +3,7 @@ import SearchContainer from './SearchContainer/SearchContainer';
 import Slider from './Slider/Slider';
 import LinkSection from './LinksSection/LinkSection';
 import ProductsRow from './../Home/RentSectionPopular/ProductsRow';
+import { useEffect } from 'react';
 
 const data=[
   {
@@ -59,12 +60,19 @@ const data=[
 
 
 function PropertyPage({className=""}) {
+  useEffect(()=>{
+    console.log(`🤜🤜🤜`);
+
+    // scroll to top
+    window.scroll(0, 0);
+
+  },[]);
   return (
     <DIV className={`${className}`}>
          <div className="PropertyPage-wrapper">
                  <SearchContainer></SearchContainer>
                  {/* <Slider></Slider> */}
-                 <ProductsRow className="mt-5" title={"Popular in Residential for Rent"} data={data}></ProductsRow>
+                 <ProductsRow className="mt-5 product-row-property-page" title={"Popular in Residential for Rent"} data={data}></ProductsRow>
                  <LinkSection></LinkSection>
                 
          </div>
@@ -78,10 +86,24 @@ const DIV=styled.div`
 
     
     .PropertyPage-wrapper{
-
+      margin-top:6rem;  
       width: var(--page-content-width);
       margin-left: auto;
       margin-right: auto; 
+
+      .product-row-property-page{
+        .products-card-items-row{
+          flex-wrap:wrap;  
+
+          .card-item{  
+            @media (max-width: 600px){
+                width: 50%;  
+            }    
+        }
+
+
+        }
+      }
 
     
         

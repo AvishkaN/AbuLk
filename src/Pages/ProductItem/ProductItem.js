@@ -1,9 +1,17 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import ProductItemComp from './ProductItemComp';
 
 
 
 function ProductItem({className=""}) {
+  useEffect(()=>{
+    console.log(`🤜🤜🤜`);
+
+    // scroll to top
+    window.scroll(0, 0);
+
+  },[]);
   return (
     <DIV className={`${className}`}>
          <div className="ProductItem-wrapper">
@@ -20,7 +28,7 @@ const DIV=styled.div`
 
 
     @media(max-width:972px){
-      margin-top: 2rem;   
+      margin-top: 5rem;   
     }
     
     .ProductItem-wrapper{

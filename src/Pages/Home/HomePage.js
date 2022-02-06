@@ -3,6 +3,7 @@ import SearchSectionComp from '././SearchSection/SearchSectionComp';
 import PopularSection from '././PopularCategoriesSection/PopularSection';
 import ProductsRow from './RentSectionPopular/ProductsRow';
 import AppdownloadBar from '././AppDownloadBarSection/AppdownloadBar';
+import { useEffect } from 'react';
 
 
 const data=[
@@ -149,6 +150,13 @@ const data3=[
 
 
 function HomePage({className=""}) {
+  useEffect(()=>{
+    console.log(`🤜🤜🤜`);
+
+    // scroll to top
+    window.scroll(0, 0);
+
+  },[]);
   return (
     <DIV className={`${className}`}>
          <div className="HomePage-wrapper">

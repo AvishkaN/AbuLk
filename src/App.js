@@ -30,12 +30,18 @@ function App() {
     // scroll to top
     window.scroll(0, 0);
 
-
     // turn off scroling opend mobile nav bar
   const html=document.querySelector('html');
   html.style.overflowY=`${clicks.showMobileNav?'hidden':'initial'}`;
 
-  },[clicks.showMobileNav])
+  },[clicks.showMobileNav]);
+
+
+  useEffect(()=>{
+    // scroll to top
+    window.scroll(0, 0);
+
+  },[]);
 
 
 
@@ -75,7 +81,7 @@ function App() {
                                       </>
                                     } />
 
-                                    <Route path="/product-item" element={ 
+                                    <Route path="/product-item/:prodcuctId" element={ 
                                       <>
                                       <NavBar></NavBar>
                                       <MobielNavBar></MobielNavBar>

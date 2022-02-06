@@ -17,7 +17,7 @@ function SearchContainer({className=""}) {
 
 const DIV=styled.div`
     width: 100%;
-    margin-top: 13rem; 
+    margin-top: 5rem; 
     background-image:  url(${BackgroundImg});
     
     @media(max-width:1000px){     

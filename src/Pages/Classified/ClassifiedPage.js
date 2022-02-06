@@ -1,9 +1,19 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import ClassifiedComp from './ClassifiedComp';
 
 
 
 function ClassfiedPage({className=""}) {
+
+  useEffect(()=>{
+    console.log(`🤜🤜🤜`);
+
+    // scroll to top
+    window.scroll(0, 0);
+
+  },[]);
+
   return (
     <DIV className={`${className}`}>
          <div className="ClassfiedPage-wrapper">

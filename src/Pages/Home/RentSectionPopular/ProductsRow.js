@@ -1,5 +1,6 @@
 import { CarRepairTwoTone } from '@mui/icons-material';
 import styled from 'styled-components';
+import Link from '../../../Components/UI/Link/Link';
 import Card from './Card';
 
 
@@ -14,7 +15,9 @@ function RentPopularSection({className="",title,data}) {
              {
                  data.map(carditem=>(
                     <div className='col-lg-2    col-sm-4 cursor-p card-item'>
-                             <Card key={Math.random}  {...carditem}></Card>
+                      <Link to={`/product-item/:${Math.random()*10000}`}>
+                             <Card key={Math.random()*10000}  {...carditem}></Card>
+                      </Link>
                     </div>
                  ))
              }
@@ -44,6 +47,9 @@ const DIV=styled.div`
         .card-item{
           @media(max-width:600px){ 
               width: 40%;      
+          }
+          @media(max-width:360px){ 
+              width: 45%;       
           }
 
         }

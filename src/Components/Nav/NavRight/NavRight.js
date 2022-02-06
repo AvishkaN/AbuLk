@@ -13,7 +13,6 @@ function NavRight({className=""}) {
 
             <div className="w-50 display-flex nav-right-button-container">
                
-                  {/* <Button className='nav-right-button  fw-bold button-font-size'  text={"Log in or sign up"}></Button> */}
              
               <Link className="w-50 nav-right-button" to="/login">
                   <Button className='nav-right-button  fw-bold button-font-size'  text={"Log in or sign up"}></Button>

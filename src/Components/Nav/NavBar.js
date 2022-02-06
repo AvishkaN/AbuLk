@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { ShowMobileNavFN } from '../../Redux/slices/clickSlice';
 
+import { useLocation } from "react-router-dom"
+
 const data=['Motors','Property for Rent','Propert for Sale','Classified','Furniture & Garden','Mobile & Tablet','Jobs','Community'];
 
 
@@ -18,6 +20,7 @@ const data=['Motors','Property for Rent','Propert for Sale','Classified','Furnit
 function NavBar({className=""}) {
 
     const dispatch=useDispatch();
+    const location = useLocation();
 
 
     const handleCLick=(e)=>{
@@ -30,6 +33,8 @@ function NavBar({className=""}) {
   return (
     <DIV className={`${className}  pb-3 `} onClick={handleCLick}>
          <div className="NavBar-wrapper">
+
+             {console.log(location.pathname)}
              
              <div className="row-1 border-bottom pb-3 pt-2 w-100 ">  
                     <div className="row justify-content-space-between align-item-center">
@@ -55,9 +60,9 @@ function NavBar({className=""}) {
              </div>
 
 
-             <div className="row-2-small-screen">
+          {location.pathname=='/' &&(   <div className="row-2-small-screen">
                   <SmallScreen></SmallScreen>
-             </div>
+             </div>)}
 
              {/* <div className="mobile-nabar">
                     <MobielNavBar></MobielNavBar>
