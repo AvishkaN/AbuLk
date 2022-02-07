@@ -39,7 +39,7 @@ function FilterSelect({className="",selectedColor="",filterList,filterDefaultSel
             {
                 showList && ( 
 
-            <DropDownList selectedColor={selectedColor}  selectedName={selectedName}  filterList={filterList}></DropDownList>
+                 <DropDownList selectedColor={selectedColor}  selectedName={selectedName}  filterList={filterList}></DropDownList>
                 )
             }
              

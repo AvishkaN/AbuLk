@@ -151,7 +151,6 @@ const data3=[
 
 function HomePage({className=""}) {
   useEffect(()=>{
-    console.log(`🤜🤜🤜`);
 
     // scroll to top
     window.scroll(0, 0);

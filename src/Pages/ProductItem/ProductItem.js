@@ -6,7 +6,6 @@ import ProductItemComp from './ProductItemComp';
 
 function ProductItem({className=""}) {
   useEffect(()=>{
-    console.log(`🤜🤜🤜`);
 
     // scroll to top
     window.scroll(0, 0);

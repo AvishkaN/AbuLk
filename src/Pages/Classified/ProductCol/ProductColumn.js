@@ -135,7 +135,7 @@ function ProductColumn({className="",}) {
 
         {
         classifiedProducts.map(product=>(
-            <Link to="/product-item">
+            <Link to="/product-item/:7884546546324165">
                     <Product className='product-item  ms-3 me-3 cursor-p mt-5 w-70' price={product.price} image={product.image} name={product.productName} location={product.loacation}></Product>
             </Link>
             ))

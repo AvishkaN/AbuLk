@@ -25,7 +25,6 @@ function App() {
   const clicks=useSelector(selectClicks);
 
   useEffect(()=>{
-    console.log(`use efect`);
 
     // scroll to top
     window.scroll(0, 0);

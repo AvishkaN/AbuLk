@@ -22,14 +22,14 @@ function FilterColumn({className=""}) {
 
                 <div className='display-flex align-item-center mt-3'> 
                     <input  className='' type="checkbox" id="vehicle1" name="vehicle1" defaultValue="Bike" />
-                    <label htmlFor="vehicle1" className='ms-2 ps-3 pe-3  border-radius-5 text-color-white fw-bold cursor-p'> URGENT</label><br />
+                    <label htmlFor="vehicle1" className='ms-2 ps-3 pe-3  border-radius-5 text-color-white fw-bold cursor-p font-1-1'> URGENT</label><br />
                 </div>
 
 
                 <div className='display-flex align-item-center mt-3'> 
                 
                     <input  className='' type="checkbox" id="FEATURED" name="vehicle1" defaultValue="FEATURED" />
-                    <label htmlFor="FEATURED" className='features ms-2 ps-3 pe-3  border-radius-5 text-color-white fw-bold cursor-p'> FEATURED</label><br />
+                    <label htmlFor="FEATURED" className='features ms-2 ps-3 pe-3  border-radius-5 text-color-white fw-bold cursor-p font-1-1'> FEATURED</label><br />
                 </div>
             </div>
 

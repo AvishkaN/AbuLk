@@ -1,6 +1,12 @@
 import styled from 'styled-components';
+
+
+import googleAdBanner from './../../assets/img/googleAdBanner.png';
+import FirstBanner from './../../assets/img/firstBanner.png';
+
 import FilterColumn from './FIlterColumn/FilterColumn';
 import ProductColumn from './ProductCol/ProductColumn';
+import ClassifiedHeader from './ClassifiedHeader/ClassifiedHeader';
 
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import FilterAltOffIcon from '@mui/icons-material/FilterAltOff';
@@ -44,6 +50,10 @@ function ClassfiedPageComp({className=""}) {
     <DIV className={`${className}`} onClick={showHidefilter}>
          <div className="ClassfiedPageComp-wrapper">
 
+             <div className="first-banner dispaly-none-992">
+                 <img src={FirstBanner} alt="" className='w-100' />
+             </div>
+
              <div className="filter-icon ps-5 cursor-p">
                  <div className="row">
                         <div className="col p-3">
@@ -54,7 +64,11 @@ function ClassfiedPageComp({className=""}) {
                  </div>
              </div>
 
-               <div className="row pe-4 ps-4  mt-3">
+             <div className="Classified-header">
+                     <ClassifiedHeader></ClassifiedHeader>
+             </div>
+
+               <div className="row pe-4 ps-4  mt-3 ">
                   {showFilter &&(
                        <div className="filtercol col-lg-3 p-3">
                             <FilterColumn></FilterColumn>
@@ -62,8 +76,12 @@ function ClassfiedPageComp({className=""}) {
                     )}
 
 
-                   <div className="col-lg-9">
+                   <div className="col-lg-8 product-col">
                           <ProductColumn></ProductColumn>
+                   </div>
+
+                   <div className="col-lg-1  gogole-ad p-0 dispaly-none-992">
+                       <img src={googleAdBanner} className="w-100" alt="" />
                    </div>
                </div>
          </div>
@@ -82,7 +100,7 @@ const DIV=styled.div`
         margin-right: auto;  */
 
         .filtercol{
-            border: 2px solid var(--color-black);
+            border: 1px solid var(--color-black);
 
             @media (max-width: 992px){
                 /* display: none;   */
@@ -91,9 +109,9 @@ const DIV=styled.div`
         }
 
         .filter-icon{
-            /* @media (min-width: 992px){
+            @media (min-width: 992px){
                 display: none;  
-            } */
+            }
         }
 
         @media (min-width: 1085px){
@@ -110,7 +128,23 @@ const DIV=styled.div`
             }
         }
 
+        .product-col{
+            width: 64.666667%;
+        }
 
+        .gogole-ad{
+            /* background: red;  */
+            width: 10.333333%;
+        }
+
+
+    }
+
+    .dispaly-none-992{
+
+        @media(max-width:992px){     
+                      display: none; 
+        }
     }
 `;
 

@@ -61,7 +61,6 @@ const data=[
 
 function PropertyPage({className=""}) {
   useEffect(()=>{
-    console.log(`🤜🤜🤜`);
 
     // scroll to top
     window.scroll(0, 0);
@@ -72,7 +71,7 @@ function PropertyPage({className=""}) {
          <div className="PropertyPage-wrapper">
                  <SearchContainer></SearchContainer>
                  {/* <Slider></Slider> */}
-                 <ProductsRow className="mt-5 product-row-property-page" title={"Popular in Residential for Rent"} data={data}></ProductsRow>
+                 <ProductsRow className="mt-5 product-row-property-page" title={"Popular Properties"} data={data}></ProductsRow>
                  <LinkSection></LinkSection>
                 
          </div>
