@@ -14,7 +14,7 @@ function Product({className="",image,name,location,price,member=true,verifiedSel
                     <div className="col-lg-9 col-9">
                         <div className="title">{name}</div>
                         <div className="signs display-flex">
-                            <div className="member w-15 border-radius-5 text-center text-color-white font-1-3">{member && ('member')}</div>
+                            <div className="member w-15 border-radius-5 text-center text-color-white font-1-2">{member && ('member')}</div>
                                     
                                     
                             {verifiedSeller && (  

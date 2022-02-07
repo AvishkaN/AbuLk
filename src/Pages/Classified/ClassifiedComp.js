@@ -54,6 +54,11 @@ function ClassfiedPageComp({className=""}) {
                  <img src={FirstBanner} alt="" className='w-100' />
              </div>
 
+
+             <div className="Classified-header">
+                     <ClassifiedHeader></ClassifiedHeader>
+             </div>
+
              <div className="filter-icon ps-5 cursor-p">
                  <div className="row">
                         <div className="col p-3">
@@ -63,11 +68,7 @@ function ClassfiedPageComp({className=""}) {
                         </div>
                  </div>
              </div>
-
-             <div className="Classified-header">
-                     <ClassifiedHeader></ClassifiedHeader>
-             </div>
-
+             
                <div className="row pe-4 ps-4  mt-3 ">
                   {showFilter &&(
                        <div className="filtercol col-lg-3 p-3">
@@ -129,7 +130,11 @@ const DIV=styled.div`
         }
 
         .product-col{
-            width: 64.666667%;
+
+            @media(min-width:992px){
+                width: 64.666667%;
+
+            }
         }
 
         .gogole-ad{

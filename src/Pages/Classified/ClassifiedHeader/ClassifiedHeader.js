@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import Button from '../../../Components/UI/Button/Button';
-import FilterSelect from '../../../Components/UI/SelectJs/FilterSelect';
+import FilterSelect from './CutomizeSelect/FilterSelect';
 
+
+import CategoryIcon from '@mui/icons-material/Category';
+import Location from '@mui/icons-material/FmdGood';
 
 
 function ClassifiedHeader({className=""}) {
@@ -9,17 +12,9 @@ function ClassifiedHeader({className=""}) {
     <DIV className={`${className}`}>
          <div className="ClassifiedHeader-wrapper p-3">
 
-             <div className="row justify-content-space-between">
+             <div className="row justify-content-space-between classified-header-row">
 
-                 <div className="col-4">
-                        <FilterSelect selectedColor="#80808021" className='filter-select'  filterSectionTitle={"Select Location"} filterList={["Matara","Galle","Colombo","Hambanthota","Kalutara","Jaffa","Kandy"]} filterDefaultSelectedText={"Location"}></FilterSelect>
-                 </div>
-
-                 <div className="col-3">
-                        <FilterSelect selectedColor="#80808021" className='filter-select'  filterSectionTitle={"Select Category"} filterList={["Jobs","News"]} filterDefaultSelectedText={"Category"}></FilterSelect>
-                 </div>
-
-                 <div className="col-5 search ">
+                 <div className="search col-5 search ">
 
                      <div className="display-flex  ps-3">
 
@@ -30,6 +25,15 @@ function ClassifiedHeader({className=""}) {
 
 
                  </div>
+
+                 <div className="col-3  classified-header-input  category cursor-p">
+                        <FilterSelect   titleSvg={<CategoryIcon className='font-2-4 me-2  text-color-primary    '></CategoryIcon>}  selectedColor="#80808021" className='filter-select  pt-1'  filterSectionTitle={"Category"} filterList={["Electronics","Essential","Job","Property"]} filterDefaultSelectedText={"Category"}></FilterSelect>
+                 </div>
+
+                 <div className="col-4   classified-header-input cursor-p  location">
+                        <FilterSelect titleSvg={<Location className='font-2-4  me-2  text-color-primary   '></Location>} selectedColor="#80808021" className='filter-select  pt-1'  filterSectionTitle={"Location"} filterList={["Matara","Galle","Colombo","Hambanthota","Kalutara","Jaffa","Kandy"]} filterDefaultSelectedText={"Location"}></FilterSelect>
+                 </div>
+
 
 
              </div>
@@ -45,9 +49,38 @@ const DIV=styled.div`
     /* margin-top: var(--margin-top-fix-nav);  */  /*only ClassifiedHeader */
     
     .ClassifiedHeader-wrapper{
-      /* width: var(--ClassifiedHeader-content-width);
-        margin-left: auto;
-        margin-right: auto;  */
+
+        .classified-header-row{
+            flex-direction:row-reverse;  
+
+            @media(max-width:779px){     
+                flex-direction: initial;
+
+            }
+            .search{
+                @media(max-width:779px){     
+                        width: 100%; 
+                        margin-bottom: 1rem!important;  
+                }
+                
+            }
+            
+            .classified-header-input{
+                @media(max-width:779px){     
+                        width: 50%; 
+                }
+
+            }
+
+            .category{
+                padding-right: 0;
+            }
+            .location{
+                padding-left: 0;
+            }
+
+
+        }
 
         .filter-select{
             border:1px solid var(--color-black);

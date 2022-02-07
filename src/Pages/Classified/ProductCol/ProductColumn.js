@@ -4,10 +4,12 @@ import Product from './Product';
 
 const classifiedProducts=[
     {
-        productName:"Calculator CT-8866V Solar led display",
         image:"https://i.ikman-st.com/calculator-ct-8866v-solar-led-display-desktop-for-sale-colombo/6f610c99-c7ca-40b5-8c01-348bbdb38b8c/160/120/cropped.webp",
-        loacation:"Colombo, All Electronics",
-        price:"Rs 2,090",
+        productName:"Calculator CT-8866V Solar led display",
+        Address:"253A Galle Road, 04",
+        telNo:"071 127 8952",
+        Web:"253A Galle Road, 04",
+        CategoryAndType:"Electronic",
     },
     {
         productName:"Apple iPhone 7 128GB (Used)",
