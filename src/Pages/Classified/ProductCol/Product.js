@@ -3,7 +3,7 @@ import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 
 
 
-function Product({className="",image,name,location,price,member=true,verifiedSeller=true}) {
+function Product({className="",image,name,telNo,Web,Address,member=true,verifiedSeller=true, CategoryAndType}) {
   return (
     <DIV className={`${className}`}>
          <div className="Product-wrapper">
@@ -13,7 +13,7 @@ function Product({className="",image,name,location,price,member=true,verifiedSel
                     </div>
                     <div className="col-lg-9 col-9">
                         <div className="title">{name}</div>
-                        <div className="signs display-flex">
+                        {/* <div className="signs display-flex">
                             <div className="member w-15 border-radius-5 text-center text-color-white font-1-2">{member && ('member')}</div>
                                     
                                     
@@ -28,9 +28,16 @@ function Product({className="",image,name,location,price,member=true,verifiedSel
 
 
                                         
-                        </div>
-                        <div className="location ">{location}</div>
-                        <div className="price text-color-primary fw-bold font-1-5">{price}</div>
+                        </div> */}
+
+                        <div className="product-list-mt  font-1-3 ">{Address}</div>
+                        <div className="font-1-3  product-list-mt">{telNo}</div>
+                        <div className="font-1-3  product-list-mt">{Web}</div>
+                        <div className="font-1-3  product-list-mt">{ CategoryAndType}</div>
+
+
+
+                        {/* <div className="price text-color-primary fw-bold font-1-5">{price}</div> */}
                     </div>
                 </div>
          </div>
@@ -47,6 +54,12 @@ const DIV=styled.div`
       /* width: var(--Product-content-width);
         margin-left: auto;
         margin-right: auto;  */
+
+        .product-list-mt{  
+            margin-top: -0.27rem; 
+            color: grey;       
+            /* color: #4c4141;        */
+        }
 
 
         .row{

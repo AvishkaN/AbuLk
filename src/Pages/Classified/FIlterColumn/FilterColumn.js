@@ -62,7 +62,8 @@ const DIV=styled.div`
         margin-right: auto;  */
 
         .filter-select{  
-            border:1px solid black;
+            border: 1px solid var(--color-grey);
+
 
             .selected-name{
                 padding: 0.5rem!important;    

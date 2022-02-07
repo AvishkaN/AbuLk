@@ -68,7 +68,7 @@ function ClassfiedPageComp({className=""}) {
                         </div>
                  </div>
              </div>
-             
+
                <div className="row pe-4 ps-4  mt-3 ">
                   {showFilter &&(
                        <div className="filtercol col-lg-3 p-3">
@@ -101,7 +101,7 @@ const DIV=styled.div`
         margin-right: auto;  */
 
         .filtercol{
-            border: 1px solid var(--color-black);
+               border: 1px solid var(--color-grey);
 
             @media (max-width: 992px){
                 /* display: none;   */
