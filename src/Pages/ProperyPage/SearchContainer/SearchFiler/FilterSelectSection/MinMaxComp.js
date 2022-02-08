@@ -12,7 +12,6 @@ function MinMaxComp({className="",priceColVal1="min",priceColVal2="Max",maxValue
   
 
   const handleClick=(e)=>{   
-    console.log(e.target.closest('.selected-name'));
     if(e.target.closest('.selected-name')){  // select name
       
       setShowList(!showList);  
@@ -20,14 +19,10 @@ function MinMaxComp({className="",priceColVal1="min",priceColVal2="Max",maxValue
   };
 
   const setNumberMinMaxFn=(e)=>{  
-    // console.log(e.target);       
-    // console.log(e.target.closest('input').value);   
-    // console.log(e.target.closest('.price-col-min'));   
     
     const value=e.target.closest('input').value;
 
     if(e.target.closest('.price-col-min')){  // is min selected
-      console.log(e.target.closest('input').value);
       setMinValue(`${IsPriceComp?'Rs ':''}`+value);
       
     }

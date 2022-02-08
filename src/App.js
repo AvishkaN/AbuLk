@@ -24,6 +24,7 @@ function App() {
 
   const clicks=useSelector(selectClicks);
 
+
   useEffect(()=>{
 
     // scroll to top
@@ -40,7 +41,11 @@ function App() {
     // scroll to top
     window.scroll(0, 0);
 
+
   },[]);
+
+
+
 
 
 
@@ -123,10 +128,9 @@ function App() {
 
                         </Routes>
 
-                        {/* <Footer className='mt-6'></Footer> */}
                 </div>
 
-                       { clicks.showMobileNav &&  <OverlayFull></OverlayFull>}
+                       { clicks.showOverlay &&  <OverlayFull></OverlayFull>}
           </BrowserRouter>
 
 

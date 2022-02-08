@@ -39,8 +39,6 @@ function Slider({className=""}) {
     const iconRight=e.target.closest('.arrow-icon-right   ');  
     const showMobileNumberBtn=e.target.closest('.show-phone-number-btn');  
     
-    // console.log(e.target);
-    console.log(showMobileNumberBtn);
     
 
     if(iconRight){

@@ -6,8 +6,6 @@ function DropDownList({className="",filterList=[],selectedName,selectedColor}) {
   return (
     <DIV className={`${className}`}  selectedColor={selectedColor}>
 
-            {console.log(selectedName)}
-            {console.log(filterList)}
 
            <div className="custom-list mt-1  border-radius-5 ">  
                         <div>        

@@ -8,7 +8,6 @@ function ToggleContainer({className=""}) {
   const [activeNow,setActiveNow]=useState('Sale');
 
   const handleClick=(e)=>{
-    // console.log(e);
     const selectText=e.target.closest('.toggle-btn-2').innerHTML;
     setActiveNow(selectText);
   };

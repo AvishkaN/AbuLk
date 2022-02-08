@@ -29,7 +29,7 @@ const DIV=styled.div`
 
     position: fixed;
     bottom: 0;
-    z-index: 50000;
+    z-index: 1;
     left: 0;
     background: var(--color-white);
     border-top: 2px solid var(--color-grey);     

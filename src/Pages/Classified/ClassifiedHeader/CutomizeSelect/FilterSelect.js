@@ -15,8 +15,6 @@ function FilterSelect({className="",selectedColor="",filterSectionTitle,filterLi
     const ShowListFN=(e)=>{
 
         setShowList(!showList);
-        // console.log(e.target);   
-        console.log(e.target.closest('.custom-list-item')?.innerText);   
 
         const IsCustomLinkSelected=e.target.closest('.custom-list-item');
 

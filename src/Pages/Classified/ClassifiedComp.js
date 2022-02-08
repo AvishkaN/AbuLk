@@ -24,7 +24,6 @@ function ClassfiedPageComp({className=""}) {
 
     const showHidefilter=(e)=>{
 
-        // console.log(e.closest('.filter-icon-svg'));
         const FilterICon=e.target.closest('.filter-icon-svg');
 
         if(FilterICon){

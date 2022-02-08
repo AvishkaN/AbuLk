@@ -3,9 +3,9 @@ import RowItem from './RowItem';
 
 
 
-function NavRow2({className="",NavDataLi}) {
+function NavRow2({className="",NavDataLi,LocationPath='/'}) {
   return (
-    <DIV className={`${className}`}>
+    <DIV className={`${className}`} LocationPath={LocationPath}>
          <div className="NavRow2-wrapper display-flex justify-content-space-around ">
 
            {NavDataLi.map(navDataItem=>(  
@@ -26,7 +26,7 @@ const DIV=styled.div`
     /* margin-top: var(--margin-top-fix-nav);  */  /*only NavRow2 */
     
     .NavRow2-wrapper{
-      width: var(--page-content-width);
+      width: ${props => (props.LocationPath=='/classified')?'80%':'var(--Nav-content-width)' };
      margin-left: auto;
      margin-right: auto; 
 

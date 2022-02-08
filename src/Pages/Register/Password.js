@@ -16,7 +16,6 @@ function PasswordInput({className="",placeholder}) {
         const selectEye=e.target.closest('.svg-icon-eye');
         const selectInput=e.target?.closest('.input');
 
-        console.log(e.target);
 
         if(selectEye){   
 

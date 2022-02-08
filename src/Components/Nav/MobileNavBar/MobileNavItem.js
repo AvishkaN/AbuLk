@@ -6,7 +6,6 @@ import {Link} from 'react-router-dom';
 function MobileNavItem({className="",SvgIcon,text}) {
   return (
     <DIV className={`${className}`}>
-          {console.log(SvgIcon)}
 
          <div className="MobileNavItem-wrapper text-center text-color-grey">
              <Link to="" className='a'>

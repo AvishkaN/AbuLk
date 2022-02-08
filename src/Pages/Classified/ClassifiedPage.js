@@ -10,6 +10,9 @@ function ClassfiedPage({className=""}) {
     // scroll to top
     window.scroll(0, 0);
 
+    const selectCSSClass= document.body.style;
+    selectCSSClass.setProperty('--page-content-width', '80%');
+
   },[]);
 
   return (
@@ -30,7 +33,8 @@ const DIV=styled.div`
     .ClassfiedPage-wrapper{   
         /* width: var(--page-content-width); */
         
-        width: 94%;
+        /* width: 94%; */
+        width: var(--page-content-width);
         margin-left: auto;
         margin-right: auto; 
         /* background: yellow;  */

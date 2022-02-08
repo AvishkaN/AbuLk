@@ -6,8 +6,6 @@ function SearchFilterNav({className="",selectedNav,SetSelectedNav}) {
 
     const handleClick=(e)=>{
     
-        // console.log(e.target.closest('.filter-nav').classList[1]);     
-        // console.log(e.target.closest('.filter-nav'));     
         const selectFilterNav=e.target.closest('.filter-nav').classList[1];
         if(selectFilterNav){
             SetSelectedNav(selectFilterNav);

@@ -47,7 +47,6 @@ const data=[
 ];
 
 const changeTransform=(sliderCardWrapper)=>{
-    console.log(sliderCardWrapper);
     const transformedValue=sliderCardWrapper.style?.transform?.match(/(\d+)/)[0];
                 
     sliderCardWrapper.style.transform = ` translateX(${10+Number(transformedValue)+'%'})  `;
@@ -62,7 +61,6 @@ function Slider({className=""}) {
 
 
     const handleClick=(e)=>{    
-            // console.log(e.target.closest('.arrow-left'));
 
             const leftArrow=e.target.closest('.arrow-left');
             const rightArrow=e.target.closest('.arrow-right');
@@ -71,21 +69,16 @@ function Slider({className=""}) {
             const sliderCardWrapper=e.target.closest('div').querySelector(".slider-card-container");
            
             if(leftArrow){   
-                console.log(sliderCardWrapper);   
                 sliderCardWrapper.style.transform = "translateX(-10%)";
 
                 
                 const dataArrCopy=[...dataArr];
 
-                console.log(dataArrCopy);
 
                 const removeEl=dataArrCopy.splice(-2);
-                console.log(removeEl);
-                console.log(dataArrCopy);
 
                 const newArr=[...removeEl,...dataArrCopy];
 
-                console.log(newArr);   
                 setDataArr(newArr);
 
             }
@@ -96,7 +89,6 @@ function Slider({className=""}) {
                 
                 sliderCardWrapper.style.transform = ` translateX(${(10-Number(transformedValue))+'%'})  `;
 
-                console.log(transformedValue);
 
                 // changeTransform(sliderCardWrapper);
 

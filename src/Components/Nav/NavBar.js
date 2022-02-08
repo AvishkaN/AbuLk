@@ -31,10 +31,9 @@ function NavBar({className=""}) {
 
 
   return (
-    <DIV className={`${className}  pb-3 `} onClick={handleCLick}>
+    <DIV className={`${className}  pb-3 `} onClick={handleCLick} LocationPath={location.pathname}>
          <div className="NavBar-wrapper">
 
-             {console.log(location.pathname)}
              
              <div className="row-1 border-bottom pb-3 pt-2 w-100 ">  
                     <div className="row justify-content-space-between align-item-center">
@@ -56,7 +55,7 @@ function NavBar({className=""}) {
 
 
              <div className="row-2 border-bottom pt-4  w-100">
-                            <Row2 NavDataLi={data}></Row2> 
+                            <Row2 LocationPath={location.pathname} NavDataLi={data}></Row2> 
              </div>
 
 
@@ -99,7 +98,7 @@ const DIV=styled.div`
             background: var(--color-white);
             z-index:100; 
             .row{
-                width: var(--page-content-width);
+                width: ${props => (props.LocationPath=='/classified')?'80%':'var(--Nav-content-width)' };
                 margin-left: auto;
                 margin-right: auto; 
                 .left{

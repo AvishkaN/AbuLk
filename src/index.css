@@ -41,9 +41,13 @@ html{
     --color-red: red;   
     --color-grey: #b7b8b9;   
     --color-grey-2: #eee;   
+    
+    --color-yellow: yellow;
+
 
 
     --page-content-width: 80%;   
+    --Nav-content-width:var(--page-content-width);   
 
     --sm-size:576px;
     --md-size:768px;
@@ -75,6 +79,9 @@ h1{
 }
 
 
+.w-95{    
+    width: 95% !important; 
+}
 .w-90{   
     width: 90% !important; 
 }
@@ -308,6 +315,12 @@ h1{
 .background-white{
     background-color: var(--color-white);
 }
+.background-black{
+    background-color: var(--color-black);
+}
+.background-yellow{
+    background-color: var(--color-yellow);
+}
 .text-color-primary{
     color: var(--color-primary);
 }
@@ -325,6 +338,14 @@ h1{
 }
 .text-color-red{  
     color: var(--color-red);
+}
+
+
+.text-right{
+    text-align: right;
+}
+.text-left{ 
+    text-align: left;
 }
 
 
