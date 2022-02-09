@@ -51,6 +51,22 @@ const DIV=styled.div`
       margin-left: auto;
       margin-right: auto;  */
 
+      .arrow-icon{   
+
+        @media(max-width:1108px){     
+          width: 16% !important;
+        }
+
+        }
+
+
+      .first-list-item-text{
+        @media(max-width:454px){        
+              font-size: 1.3rem;
+        }
+
+      }  
+
       .border-b{
         border-bottom: 1px solid #e7edee;
       }

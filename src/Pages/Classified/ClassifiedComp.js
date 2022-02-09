@@ -29,9 +29,8 @@ function ClassfiedPageComp({className=""}) {
 
         const FilterICon=e.target.closest('.filter-icon-svg');
 
-       const FilterTitle=e.target.closest('.filter-title').classList[1]; 
+       const FilterTitle=e.target.closest('.filter-title')?.classList[1]; 
 
-       console.log(FilterTitle);
 
         if(FilterICon){
             setShowFilter(!showFilter);
