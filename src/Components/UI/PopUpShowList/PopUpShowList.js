@@ -10,16 +10,29 @@ function PopUpShowList({className="",locationList,secondList=['Maharagama','Pili
          <div className="category-section mt-4">
                       <div className="row">
                             <div className="col-5 ">
+
+
+
                                  { 
                                  locationList.map(categorieItem=>(
                                     <div className='categorie-item display-flex border-b align-item-center first-list-item'>
+                                    
                                         <div className=' w-95 font-1-4  pb-3 pt-3 first-list-item-text'>{categorieItem.categoryName}</div>
                                         <div className="arrow-icon   w-5  ">
                                               <ArrowForwardIosIcon className='font-2 text-color-grey'></ArrowForwardIosIcon>
                                         </div>
+
+
+                                        
+
                                     </div>
                                  ))
                                  }
+
+
+
+
+
                             </div>
                             <div className="col-7 ps-5">
                             { 
@@ -54,6 +67,14 @@ const DIV=styled.div`
       .second-list-item{
         color: #5f5fb8;
         font-weight: bold;
+      }
+
+      .arrow-icon{   
+
+        @media(max-width:1108px){     
+          width: 16% !important;
+        }
+
       }
 
 `;
