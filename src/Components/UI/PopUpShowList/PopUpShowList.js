@@ -75,7 +75,7 @@ const DIV=styled.div`
 
       .first-list-item-text{
         @media(max-width:454px){        
-              font-size: 1.3rem;
+              font-size: 1.4rem;
         }
 
       }
