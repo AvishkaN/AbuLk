@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import FilterDataName from '../../../Functions/FilterDataByName';
-import { SetClassifedLocationFN } from '../../../Redux/slices/clickSlice';
+import { SetClassifedLocationFN, ShowHideAllFN } from '../../../Redux/slices/clickSlice';
 import PopUpShowList from '../../UI/PopUpShowList/PopUpShowList';
 
 import PopUp from '../PopUp/PopUp';
@@ -246,6 +246,7 @@ function LocationPopUp({className=""}) {
 
         if(selectedSecondListItem){   // set selcted location to redux state
             dispatch( SetClassifedLocationFN(selectedSecondListItem));
+            dispatch(ShowHideAllFN());
 
             // console.log(selectedSecondListItem);
         }

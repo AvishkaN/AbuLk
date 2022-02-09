@@ -9,7 +9,7 @@ function PopUpShowList({className="",locationList,secondList=['Maharagama','Pili
     <DIV className={`${className}`}>
          <div className="category-section mt-4">
                       <div className="row">
-                            <div className="col-5 ">
+                            <div className="col-7 ">
 
 
 
@@ -38,7 +38,7 @@ function PopUpShowList({className="",locationList,secondList=['Maharagama','Pili
 
 
                             </div>
-                            <div className="col-7 ps-5">
+                            <div className="col-5 ps-3">
                             { 
                                  secondList.map(categorieItem=>(
                                     <div className='categorie-item display-flex border-b '>

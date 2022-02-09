@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import FilterDataName from '../../../Functions/FilterDataByName';
-import { SetClassifedCategoryFN } from '../../../Redux/slices/clickSlice';
+import { SetClassifedCategoryFN, ShowHideAllFN } from '../../../Redux/slices/clickSlice';
 import CustomizePopUpShowList from './CustomizePopUpShowList';
 
 
@@ -189,6 +189,8 @@ function CategoryPopUp({className=""}) {
 
         if(selectedSecondListItem){   // set selcted location to redux state
             dispatch( SetClassifedCategoryFN(selectedSecondListItem));
+            dispatch(ShowHideAllFN());
+
 
             // console.log(selectedSecondListItem);
         }
