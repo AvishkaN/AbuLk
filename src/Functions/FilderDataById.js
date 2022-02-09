@@ -1,4 +1,3 @@
-import Data from './../Data/Data';
 
 
 const FilterDataById=(id,Data)=>{

@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
-import { HideMobileNavFN, selectClicks } from '../../Redux/slices/clickSlice';
+import { HideMobileNavFN, selectClicks, ShowHideAllFN } from '../../Redux/slices/clickSlice';
 import MobileNav from './MobileNav/MobileNav';
-import PopUp from './PopUp/PopUp';
+import LocationPopUp from './LocationPopUp/LocationPopUp';
+import CategoryPopUp from './CategoryPopUp/CategoryPopUp';
 
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
 
@@ -18,10 +18,18 @@ function Overlay({className=""}) {
   const handleClick=(e)=>{
     
     const IsSelectOverlay=(e.target.classList[0]=='Overlay-wrapper');
+
+    const closeBtn=e.target.closest('#closeIcon');
+
+    console.log(closeBtn);
     
 
     if(IsSelectOverlay){ // hide mobile nav and overlay
-        dispatch(HideMobileNavFN());
+        // dispatch(HideMobileNavFN());
+        dispatch(ShowHideAllFN());
+    }
+    if(closeBtn){ // hide mobile nav and overlay
+        dispatch(ShowHideAllFN());
     }
 
   };
@@ -30,35 +38,18 @@ function Overlay({className=""}) {
   return (
     <DIV className={`${className}`} onClick={handleClick}>
          <div className="Overlay-wrapper cursor-p">
+           {console.log(clicks)}
              {clicks.showMobileNav &&  <MobileNav  className=' w-30  mobile-navv p-3'></MobileNav>}
-      
-              <PopUp to="/">
-                    
-                    <div className="title">Select city Or Division</div>
-                    <div className="">All of Sri Lanka</div>
-                    <div className="">District</div>
+             {clicks.showLocationPopUp &&    <LocationPopUp className='w-65 ms-auto me-auto mt-5'></LocationPopUp>}
+             {clicks.showCategoryPopUp &&    <CategoryPopUp className='w-65 ms-auto me-auto mt-5'></CategoryPopUp>}
+     
+     
+     
+             {/* {clicks.showMobileNav &&    <LocationPopUp className='w-65 ms-auto me-auto mt-5'></LocationPopUp>}
+             {clicks.showMobileNav &&    <LocationPopUp className='w-65 ms-auto me-auto mt-5'></LocationPopUp>} */}
 
-                    <div className="category-section">
-                      <div className="row">
-                            <div className="col-6 ">
-                                 { 
-                                 ['Colombo','Matara','Kandy','Galle'].map(categorieItem=>(
-                                    <div className='categorie-icon display-flex'>
-                                        <div className=' w-95 font-1-5 '>{categorieItem}</div>
-                                        <div className="arrow-icon   w-5  ">
-                                              <ArrowForwardIosIcon className='font-2'></ArrowForwardIosIcon>
-                                        </div>
-                                    </div>
-                                 ))
-                                 }
-                            </div>
-                            <div className="col-6"></div>
-                      </div>
-                    </div>
-
-
-
-              </PopUp>
+          
+            
          </div>
     </DIV>
   );

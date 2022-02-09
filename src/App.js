@@ -32,17 +32,12 @@ function App() {
 
     // turn off scroling opend mobile nav bar
   const html=document.querySelector('html');
-  html.style.overflowY=`${clicks.showMobileNav?'hidden':'initial'}`;
+  html.style.overflowY=`${clicks.showOverlay?'hidden':'initial'}`;
 
-  },[clicks.showMobileNav]);
-
-
-  useEffect(()=>{
-    // scroll to top
-    window.scroll(0, 0);
+  },[clicks.showOverlay]);
 
 
-  },[]);
+  
 
 
 

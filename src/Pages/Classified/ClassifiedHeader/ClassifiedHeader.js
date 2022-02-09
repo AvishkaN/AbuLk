@@ -5,9 +5,14 @@ import FilterSelect from './CutomizeSelect/FilterSelect';
 
 import CategoryIcon from '@mui/icons-material/Category';
 import Location from '@mui/icons-material/FmdGood';
+import { useSelector } from 'react-redux';
+import { selectClicks } from '../../../Redux/slices/clickSlice';
 
 
 function ClassifiedHeader({className=""}) {
+
+    const clicks=useSelector(selectClicks);
+
   return (
     <DIV className={`${className}`}>
          <div className="ClassifiedHeader-wrapper p-3">
@@ -27,11 +32,23 @@ function ClassifiedHeader({className=""}) {
                  </div>
 
                  <div className="col-3  classified-header-input  category cursor-p">
-                        <FilterSelect   titleSvg={<CategoryIcon className='font-2-4 me-2  text-color-primary    '></CategoryIcon>}  selectedColor="#80808021" className='filter-select  pt-1'  filterSectionTitle={"Category"} filterList={["Electronics","Essential","Job","Property"]} filterDefaultSelectedText={"Category"}></FilterSelect>
+                     <div className=" filter-title filter-title-category display-flex   align-items-center  p-1"> 
+                         <CategoryIcon className='font-2-4 text-color-primary me-2' ></CategoryIcon>
+
+                        <div className="fw-bold"> {clicks.classifiedPageSelectedCategory}</div>
+                        
+                     </div>
                  </div>
 
                  <div className="col-4   classified-header-input cursor-p  location">
-                        <FilterSelect titleSvg={<Location className='font-2-4  me-2  text-color-primary   '></Location>} selectedColor="#80808021" className='filter-select  pt-1'  filterSectionTitle={"Location"} filterList={["Matara","Galle","Colombo","Hambanthota","Kalutara","Jaffa","Kandy"]} filterDefaultSelectedText={"Location"}></FilterSelect>
+                     <div className=" filter-title filter-title-location  display-flex  align-items-center  p-1">
+
+
+                         <Location className='font-2-4 text-color-primary me-2'></Location>
+
+                         <div className="fw-bold"> {clicks.classifiedPageSelectedLocation}</div>
+                        
+                     </div>
                  </div>
 
 
@@ -67,29 +84,31 @@ const DIV=styled.div`
             
             .classified-header-input{
                 @media(max-width:779px){     
-                        width: 50%; 
+                    width: 50%; 
+                }
+                
+            }
+            
+            .category{
+                padding-right: 0;
+
+                .filter-title{
+                    border:1px solid var(--color-grey);
                 }
 
             }
-
-            .category{
-                padding-right: 0;
-            }
             .location{
                 padding-left: 0;
+
+                .filter-title{
+                    border:1px solid var(--color-grey);
+                }
+
             }
-
-
+            
+            
         }
 
-        .filter-select{
-            border: 1px solid var(--color-grey);
-
-
-            .selected-name{
-                padding: 0.5rem!important;   
-            }
-        }
 
        .search{
            div{

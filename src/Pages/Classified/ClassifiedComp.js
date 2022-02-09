@@ -12,6 +12,8 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import FilterAltOffIcon from '@mui/icons-material/FilterAltOff';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { ShowCategoryPopupFN, ShowLocationPopupFN } from '../../Redux/slices/clickSlice';
 
 
 
@@ -20,14 +22,31 @@ function ClassfiedPageComp({className=""}) {
 
 
     const[showFilter,setShowFilter]=useState(true);
+    const dispatch=useDispatch();
 
 
-    const showHidefilter=(e)=>{
+    const handleClick=(e)=>{
 
         const FilterICon=e.target.closest('.filter-icon-svg');
 
+       const FilterTitle=e.target.closest('.filter-title').classList[1]; 
+
+       console.log(FilterTitle);
+
         if(FilterICon){
             setShowFilter(!showFilter);
+        }
+
+
+        if(FilterTitle=="filter-title-location"){
+            console.log(`....`);
+            dispatch(ShowLocationPopupFN());
+            
+            
+        }
+        if(FilterTitle=="filter-title-category"){
+            dispatch(ShowCategoryPopupFN());
+
         }
     }
 
@@ -46,7 +65,7 @@ function ClassfiedPageComp({className=""}) {
 
 
   return (
-    <DIV className={`${className}`} onClick={showHidefilter}>
+    <DIV className={`${className}`} onClick={handleClick}>
          <div className="ClassfiedPageComp-wrapper">
 
              <div className="first-banner dispaly-none-992">
