@@ -98,7 +98,7 @@ const DIV=styled.div`
             background: var(--color-white);
             z-index:100; 
             .row{
-                width: ${props => (props.LocationPath=='/classified')?'80%':'var(--Nav-content-width)' };
+                width: ${props => (props.LocationPath=='/classified')?'var(--page-content-width)':'var(--Nav-content-width)' };
                 margin-left: auto;
                 margin-right: auto; 
                 .left{
