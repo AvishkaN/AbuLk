@@ -4,6 +4,7 @@ import PopularSection from '././PopularCategoriesSection/PopularSection';
 import ProductsRow from './RentSectionPopular/ProductsRow';
 import AppdownloadBar from '././AppDownloadBarSection/AppdownloadBar';
 import { useEffect } from 'react';
+import Link from '../../Components/UI/Link/Link';
 
 
 const data=[
@@ -159,6 +160,13 @@ function HomePage({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="HomePage-wrapper">
+
+           
+           <Link to="/classified">
+                <h1>calssified</h1>
+           </Link>
+
+
          <SearchSectionComp className='mt-5  dispaly-none-1000px'></SearchSectionComp>
          <PopularSection className='mt-5  dispaly-none-600px'></PopularSection>
 
