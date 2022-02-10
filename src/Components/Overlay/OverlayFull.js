@@ -4,6 +4,7 @@ import { HideMobileNavFN, selectClicks, ShowHideAllFN } from '../../Redux/slices
 import MobileNav from './MobileNav/MobileNav';
 import LocationPopUp from './LocationPopUp/LocationPopUp';
 import CategoryPopUp from './CategoryPopUp/CategoryPopUp';
+import PostAdPopUp from './PostAdPopUp/PostAdPopUp';
 
 
 
@@ -42,6 +43,7 @@ function Overlay({className=""}) {
              {clicks.showMobileNav &&  <MobileNav  className=' w-30  mobile-navv p-3'></MobileNav>}
              {clicks.showLocationPopUp &&    <LocationPopUp className='w-65  overlay-inside-popup  ms-auto me-auto mt-5'></LocationPopUp>}
              {clicks.showCategoryPopUp &&    <CategoryPopUp className='w-65  overlay-inside-popup  ms-auto me-auto mt-5'></CategoryPopUp>}
+             {clicks.showPostAd &&    <PostAdPopUp className='w-65  overlay-inside-popup  ms-auto me-auto mt-5'></PostAdPopUp>}
      
      
      
