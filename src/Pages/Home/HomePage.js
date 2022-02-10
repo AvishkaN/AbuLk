@@ -165,6 +165,9 @@ function HomePage({className=""}) {
            <Link to="/classified">
                 <h1>calssified</h1>
            </Link>
+           <Link to="/myaccount">
+                <h1>My account</h1>
+           </Link>
 
 
          <SearchSectionComp className='mt-5  dispaly-none-1000px'></SearchSectionComp>

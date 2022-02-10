@@ -15,6 +15,10 @@ function MyAccountComp({className=""}) {
 
     const handleClick=(e)=>{
         // console.log(e.target.closest('#post-ad-ad'));
+        // console.log(e.target.closest('#1'));
+        // console.log(e.target.closest('.1'));
+        // console.log(e.target);
+        console.log(e.target.closest('div'));
 
         const PostAdButton=e.target.closest('#post-ad-ad');
 
@@ -40,7 +44,7 @@ function MyAccountComp({className=""}) {
                      <div className="my-account-content h-100"> 
                                 <div className=" h-100 ">
                                 
-                                     <PostAd className='h-100 '></PostAd>
+                                     <PostAd  id="post-ad" className='h-100 '></PostAd>
 
                                 </div> 
                      </div>

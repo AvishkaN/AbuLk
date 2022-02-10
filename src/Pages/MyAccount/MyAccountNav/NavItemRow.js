@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 
 
-function NavItemRow({className="",svgIcon,text}) {
+function NavItemRow({className="",svgIcon,text,id}) {
   return (
-    <DIV className={`${className} display-flex align-items-center`}>
+    <DIV id={id} className={`${className} display-flex align-items-center`}>
             {svgIcon}
             <div className="font-1-6 ms-3 text-color-grey-ori">
                 {text}
