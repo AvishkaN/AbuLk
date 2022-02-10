@@ -4,6 +4,9 @@ import HomePage from './Pages/Home/HomePage';
 import PropertPage from './Pages/ProperyPage/PropertPage';
 import ProductItem from './Pages/ProductItem/ProductItem';
 import ClassifiedPage from './Pages/Classified/ClassifiedPage';
+import MyAccountPage from './Pages/MyAccount/MyAccountPage';
+
+
 import NavBar from './Components/Nav/NavBar';
 import Login from './Pages/Login/Login';
 import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
@@ -98,6 +101,17 @@ function App() {
                                           <MobielNavBar></MobielNavBar>
 
                                         <ClassifiedPage></ClassifiedPage>
+                                        <Footer className='mt-6'></Footer>
+
+                                      </>
+                                    } />
+
+                                    <Route path="/myaccount" element={ 
+                                      <>
+                                            <NavBar></NavBar>
+                                          <MobielNavBar></MobielNavBar>
+
+                                        <MyAccountPage></MyAccountPage>
                                         <Footer className='mt-6'></Footer>
 
                                       </>

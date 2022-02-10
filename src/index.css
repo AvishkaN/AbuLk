@@ -43,6 +43,8 @@ html{
     --color-grey-2: #eee;   
     
     --color-yellow: yellow;
+    --color-aqua: aqua;
+    --color-grey-ori: grey;
 
 
 
@@ -157,6 +159,12 @@ h1{
 }
 .h-50{ 
     height: 50% !important;
+}
+.h-20{  
+    height: 20% !important;
+}
+.h-auto{ 
+    height: auto !important;
 }
 
 
@@ -324,6 +332,9 @@ h1{
 .background-yellow{
     background-color: var(--color-yellow);
 }
+.background-aqua{
+    background-color: var(--color-aqua);
+}
 .text-color-primary{
     color: var(--color-primary);
 }
@@ -333,6 +344,9 @@ h1{
 }
 .text-color-grey-2{
     color: var(--color-grey-2);
+}
+.text-color-grey-ori{
+    color: var(--color-grey-ori);
 }
 
 

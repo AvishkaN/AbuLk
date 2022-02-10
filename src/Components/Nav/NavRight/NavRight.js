@@ -15,10 +15,10 @@ function NavRight({className=""}) {
                
              
               <Link className="w-50 nav-right-button" to="/login">
-                  <Button className='nav-right-button  fw-bold button-font-size'  text={"Log in or sign up"}></Button>
+                  <Button className='nav-right-button  fw-bold button-font-size'  text={""}>Log in or sign up</Button>
               </Link>
 
-                  <Button className='nav-right-button  background-primary fw-bold  text-color-white button-font-size  w-50'  text={"Place Your Ad"}></Button>
+                  <Button className='nav-right-button  background-primary fw-bold  text-color-white button-font-size  w-50'  text={""}>Place Your Ad</Button>
 
             </div>
          </div>

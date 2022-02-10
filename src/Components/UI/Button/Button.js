@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 
 
-function Button({className="",text}) {
+function Button(props) {
   return (
-             <ButtonComp type="button"  className={`btn ${className}`}>{text}</ButtonComp>
+    <ButtonComp type="button"  className={`${props.className} btn`}   border={props.border}>
+                {props.children}  
+    </ButtonComp>
   );
 };
 
@@ -12,6 +14,8 @@ function Button({className="",text}) {
 const ButtonComp=styled.button`
     width: 100%;
     /* margin-top: var(--margin-top-fix-nav);  */  /*only Button */
+
+    border:${props => props.border? `1px solid black`:`none`};
 
     &:hover{
       /* color: var(--color-white);   */
