@@ -6,7 +6,7 @@ import StorefrontOutlinedIcon from '@mui/icons-material/StorefrontOutlined';
 import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 import BusinessIcon from '@mui/icons-material/Business';
 import BorderAllOutlinedIcon from '@mui/icons-material/BorderAllOutlined';
-import SettingsPowerIcon from '@mui/icons-material/SettingsPower';
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 import { Avatar } from '@mui/material';
 
@@ -26,7 +26,7 @@ function MyAccountNav({className=""}) {
 
                 </div>
 
-                    <div className="name-container">
+                    <div className="name-container ms-3">
                             <div className="name fw-bold ">  Aruna</div>
                             <div className="email text-color-grey font-1-1">  arunalakshan23@gmail.com</div>
                       
@@ -35,12 +35,12 @@ function MyAccountNav({className=""}) {
                 <div className=" p-4 ">
 
                     <NavItemRow  className={`cursor-p   border-radius-20     active    ${className}`}  svgIcon={<AccountCircleOutlinedIcon className='font-2-3   text-color-grey-ori    '></AccountCircleOutlinedIcon>} text={"My account"}></NavItemRow>
-                    <NavItemRow  className='cursor-p'  svgIcon={<AddCircleOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-2'   ></AddCircleOutlineOutlinedIcon>} text={"Post an Ad"}></NavItemRow>
-                    <NavItemRow  className='cursor-p'  svgIcon={<StorefrontOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-2'   ></StorefrontOutlinedIcon>} text={"My Store"}></NavItemRow>
-                    <NavItemRow  className='cursor-p'  svgIcon={<WorkOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-2'   ></WorkOutlineOutlinedIcon>} text={"My Jobs"}></NavItemRow>
-                    <NavItemRow  className='cursor-p'  svgIcon={<BusinessIcon   className='font-2-3   text-color-grey-ori          mt-2'   ></BusinessIcon>} text={"My buissness"}></NavItemRow>
-                    <NavItemRow  className='cursor-p'  svgIcon={<BorderAllOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-2'   ></BorderAllOutlinedIcon>} text={"My all ads"}></NavItemRow>
-                    <NavItemRow  className='cursor-p'  svgIcon={<SettingsPowerIcon   className='font-2-3   text-color-grey-ori          mt-2'   ></SettingsPowerIcon>} text={"Log Out"}></NavItemRow>
+                    <NavItemRow  className='cursor-p'  svgIcon={<AddCircleOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></AddCircleOutlineOutlinedIcon>} text={"Post an Ad"}></NavItemRow>
+                    <NavItemRow  className='cursor-p'  svgIcon={<StorefrontOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></StorefrontOutlinedIcon>} text={"My Store"}></NavItemRow>
+                    <NavItemRow  className='cursor-p'  svgIcon={<WorkOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></WorkOutlineOutlinedIcon>} text={"My Jobs"}></NavItemRow>
+                    <NavItemRow  className='cursor-p'  svgIcon={<BusinessIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></BusinessIcon>} text={"My buissness"}></NavItemRow>
+                    <NavItemRow  className='cursor-p'  svgIcon={<BorderAllOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></BorderAllOutlinedIcon>} text={"My all ads"}></NavItemRow>
+                    <NavItemRow  className='cursor-p'  svgIcon={<PowerSettingsNewIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></PowerSettingsNewIcon>} text={"Log Out"}></NavItemRow>
                 </div>
          </div>
     </DIV>

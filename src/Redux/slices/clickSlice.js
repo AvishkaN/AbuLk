@@ -3,13 +3,13 @@ import {createSlice} from '@reduxjs/toolkit';
 export const clickSlice=createSlice({
     name:"clicks",
     initialState:{  
-        showOverlay:true, 
+        showOverlay:false, 
         showMobileNav:false, 
 
         showLocationPopUp:false, 
         showCategoryPopUp:false, 
 
-        showPostAd:true, 
+        showPostAd:false, 
 
         classifiedPageSelectedLocation:"Location",
         classifiedPageSelectedCategory:"Category",
@@ -45,33 +45,31 @@ export const clickSlice=createSlice({
 
             state.classifiedPageSelectedLocation=action.payload;    
         },
+
+        SetShowPostAdFN:(state,action)=>{     
+
+            state.showPostAd=true;    
+            state.showOverlay=true;    
+        },
+
+
+
         SetClassifedCategoryFN:(state,action)=>{     
 
             state.classifiedPageSelectedCategory=action.payload;    
         },
+
+        
         ShowHideAllFN:(state)=>{     
-
-            // state.showOverlay=!state.showOverlay; 
-            // state.showMobileNav=!state.showMobileNav; 
-    
-            // state.showLocationPopUp=!state.showLocationPopUp; 
-            // state.showCategoryPopUp=!state.showCategoryPopUp; 
-    
-            // state.classifiedPageSelectedLocation=! state.classifiedPageSelectedLocation;
-            // state.classifiedPageSelectedCategory=!state.classifiedPageSelectedCategory;
-
-
 
             state.showOverlay=false;  
             state.showMobileNav=false; 
     
             state.showLocationPopUp=false; 
             state.showCategoryPopUp=false; 
-    
-            // state.classifiedPageSelectedLocation=null;
-            // state.classifiedPageSelectedCategory=null;
 
         },
+
 
 
      
@@ -90,6 +88,8 @@ export const {
 
                             ShowCategoryPopupFN,
                             ShowLocationPopupFN,
+
+                            SetShowPostAdFN,
 
 
                             ShowHideAllFN,

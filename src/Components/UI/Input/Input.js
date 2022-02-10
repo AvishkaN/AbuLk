@@ -4,8 +4,7 @@ import styled from 'styled-components';
 
 function Input(props) {
   return (
-
-         <InputComp type={props.type}  className={` input ${props.className} `}   border={props.border}>
+         <InputComp ref={props.ref} type={props.type}  className={` input ${props.className} `}   border={props.border}>
                  {props.children}  
         </InputComp>
 

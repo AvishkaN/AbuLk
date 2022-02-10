@@ -2,11 +2,31 @@ import styled from 'styled-components';
 import MyAccountNav from './MyAccountNav/MyAccountNav';
 import PostAd from './PostAd/PostAd';
 
+import { useDispatch } from 'react-redux';
+import { SetShowPostAdFN } from '../../Redux/slices/clickSlice';
+
+
 
 
 function MyAccountComp({className=""}) {
+
+    const dispatch=useDispatch();
+
+
+    const handleClick=(e)=>{
+        // console.log(e.target.closest('#post-ad-ad'));
+
+        const PostAdButton=e.target.closest('#post-ad-ad');
+
+        if(PostAdButton){
+
+            dispatch(SetShowPostAdFN());
+
+        }
+    }
+
   return (
-    <DIV className={`${className}`}>
+    <DIV className={`${className}`} onClick={handleClick}>
          <div className="MyAccountComp-wrapper">
              <div className="row">
 
@@ -41,12 +61,16 @@ const DIV=styled.div`
       /* width: var(--MyAccountComp-content-width);
         margin-left: auto;
         margin-right: auto;  */
+        /* min-height: 72vh; */
         background: #F9FBFC;
+        border-radius: 2% 2% 2% 0%;
 
         .my-account-nav{  
-            border-radius: 2% 20% 0% 0%;
+            border-radius: 1% 15% 15% 3%;
             background: #FFF;
             box-shadow: 0px 8px 3px 3px rgba(0 ,0 ,0,0.12);
+            min-height:70vh;  
+
         }
 
         .my-account-content{

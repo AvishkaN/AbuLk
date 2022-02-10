@@ -43,7 +43,7 @@ function Overlay({className=""}) {
              {clicks.showMobileNav &&  <MobileNav  className=' w-30  mobile-navv p-3'></MobileNav>}
              {clicks.showLocationPopUp &&    <LocationPopUp className='w-65  overlay-inside-popup  ms-auto me-auto mt-5'></LocationPopUp>}
              {clicks.showCategoryPopUp &&    <CategoryPopUp className='w-65  overlay-inside-popup  ms-auto me-auto mt-5'></CategoryPopUp>}
-             {clicks.showPostAd &&    <PostAdPopUp className='w-65  overlay-inside-popup  ms-auto me-auto mt-5'></PostAdPopUp>}
+             {clicks.showPostAd &&    <PostAdPopUp className='w-65  overlay-inside-popup-post-ad  ms-auto me-auto mt-5'></PostAdPopUp>}
      
      
      
@@ -95,6 +95,13 @@ const DIV=styled.div`
               @media(max-width:609px){     
                           width: 92% !important;
             }
+            
+          }
+          
+          .overlay-inside-popup-post-ad{
+                @media(max-width:903px){     
+                  width: 91% !important;
+              }
 
         }
 

@@ -7,7 +7,7 @@ function MyAccoutPage({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="MyAccoutPage-wrapper mt-5">
-                <MyAccountComp ></MyAccountComp>
+                <MyAccountComp className='pb-5'></MyAccountComp>
          </div>
     </DIV>
   );
@@ -28,6 +28,7 @@ const DIV=styled.div`
     /* background: green;  */
     /* margin-top: var(--margin-top-fix-nav);  */  /*only MyAccoutPage */
     background: #D5DAE6;
+    min-height:87vh;  
     
     .MyAccoutPage-wrapper{
         /* background: yellow;  */

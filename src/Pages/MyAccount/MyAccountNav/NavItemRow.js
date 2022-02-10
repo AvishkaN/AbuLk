@@ -6,7 +6,7 @@ function NavItemRow({className="",svgIcon,text}) {
   return (
     <DIV className={`${className} display-flex align-items-center`}>
             {svgIcon}
-            <div className="font-1-4 ms-3 text-color-grey-ori">
+            <div className="font-1-6 ms-3 text-color-grey-ori">
                 {text}
             </div>
     </DIV>

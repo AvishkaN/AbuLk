@@ -7,7 +7,7 @@ import AddCircle from '@mui/icons-material/AddCircleOutlineOutlined';
 function PoadAdForm({className=""}) {
   return (
     <DIV className={`${className} `}>
-              <Button  className="font-1-5 display-flex align-item-center w-35 border-radius-5 justify-content-center" border={true}>
+              <Button   id="post-ad-ad" className="font-1-5 display-flex align-item-center w-35 border-radius-5 justify-content-center" border={true}>
                          <AddCircle className='font-2-9'></AddCircle>
                          <div className="ms-2">  Post an Ad</div>
                 </Button>
