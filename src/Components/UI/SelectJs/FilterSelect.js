@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 
-function FilterSelect({className="",selectedColor="",filterList,filterDefaultSelectedText,ShowListProp}) {
+function FilterSelect({className="",border=false,DropDownListItemclassName,selectedColor="",filterList,filterDefaultSelectedText,ShowListProp}) {
 
     const [showList,setShowList]=useState(false);
     const [selectedName,setSelectedName]=useState(filterDefaultSelectedText);
@@ -29,7 +29,7 @@ function FilterSelect({className="",selectedColor="",filterList,filterDefaultSel
     }
 
   return (
-    <DIV selectedColor={selectedColor}  className={`${className}`} IsShowList={showList} onClick={ShowListProp? ShowListProp:ShowListFN}>
+    <DIV selectedColor={selectedColor}  className={`${className}`} IsShowList={showList} onClick={ShowListProp? ShowListProp:ShowListFN} border={border}>
          <div className="FilterSelect-wrapper " >
 
          <FilterSelectTitle showList={showList}  selectedName={selectedName}></FilterSelectTitle>
@@ -37,7 +37,7 @@ function FilterSelect({className="",selectedColor="",filterList,filterDefaultSel
             {
                 showList && ( 
 
-                 <DropDownList selectedColor={selectedColor}  selectedName={selectedName}  filterList={filterList}></DropDownList>
+                 <DropDownList className={DropDownListItemclassName}  selectedColor={selectedColor}  selectedName={selectedName}  filterList={filterList}></DropDownList>
                 )
             }
              
@@ -52,6 +52,8 @@ function FilterSelect({className="",selectedColor="",filterList,filterDefaultSel
 const DIV=styled.div`
     width: 100%;
     /* margin-top: var(--margin-top-fix-nav);  */  /*only FilterSelect */
+    border:${props => props.border? `1px solid black`:`none`};
+
     
     .FilterSelect-wrapper{
 

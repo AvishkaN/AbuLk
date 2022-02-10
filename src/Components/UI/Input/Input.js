@@ -2,33 +2,23 @@ import styled from 'styled-components';
 
 
 
-function Input({className="",text,type="text"}) {
+function Input(props) {
   return (
-    <DIV className={`${className}`}>
-         <div className="Input-wrapper">
-                <input type={type} placeholder={text}  className='input ' />
 
-         </div>
-    </DIV>
+         <InputComp type={props.type}  className={` input ${props.className} `}   border={props.border}>
+                 {props.children}  
+        </InputComp>
+
   );
 }
 
 
-const DIV=styled.div`
+
+const InputComp=styled.input`
     width: 100%;
-    /* margin-top: var(--margin-top-fix-nav);  */  /*only Input */
-    
-    .Input-wrapper{
+    border:${props => props.border? `1px solid black`:`none`};
 
-        input{
-            width: 100%; 
-            background-color: var(--color-white);
-        }
-      /* width: var(--Input-content-width);
-        margin-left: auto;
-        margin-right: auto;  */
 
-    }
 `;
 
 export default Input;
