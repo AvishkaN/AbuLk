@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import MinMaxComp from './FilterSelectSection/MinMaxComp';
 import FilterSelect from '../../../../Components/UI/SelectJs/FilterSelect';
-import Input from './../../../../Components/UI/Input/Input';
+import Input from '../../../../Components/UI/Input/Input';
 import Button from './../../../../Components/UI/Button/Button';
 
 

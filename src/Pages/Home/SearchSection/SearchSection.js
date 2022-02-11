@@ -16,12 +16,12 @@ function SearchSection({className=""}) {
                     <div className="row">
                         <div className="col-sm-10">
 
-                                {/* <Input  type="text" className='input' border={true} >sdfsdfdsf</Input> */}
+                                <Input placeholder={"Search for anything.."}  type="text" className='input p-3 background-white' border={true} ></Input>
 
                         </div>
                         <div className="col-sm-2">
 
-                            <Button text={"Search "} className='background-primary text-color-white w-100 h-100 text-1-3 font-1-4'></Button> 
+                            <Button text={" "} className='background-primary text-color-white w-100 h-100 text-1-3 font-1-4'>Search</Button> 
 
                         </div> 
                     </div>
@@ -48,6 +48,7 @@ const DIV=styled.div`
     }
 
     .input{
+
 
       .Input-wrapper{
         .input{

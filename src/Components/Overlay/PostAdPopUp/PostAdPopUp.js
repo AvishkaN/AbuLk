@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PopUp from './../PopUp/PopUp';
-import Input from './../../UI/Input/Input';
+import Input from '../../UI/Input/Input';
 import FilterSelect from './../../UI/SelectJs/FilterSelect';
 import TextArea from './../../UI/TextArea/TextArea';
 import FIleUpload from './../../UI/FileUpload/FIleUpload';

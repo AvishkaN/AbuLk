@@ -8,7 +8,7 @@ function Bottom({className="",btnText,secondText,to}) {
   return (
     <DIV className={`${className}`}>
       
-      <Button className='background-primary border-radius-20 font-1-2 text-color-white mt-4'  text={btnText}></Button>
+      <Button className='background-primary border-radius-20 font-1-2 text-color-white mt-4'  >{btnText}</Button>
          
          
          <div className="sign-in text-center mt-2">
