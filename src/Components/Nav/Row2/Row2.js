@@ -10,7 +10,7 @@ function NavRow2({className="",NavDataLi,LocationPath='/'}) {
 
            {NavDataLi.map(navDataItem=>(  
 
-             <li className='pb-4'> <RowItem text={navDataItem}></RowItem></li>
+             <li className='pb-4 text-color-white'> <RowItem text={navDataItem}></RowItem></li>
            ))
 
            }

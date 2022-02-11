@@ -16,7 +16,7 @@ function SearchSection({className=""}) {
                     <div className="row">
                         <div className="col-sm-10">
 
-                                <Input  className='input' text={"Search for anything.."}></Input>
+                                {/* <Input  type="text" className='input' border={true} >sdfsdfdsf</Input> */}
 
                         </div>
                         <div className="col-sm-2">

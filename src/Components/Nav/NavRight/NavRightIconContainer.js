@@ -10,10 +10,10 @@ function IconContainer({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="IconContainer-wrapper display-flex">
-            <NavRightIcon text={"Notification"} Icon={NotificationsNoneOutlinedIcon} className='text-size text-color-grey cursor-p   nav-right-icon'></NavRightIcon>
-            <NavRightIcon text={"Searches"} Icon={SearchOutlinedIcon} className='text-size  text-color-grey cursor-p  nav-right-icon'></NavRightIcon>
-            <NavRightIcon text={"Favourites"} Icon={FavoriteBorderOutlinedIcon} className='text-size  text-color-grey cursor-p  nav-right-icon'></NavRightIcon>
-            <NavRightIcon text={"My Chat"} Icon={ChatBubbleOutlineOutlinedIcon} className='text-size  text-color-grey cursor-p  nav-right-icon'></NavRightIcon>
+            <NavRightIcon text={"Notification"} Icon={NotificationsNoneOutlinedIcon} className='text-size text-color-white cursor-p   nav-right-icon'></NavRightIcon>
+            <NavRightIcon text={"Searches"} Icon={SearchOutlinedIcon} className='text-size  text-color-white cursor-p  nav-right-icon'></NavRightIcon>
+            <NavRightIcon text={"Favourites"} Icon={FavoriteBorderOutlinedIcon} className='text-size  text-color-white cursor-p  nav-right-icon'></NavRightIcon>
+            <NavRightIcon text={"My Chat"} Icon={ChatBubbleOutlineOutlinedIcon} className='text-size  text-color-white cursor-p  nav-right-icon'></NavRightIcon>
          </div>
     </DIV>
   );

@@ -20,7 +20,6 @@ const DIV=styled.div`
 
     .link{
         text-decoration:none;   
-        color: var(--color-black);
     }
 
     

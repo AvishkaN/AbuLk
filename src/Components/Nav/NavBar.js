@@ -35,12 +35,12 @@ function NavBar({className=""}) {
          <div className="NavBar-wrapper">
 
              
-             <div className="row-1 border-bottom pb-3 pt-2 w-100 ">  
+             <div className="row-1 border-bottom pb-3 pt-2 w-100  background-primary">  
                     <div className="row justify-content-space-between align-item-center">
                             <div className="left col-3  col-xl-4">
                                 <Link to="/" className='w-30 a'>
                                     {/* <Logo className='w-100'></Logo> */}
-                                    <h3 className='w-100 fw-bold  text-color-red'>ABU.LK</h3>
+                                    <h3 className='w-100 fw-bold  text-color-white'>ABU.LK</h3>
 
                                 </Link>
                                     <Select className='select w-25 cursor-p ms-3'></Select>
@@ -54,7 +54,7 @@ function NavBar({className=""}) {
              </div>
 
 
-             <div className="row-2 border-bottom pt-4  w-100">
+             <div className="row-2 border-bottom pt-4  w-100 background-primary">
                             <Row2 LocationPath={location.pathname} NavDataLi={data}></Row2> 
              </div>
 
@@ -95,7 +95,7 @@ const DIV=styled.div`
         
         .row-1{
             position: fixed;  
-            background: var(--color-white);
+            /* background: var(--color-white); */
             z-index:100; 
             .row{
                 width: ${props => (props.LocationPath=='/classified')?'var(--page-content-width)':'var(--Nav-content-width)' };
@@ -145,7 +145,7 @@ const DIV=styled.div`
 
         .row-2{
             margin-top: 5rem; 
-            background: var(--color-white);
+            /* background: var(--color-white); */
             z-index:100; 
             @media(max-width:1000px){
                 display:none; 
