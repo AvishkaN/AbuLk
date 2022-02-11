@@ -32,15 +32,15 @@ function MyAccountNav({className=""}) {
                       
                     </div>
 
-                <div className=" p-4 ">
+                <div className="nav-itesm-row  p-4 ">
 
-                    <NavItemRow id={"1" }  className={`1 cursor-p   border-radius-20     active    ${className}`}  svgIcon={<AccountCircleOutlinedIcon className='font-2-3   text-color-grey-ori    '></AccountCircleOutlinedIcon>} text={"My account"}></NavItemRow>
-                    <NavItemRow id="00" className='cursor-p'  svgIcon={<AddCircleOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></AddCircleOutlineOutlinedIcon>} text={"Post an Ad"}></NavItemRow>
-                    <NavItemRow id="00" className='cursor-p'  svgIcon={<StorefrontOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></StorefrontOutlinedIcon>} text={"My Store"}></NavItemRow>
-                    <NavItemRow id="00" className='cursor-p'  svgIcon={<WorkOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></WorkOutlineOutlinedIcon>} text={"My Jobs"}></NavItemRow>
-                    <NavItemRow id="00" className='cursor-p'  svgIcon={<BusinessIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></BusinessIcon>} text={"My buissness"}></NavItemRow>
-                    <NavItemRow id="00" className='cursor-p'  svgIcon={<BorderAllOutlinedIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></BorderAllOutlinedIcon>} text={"My all ads"}></NavItemRow>
-                    <NavItemRow id="00" className='cursor-p'  svgIcon={<PowerSettingsNewIcon   className='font-2-3   text-color-grey-ori          mt-3'   ></PowerSettingsNewIcon>} text={"Log Out"}></NavItemRow>
+                    <NavItemRow id={"1" }  className={`    -nav-item-row   cursor-p mt-3     border-radius-20    active     ${className}`}  svgIcon={<AddCircleOutlineOutlinedIcon className='font-2-3   text-color-grey-ori    '></AddCircleOutlineOutlinedIcon>} text={"Post an Ad"}></NavItemRow>
+                    <NavItemRow id={"1" }  className={`    -nav-item-row   cursor-p mt-3     border-radius-20         ${className}`}  svgIcon={<AccountCircleOutlinedIcon className='font-2-3   text-color-grey-ori    '></AccountCircleOutlinedIcon>} text={"My account"}></NavItemRow>
+                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<StorefrontOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></StorefrontOutlinedIcon>} text={"My Store"}></NavItemRow>
+                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<WorkOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></WorkOutlineOutlinedIcon>} text={"My Jobs"}></NavItemRow>
+                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<BusinessIcon   className='font-2-3   text-color-grey-ori         '   ></BusinessIcon>} text={"My buissness"}></NavItemRow>
+                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<BorderAllOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></BorderAllOutlinedIcon>} text={"My all ads"}></NavItemRow>
+                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<PowerSettingsNewIcon   className='font-2-3   text-color-grey-ori         '   ></PowerSettingsNewIcon>} text={"Log Out"}></NavItemRow>
                 </div>
          </div>
     </DIV>
@@ -74,7 +74,7 @@ const DIV=styled.div`
         }
         .active{
             background: #e5e7e8;
-            padding-left: 0.8rem  !important;
+            /* padding-left: 0.8rem  !important; */
 
             div,svg{
                 color:black;

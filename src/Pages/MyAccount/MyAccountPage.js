@@ -35,6 +35,10 @@ const DIV=styled.div`
         /* width: var(--page-content-width); */
         width: 70%;
 
+        @media(max-width:1064px){     
+                width: 94% !important;  
+        }
+
         margin-left: auto;
         margin-right: auto; 
 

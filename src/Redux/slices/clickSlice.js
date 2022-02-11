@@ -68,6 +68,8 @@ export const clickSlice=createSlice({
             state.showLocationPopUp=false; 
             state.showCategoryPopUp=false; 
 
+            state.showPostAd=false; 
+
         },
 
 

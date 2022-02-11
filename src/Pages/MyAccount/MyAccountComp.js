@@ -18,7 +18,7 @@ function MyAccountComp({className=""}) {
         // console.log(e.target.closest('#1'));
         // console.log(e.target.closest('.1'));
         // console.log(e.target);
-        console.log(e.target.closest('div'));
+        // console.log(e.target.closest('.1'));
 
         const PostAdButton=e.target.closest('#post-ad-ad');
 
@@ -34,13 +34,13 @@ function MyAccountComp({className=""}) {
          <div className="MyAccountComp-wrapper">
              <div className="row">
 
-                 <div className="col-3">
+                 <div className="col-3 nv">
                      <div className="my-account-nav background-aqu">
                         <MyAccountNav></MyAccountNav>
                      </div>
                  </div>
 
-                 <div className="col-9  background-aqu">
+                 <div className="col-9  background-aqu  content">
                      <div className="my-account-content h-100"> 
                                 <div className=" h-100 ">
                                 
@@ -69,12 +69,62 @@ const DIV=styled.div`
         background: #F9FBFC;
         border-radius: 2% 2% 2% 0%;
 
+        .nv{
+
+            @media(max-width:795px){     
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
+            @media(max-width:600px){     
+                flex: 0 0 auto;
+                width:100%;
+            }
+            
+            .nav-itesm-row{
+                @media(max-width:600px){     
+                        /* background: red;  */
+                        display:flex; 
+                        flex-wrap: wrap;  
+                        justify-content:space-between;
+
+                        .-nav-item-row{      
+                            flex-basis: 33%;
+                            
+                            @media(max-width:459px){     
+                                flex-basis: 44%;   
+                            }
+                        }
+                        }
+                
+            }
+            
+        }
+        
+        .content{
+            @media(max-width:795px){       
+                            flex: 0 0 auto;
+                            width: 66.66666667%;
+            }
+            @media(max-width:600px){       
+                            width: 100%;
+                            min-height:30vh;
+            }
+
+            
+        }
+        
         .my-account-nav{  
             border-radius: 1% 15% 15% 3%;
             background: #FFF;
             box-shadow: 0px 8px 3px 3px rgba(0 ,0 ,0,0.12);
             min-height:70vh;  
 
+            @media(max-width:600px){      
+                border-radius: 1% 1% 1% 1%;
+                min-height: 48vh;
+            }
+            
+          
         }
 
         .my-account-content{
