@@ -6,7 +6,7 @@ import RowItem from './RowItem';
 function NavRow2({className="",NavDataLi,LocationPath='/'}) {
   return (
     <DIV className={`${className}`} LocationPath={LocationPath}>
-         <div className="NavRow2-wrapper display-flex justify-content-space-around ">
+         <div className="NavRow2-wrapper display-flex  justify-content-between ">
 
            {NavDataLi.map(navDataItem=>(  
 
@@ -41,7 +41,7 @@ const DIV=styled.div`
               bottom: 0px;
               left: 0px;
               right: 0px;
-              background-color: black;
+              background-color: var(--color-white);
               transition: height 0.1s ease-out 0s;
             }
 

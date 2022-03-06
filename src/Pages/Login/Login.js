@@ -11,8 +11,8 @@ function RegistarPage({className=""}) {
          <div className="RegistarPage-wrapper p-5 border-radius-10  ">
                  <h2 className='text-center fw-bold text-color-primary'>Login</h2>    
 
-                 <Input className="input w-100 p-2  ps-3 mt-4" placeholder='email'></Input>  
-                 <Password className="input w-100 p-2  ps-3 mt-4"   placeholder='password'></Password>
+                 <Input className="input w-100 p-2  ps-3 mt-4  font-1-6 " placeholder='email'></Input>  
+                 <Password className="input w-100 p-2  ps-3 mt-4  font-1-6 "   placeholder='password'></Password>
 
                  <Bottom btnText="LOGIN" secondText="Sign Up" to="/register" ></Bottom>
          

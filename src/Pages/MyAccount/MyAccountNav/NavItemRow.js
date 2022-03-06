@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 function NavItemRow({className="",svgIcon,text,id}) {
   return (
-    <DIV id={id} className={`${className} display-flex align-items-center`}>
+    <DIV id={id} className={`${className} display-flex align-items-center  navitemrow`}>
             {svgIcon}
             <div className="text font-1-4 ms-3 text-color-grey-ori">
                 {text}

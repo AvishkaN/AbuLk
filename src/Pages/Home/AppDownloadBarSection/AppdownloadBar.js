@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import DownladStore from './DownladStore';
+const Img1= 'https://alain.dubizzle.com/static/home/img/icons/app-icons/app_download_preview.png';
 
 
 
@@ -13,7 +14,7 @@ function AppDownloadBar({className=""}) {
                         <h2 className='text-center text-color-primary fw-bold'>Download the app now!</h2>
                     </div>
                     <div className="col-2 app-download-center">
-                        <img src="https://alain.dubizzle.com/static/home/img/icons/app-icons/app_download_preview.png" alt="" />
+                        <img src={"https://alain.dubizzle.com/static/home/img/icons/app-icons/app_download_preview.png"} alt="" />
                     </div>
                     <div className="col-3 app-download-right display-flex align-items-center">
                             <DownladStore className='w-100' imgSrc={"https://alain.dubizzle.com/static/home/img/icons/app-icons/apple-store.png"}></DownladStore>
@@ -28,8 +29,12 @@ function AppDownloadBar({className=""}) {
 
 const DIV=styled.div`
     width: 100%;
-    /* margin-top: var(--margin-top-fix-nav);  */  /*only AppDownloadBar */
     
+    @media(max-width:1000px){     
+                      display: none;
+      }    
+
+
     .AppDownloadBar-wrapper{
       /* width: var(--AppDownloadBar-content-width);
         margin-left: auto;

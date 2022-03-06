@@ -104,7 +104,7 @@ function App() {
                                       </>
                                     } />
 
-                                    <Route path="/myaccount" element={ 
+                                    <Route path="/myaccount/*" element={ 
                                       <>
                                             <NavBar></NavBar>
                                           <MobielNavBar></MobielNavBar>

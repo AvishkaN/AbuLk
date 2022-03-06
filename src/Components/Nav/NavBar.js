@@ -38,14 +38,14 @@ function NavBar({className=""}) {
              <div className="row-1 border-bottom pb-3 pt-2 w-100  background-primary">  
                     <div className="row justify-content-space-between align-item-center">
                             <div className="left col-3  col-xl-4">
-                                <Link to="/" className='w-30 a'>
+                                <Link to="/" className='w-100 a'>
                                     {/* <Logo className='w-100'></Logo> */}
-                                    <h3 className='w-100 fw-bold  text-color-white'>ABU.LK</h3>
+                                    <h2 className='w-100 fw-bold  text-color-white text-center  text-logo '>ABU.LK</h2>
 
                                 </Link>
-                                    <Select className='select w-25 cursor-p ms-3'></Select>
+                                    {/* <Select className='select w-25 cursor-p ms-3'></Select> */}
                             </div>
-                            <div className="right col-8 col-xl-7"> 
+                            <div className="right col-9 col-xl-8"> 
                                 <NavRight></NavRight>
                             </div>
 
@@ -77,18 +77,14 @@ const DIV=styled.div`
     width: 100%;
     background: var(--color-white);
   
-    /* margin-top: var(--margin-top-fix-nav);  */  /*only NavBar */
-    /* position: fixed; */
+    
+    .text-logo{
+        /* background-color:yellow;  */
 
-    /* &:after{
-        content: '';
-        width: 100%;
-        height: 200px;
-        background: #f44336;
-        display: block;
-        transition: 0.45s;
-    } */
-
+        @media(min-width:1000px){     
+            text-align: left!important;
+        }
+    }
 
     
     .NavBar-wrapper{
@@ -112,7 +108,7 @@ const DIV=styled.div`
                 }
                 
                 .select{
-                    @media(max-width:1000px){
+                    @media(max-width:1273px){
                         display: none;  
                         
                     }

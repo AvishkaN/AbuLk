@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 import MyAccountNav from './MyAccountNav/MyAccountNav';
-import PostAd from './PostAd/PostAd';
+import PostAd from './2PostAd/PostAd';
+import MyAccount from './3MyAccount/3MyAccount';
+import MyStore from './4MyStore/MyStore';
+import MyJobs from './5MyJobs/MyJobs';
+import MyBuissness from './6MyBuissness/MyBuissness';
+import MyAllAds from './7MyAllAds/MyAllAds';
+import LogOut from './8LogOut/LogOut';
 
 import { useDispatch } from 'react-redux';
 import { SetShowPostAdFN } from '../../Redux/slices/clickSlice';
+import { Route, Routes } from 'react-router-dom';
 
 
 
@@ -14,11 +21,6 @@ function MyAccountComp({className=""}) {
 
 
     const handleClick=(e)=>{
-        // console.log(e.target.closest('#post-ad-ad'));
-        // console.log(e.target.closest('#1'));
-        // console.log(e.target.closest('.1'));
-        // console.log(e.target);
-        // console.log(e.target.closest('.1'));
 
         const PostAdButton=e.target.closest('#post-ad-ad');
 
@@ -44,7 +46,39 @@ function MyAccountComp({className=""}) {
                      <div className="my-account-content h-100"> 
                                 <div className=" h-100 ">
                                 
-                                     <PostAd  id="post-ad" className='h-100 '></PostAd>
+                                     
+                                     {/* <MyAccount  className='h-100 '></MyAccount> */}
+                                     {/* <PostAd  id="post-ad" className='h-100 '></PostAd> */}
+
+
+                                     <Routes>
+                                         <Route path="/postAd" element={<PostAd  id="post-ad" className='h-100 '></PostAd>} />
+                                    </Routes>
+
+                                     <Routes>
+                                        <Route path="/myAccount" element={<MyAccount  className='h-100 '></MyAccount>} />
+                                    </Routes>
+
+                                     <Routes>
+                                        <Route path="/MyStore" element={<MyStore  className='h-100 '></MyStore>} />
+                                    </Routes>
+
+                                     <Routes>
+                                        <Route path="/MyJobs" element={<MyJobs  className='h-100 '></MyJobs>} />
+                                    </Routes>
+
+                                     <Routes>
+                                        <Route path="/MyBuissness" element={<MyBuissness  className='h-100 '></MyBuissness>} />
+                                    </Routes>
+
+
+                                     <Routes>
+                                        <Route path="/MyAllAds" element={<MyAllAds  className='h-100 '></MyAllAds>} />
+                                    </Routes>
+
+                                     <Routes>
+                                        <Route path="/logOut" element={<LogOut  className='h-100 '></LogOut>} />
+                                    </Routes>
 
                                 </div> 
                      </div>

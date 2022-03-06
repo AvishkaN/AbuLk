@@ -16,7 +16,7 @@ function SearchSection({className=""}) {
                     <div className="row">
                         <div className="col-sm-10">
 
-                                <Input placeholder={"Search for anything.."}  type="text" className='input p-3 background-white' border={true} ></Input>
+                                <Input placeholder={"Search for anything.."}  type="text" className='input p-3 background-white  border-radius-5' border={true} ></Input>
 
                         </div>
                         <div className="col-sm-2">

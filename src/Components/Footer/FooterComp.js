@@ -7,25 +7,25 @@ function FooterComp({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="FooterComp-wrapper">
-                <div className="row">
-                    <div className="col-sm-2">
+                <div className="row gy-5">
+                    <div className="col-6 col-md-2">
                             <FooterCol title={"Company"} list={["About Us ","Advertising","Careers","Terms of Use","Privacy Policy"]}></FooterCol>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-6 col-md-2">
                             <FooterCol title={"UAE"} list={["Dubai ","Abu Dhabi","Ras al Khaimah","Sharjah","Fujairah","Ajman","Umm al Quwain","Al Ain"]}></FooterCol>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-6 col-md-2">
                             <FooterCol title={"Other Countries"} list={["Egypt ","Bahrain","Saudi Arabia","Lebanon","Kuwait","Oman","Qatar","Pakistan"]}></FooterCol>
                     </div>
 
 
-                    <div className="col-sm-2">
+                    <div className="col-6 col-md-2">
                             <FooterCol title={"Get Social"} list={["Dubai ","Abu Dhabi","Ras al Khaimah","Sharjah","Fujairah","Ajman","Umm al Quwain","Al Ain"]}></FooterCol>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-6 col-md-2">
                             <FooterCol title={"Support"} list={["Dubai ","Abu Dhabi","Ras al Khaimah","Sharjah","Fujairah","Ajman","Umm al Quwain","Al Ain"]}></FooterCol>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-6 col-md-2">
                             <FooterCol title={"Languages"} list={["Dubai ","Abu Dhabi","Ras al Khaimah","Sharjah","Fujairah","Ajman","Umm al Quwain","Al Ain"]}></FooterCol>
                     </div>
                 </div>

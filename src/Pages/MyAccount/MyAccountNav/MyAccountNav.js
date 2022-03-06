@@ -11,6 +11,7 @@ import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOu
 import { Avatar } from '@mui/material';
 
 import { deepOrange, deepPurple } from '@mui/material/colors';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -33,15 +34,41 @@ function MyAccountNav({className=""}) {
                     </div>
 
                 <div className="nav-itesm-row  p-4 ">
+                             {/* <NavItemRow id={"1" }  className={`    -nav-item-row   cursor-p mt-3     border-radius-20     active    ${className}`}  svgIcon={<AddCircleOutlineOutlinedIcon className='font-2-3   text-color-grey-ori    '></AddCircleOutlineOutlinedIcon>} text={"Post an Ad"}></NavItemRow> */}
 
-                    <NavItemRow id={"1" }  className={`    -nav-item-row   cursor-p mt-3     border-radius-20    active     ${className}`}  svgIcon={<AddCircleOutlineOutlinedIcon className='font-2-3   text-color-grey-ori    '></AddCircleOutlineOutlinedIcon>} text={"Post an Ad"}></NavItemRow>
-                    <NavItemRow id={"1" }  className={`    -nav-item-row   cursor-p mt-3     border-radius-20         ${className}`}  svgIcon={<AccountCircleOutlinedIcon className='font-2-3   text-color-grey-ori    '></AccountCircleOutlinedIcon>} text={"My account"}></NavItemRow>
-                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<StorefrontOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></StorefrontOutlinedIcon>} text={"My Store"}></NavItemRow>
-                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<WorkOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></WorkOutlineOutlinedIcon>} text={"My Jobs"}></NavItemRow>
-                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<BusinessIcon   className='font-2-3   text-color-grey-ori         '   ></BusinessIcon>} text={"My buissness"}></NavItemRow>
-                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<BorderAllOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></BorderAllOutlinedIcon>} text={"My all ads"}></NavItemRow>
-                    <NavItemRow id="00" className='   -nav-item-row   cursor-p mt-3  '  svgIcon={<PowerSettingsNewIcon   className='font-2-3   text-color-grey-ori         '   ></PowerSettingsNewIcon>} text={"Log Out"}></NavItemRow>
+                    <NavLink to="/myaccount/postAd"  activeClassName="active" className="a">
+                             <NavItemRow id={"1" }  className={`    -nav-item-row   cursor-p mt-3     border-radius-20         ${className}`}  svgIcon={<AddCircleOutlineOutlinedIcon className='font-2-3   text-color-grey-ori    '></AddCircleOutlineOutlinedIcon>} text={"Post an Ad"}></NavItemRow>
+                    </NavLink>
+
+                    <NavLink to="/myaccount/myAccount" className="a">
+                              <NavItemRow id={"1" }  className={`    -nav-item-row   cursor-p mt-3     border-radius-20         ${className}`}  svgIcon={<AccountCircleOutlinedIcon className='font-2-3   text-color-grey-ori    '></AccountCircleOutlinedIcon>} text={"My account"}></NavItemRow>
+                    </NavLink>
+
+                    <NavLink to="/myaccount/MyStore" className="a">
+                             <NavItemRow id="00" className='-nav-item-row   cursor-p mt-3  border-radius-20'  svgIcon={<StorefrontOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></StorefrontOutlinedIcon>} text={"My Store"}></NavItemRow>
+                    </NavLink>
+
+                    <NavLink to="/myaccount/MyJobs" className="a">
+                               <NavItemRow id="00" className='-nav-item-row   cursor-p mt-3   border-radius-20'  svgIcon={<WorkOutlineOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></WorkOutlineOutlinedIcon>} text={"My Jobs"}></NavItemRow>
+                    </NavLink>
+
+
+                    <NavLink to="/myaccount/MyBuissness" className="a">
+                           <NavItemRow id="00" className='-nav-item-row   cursor-p mt-3  border-radius-20 '  svgIcon={<BusinessIcon   className='font-2-3   text-color-grey-ori         '   ></BusinessIcon>} text={"My buissness"}></NavItemRow>
+                    </NavLink>
+
+                    <NavLink to="/myaccount/MyAllAds" className="a">
+                             <NavItemRow id="00" className='-nav-item-row   cursor-p mt-3   border-radius-20'  svgIcon={<BorderAllOutlinedIcon   className='font-2-3   text-color-grey-ori         '   ></BorderAllOutlinedIcon>} text={"My all ads"}></NavItemRow>
+                    </NavLink>
+
+                    <NavLink to="/myaccount/logOut" className="a">
+                              <NavItemRow id="00" className='-nav-item-row   cursor-p mt-3  border-radius-20 '  svgIcon={<PowerSettingsNewIcon   className='font-2-3   text-color-grey-ori         '   ></PowerSettingsNewIcon>} text={"Log Out"}></NavItemRow>
+                    </NavLink>
+
+
                 </div>
+
+
          </div>
     </DIV>
   );
@@ -73,12 +100,15 @@ const DIV=styled.div`
 
         }
         .active{
-            background: #e5e7e8;
-            /* padding-left: 0.8rem  !important; */
+            
+            .navitemrow{
+                background: #e5e7e8;
 
-            div,svg{
-                color:black;
+                div,svg{
+                    color:black;
+                }
             }
+
         }
 
 

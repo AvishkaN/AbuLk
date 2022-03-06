@@ -24,7 +24,7 @@ function MyAccoutPage({className=""}) {
 
 const DIV=styled.div`
     width: 100%;
-    margin-top:10rem;
+    margin-top:9rem;
     /* background: green;  */
     /* margin-top: var(--margin-top-fix-nav);  */  /*only MyAccoutPage */
     background: #D5DAE6;

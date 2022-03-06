@@ -11,11 +11,11 @@ function RegistarPage({className=""}) {
          <div className="RegistarPage-wrapper p-5  border-radius-10  ">
                  <h2 className='text-center fw-bold text-color-primary'>Sign UP</h2>    
 
-                 <Input className="input w-100 p-2  ps-3 mt-4" placeholder='email'></Input>  
-                 <Password className="input w-100 p-2  ps-3 mt-4"   placeholder='password'></Password>
-                 <Password className="input w-100 p-2  ps-3 mt-4"   placeholder='confirm password'></Password>
+                 <Input className="input w-100 p-2  ps-3 mt-4  font-1-5 " placeholder='email'></Input>  
+                 <Password className="input w-100 p-2  ps-3 mt-4  font-1-5 "   placeholder='password'></Password>
+                 <Password className="input w-100 p-2  ps-3 mt-4  font-1-5 "   placeholder='confirm password'></Password>
              
-                 <Input className="input w-100 p-2  ps-3 mt-4" placeholder='mobile number'></Input>  
+                 <Input className="input w-100 p-2  ps-3 mt-4  font-1-5 " placeholder='mobile number'></Input>  
 
                  <Bottom btnText="SIGN UP" secondText="Login" to="/login" ></Bottom>
          
