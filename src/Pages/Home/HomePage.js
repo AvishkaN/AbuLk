@@ -162,7 +162,7 @@ function HomePage({className=""}) {
          <div className="HomePage-wrapper">
 
            {/*All page   */}
-          <div className="">
+          {/* <div className="">
                           <Link to="/login">
                                 <h1>  Login  </h1>
                           </Link>
@@ -197,7 +197,7 @@ function HomePage({className=""}) {
                           </Link>
 
 
-          </div>
+          </div> */}
 
 
          <SearchSectionComp className='mt-5  dispaly-none-1000px'></SearchSectionComp>
