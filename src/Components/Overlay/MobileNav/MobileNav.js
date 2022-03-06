@@ -16,7 +16,7 @@ function MobileNav({className=""}) {
 
 const DIV=styled.div`
     width: 100%;
-    background: #fff; 
+    background:red; 
     height: 100vh; 
 
 
@@ -50,6 +50,8 @@ const DIV=styled.div`
 
                             .nav-right-icon{  
                                 font-size: 2rem;
+                                /* color:var(--color-black);
+                                background-color:red; */
                             }
                             .nav-right-text { 
                                 font-size: 1.6rem;

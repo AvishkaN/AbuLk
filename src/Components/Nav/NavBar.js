@@ -49,7 +49,7 @@ function NavBar({className=""}) {
                                 <NavRight></NavRight>
                             </div>
 
-                            <MenuIcon className='mobile-nav-icon'></MenuIcon>
+                            <MenuIcon className='mobile-nav-icon text-color-white'></MenuIcon>
                     </div>
              </div>
 
@@ -130,7 +130,7 @@ const DIV=styled.div`
             }
 
             .mobile-nav-icon{ 
-                color: var(--color-primary);
+                /* color: var(--color-primary); */
                 font-size: 5rem;  
                 display: none;
                 
