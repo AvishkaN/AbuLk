@@ -28,7 +28,7 @@ function Form({className=""}) {
                     </div>
                     <div className="mb-3 mt-5">
 
-                            <Button className='form--btnn background-primary border-radius-5 p-3 font-1-5  text-color-white'  text={"Inguire Now"}></Button>
+                            <Button className='form--btnn background-primary border-radius-5 p-3 font-1-5  text-color-white' >{"Inguire Now"}</Button>
                     </div>
 
 

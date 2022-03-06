@@ -102,9 +102,10 @@ function Slider({className=""}) {
                     </div>
                   </div>
 
-                   <Button className='phone-number show-phone-number-btn border-radius-10 pt-3 pb-3 font-1-5 mt-3' 
-                          text={`${showMobileNumber?data[0].phoneNumber  :'Show Phone Number'}`}
-                          ></Button>
+                   <Button className='phone-number show-phone-number-btn border-radius-10 fw-bold  pt-2 pb-2 font-1-5 mt-3' >
+                              {`${showMobileNumber?data[0].phoneNumber  :'Show Phone Number'}`}
+                     </Button>
+
                 </div>
         </div>
 

@@ -6,6 +6,7 @@ function Input(props) {
   
   return (
          <InputComp  type={props.type}  className={` input ${props.className} `}   placeholder={props.placeholder}  border={props.border}>
+           
         </InputComp>
 
   );

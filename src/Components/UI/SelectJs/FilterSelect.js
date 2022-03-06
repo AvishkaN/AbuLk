@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 
-function FilterSelect({className="",border=false,DropDownListItemclassName,selectedColor="",filterList,filterDefaultSelectedText,ShowListProp}) {
+function FilterSelect({className="",border=false,DropDownListItemclassName,selectedColor="",filterList,filterDefaultSelectedText,ShowListProp,filterSelectTitleClassName}) {
 
     const [showList,setShowList]=useState(false);
     const [selectedName,setSelectedName]=useState(filterDefaultSelectedText);
@@ -32,7 +32,7 @@ function FilterSelect({className="",border=false,DropDownListItemclassName,selec
     <DIV selectedColor={selectedColor}  className={`${className}`} IsShowList={showList} onClick={ShowListProp? ShowListProp:ShowListFN} border={border}>
          <div className="FilterSelect-wrapper " >
 
-         <FilterSelectTitle showList={showList}  selectedName={selectedName}></FilterSelectTitle>
+         <FilterSelectTitle showList={showList}  className={`${filterSelectTitleClassName}`}  selectedName={selectedName}></FilterSelectTitle>
 
             {
                 showList && ( 

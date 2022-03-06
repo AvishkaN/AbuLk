@@ -16,46 +16,79 @@ function SeachFilterRow2({className="",selectedNav,SetSelectedNav}) {
          <div className="SeachFilterRow2-wrapper row display-flex gx-2">
                         <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'City'}</div>
-                            <FilterSelect  filterSectionTitle={"City"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}></FilterSelect>
+                            <FilterSelect  filterSectionTitle={"City"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}  filterSelectTitleClassName='p-3'   DropDownListItemclassName="p-2"></FilterSelect>
 
                         </div>
                         <div className="col">  
                                 <div className="select-title text-color-white font-1-2">{'Location'}</div>
-                                <Input text={"Enter Neighrhood or Building"} className='input border-radius-5'></Input>
+                                <Input placeholder={"Enter Neighrhood or Building"} className='input border-radius-5 p-3'></Input>
 
                         </div>
 
                        {(selectedNav==="filter-nav-1" || selectedNav==="filter-nav-2") && ( <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Property Type'}</div>
-                            <FilterSelect  filterSectionTitle={"Price Range"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}></FilterSelect>
+                            <FilterSelect  
+                                  filterSelectTitleClassName='p-3' 
+                                  filterSectionTitle={"Price Range"} 
+                                  filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} 
+                                  filterDefaultSelectedText={"Kandy"}
+                                  DropDownListItemclassName={"p-2"}
+                            ></FilterSelect>
 
 
                         </div>)}
 
                         <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Price Range'}</div>
-                            <MinMaxComp priceColVal1={"Min"} priceColVal2={"Max"} IsPriceComp={true}></MinMaxComp>
+                            <MinMaxComp 
+                                priceColVal1={"Min"} 
+                                priceColVal2={"Max"} 
+                                IsPriceComp={true}
+                                FilterTitleClassName="p-3"
+                            ></MinMaxComp>
 
                         </div>
 
 
                        {(selectedNav==="filter-nav-3" || selectedNav==="filter-nav-4")  && (<div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Zoned For'}</div>
-                            <FilterSelect  filterSectionTitle={"Price Range"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}></FilterSelect>
+                            <FilterSelect 
+                             filterSectionTitle={"Price Range"} 
+                             filterSelectTitleClassName='p-3' 
+                             filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} 
+                             filterDefaultSelectedText={"Kandy"}
+                             DropDownListItemclassName={"p-2"}
+                             ></FilterSelect>
 
 
                         </div>)}
 
                        {selectedNav==="filter-nav-1" &&( <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Beds'}</div>
-                            <MinMaxComp priceColVal1={"Min bedrooms"} priceColVal2={"Max bedrooms"}   minValuePlaceholder={"1"} maxValuePlaceholder={"2"}></MinMaxComp>
+                            <MinMaxComp 
+                            priceColVal1={"Min bedrooms"} 
+                            priceColVal2={"Max bedrooms"}   
+                            FilterTitleClassName="p-3"
+                            minValuePlaceholder={"1"} 
+                            maxValuePlaceholder={"2"}
+
+                            ></MinMaxComp>
 
                         </div>)}
 
 
                         <div className="col-1">  
                             <div className="select-title text-color-white font-1-2 opacity-0">{'.'}</div>
-                            <FilterSelect  filterSectionTitle={"Any"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"More"}></FilterSelect>
+                            <FilterSelect  
+                              filterSectionTitle={"Any"} 
+                              filterSelectTitleClassName='p-3' 
+
+
+                              filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} 
+                              filterDefaultSelectedText={"More"}
+                              DropDownListItemclassName={"p-2"}
+
+                              ></FilterSelect>
 
                         </div>
 
@@ -63,7 +96,7 @@ function SeachFilterRow2({className="",selectedNav,SetSelectedNav}) {
 
 
                         <div className="col-1 display-flex search-filter-col">  
-                              <Button className='search-filter-button background-primary   font-1-4   text-color-white  p-3 mt-4 border-radius-5' text={"Search"}></Button>
+                              <Button className='search-filter-button background-primary   font-1-4   text-color-white  p-3 mt-4 border-radius-5' >{"Search"}</Button>
                         </div>
 
 

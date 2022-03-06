@@ -5,7 +5,7 @@ import MinMax from '../../../../../Components/UI/MinMax/MinMax';
 
 
 
-function MinMaxComp({className="",priceColVal1="min",priceColVal2="Max",maxValuePlaceholder, minValuePlaceholder,IsPriceComp=false}) {      
+function MinMaxComp({className="",priceColVal1="min",priceColVal2="Max",maxValuePlaceholder, minValuePlaceholder,IsPriceComp=false,FilterTitleClassName}) {      
   const [showList,setShowList]=useState(false);   
   const [minValue,setMinValue]=useState("");   
   const [maxValue,setMaxValue]=useState("");   
@@ -37,7 +37,7 @@ function MinMaxComp({className="",priceColVal1="min",priceColVal2="Max",maxValue
   return (
     <DIV className={`${className}`}  onClick={handleClick} onChange={setNumberMinMaxFn}>
          <div className="MinMaxComp-wrapper">
-               <FilterSelectTitle showList={showList}  selectedName={maxValue|| minValue ?  ` ${minValue}  ${maxValue&&`-${maxValue}`}`:"any"}></FilterSelectTitle>
+               <FilterSelectTitle showList={showList}  className={`${FilterTitleClassName}`}  selectedName={maxValue|| minValue ?  ` ${minValue}  ${maxValue&&`-${maxValue}`}`:"any"}></FilterSelectTitle>
                {showList &&   <MinMax   minValuePlaceholder={ minValuePlaceholder} maxValuePlaceholder={maxValuePlaceholder}  priceColVal1={priceColVal1} priceColVal2={priceColVal2} className='mt-2'></MinMax>}
          </div>
     </DIV>

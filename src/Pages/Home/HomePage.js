@@ -161,13 +161,43 @@ function HomePage({className=""}) {
     <DIV className={`${className}`}>
          <div className="HomePage-wrapper">
 
-           
-           <Link to="/classified">
-                <h1>calssified</h1>
-           </Link>
-           <Link to="/myaccount">
-                <h1>My account</h1>
-           </Link>
+           {/*All page   */}
+          <div className="">
+                          <Link to="/login">
+                                <h1>  Login  </h1>
+                          </Link>
+
+                          <Link to="/register">
+                                <h1>  Register  </h1>
+                          </Link>
+                          
+                          
+                          <Link to="/classified">
+                                <h1>calssified</h1>
+                          </Link>
+
+
+                          <Link to="/myaccount">
+                                <h1>My account</h1>
+                          </Link>
+
+
+                          <Link to="/product-item/:1933.2812140521849">
+                                <h1>Product Item </h1>
+                          </Link>
+
+
+                          <Link to="/properties">
+                                <h1>Properties Page </h1>
+                          </Link>
+
+
+                          <Link to="/myaccount">
+                                <h1>  My Account  </h1>
+                          </Link>
+
+
+          </div>
 
 
          <SearchSectionComp className='mt-5  dispaly-none-1000px'></SearchSectionComp>

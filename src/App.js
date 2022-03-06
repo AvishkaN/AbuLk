@@ -57,8 +57,6 @@ function App() {
           <BrowserRouter>
 
                 <div className="app-content">
-                          {/* <NavBar></NavBar>
-                          <MobielNavBar></MobielNavBar> */}
                           <div className="clear"></div>
                         <Routes>
                                     <Route path="/" element={ 
