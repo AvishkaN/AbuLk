@@ -17,9 +17,7 @@
 
 
 html{
-    /* font-size: 6.25%;  1px --> 1rem */
-    /* font-size: 16px;   1px --> 1rem */
-    font-size: 62.5%;   /*16px --> 1rem */
+    font-size: 62.5%;   /*10px --> 1rem */
 }
 
 *{
@@ -28,23 +26,32 @@ html{
     overflow-x: hidden;   
     font-family: Montserrat;      
     box-sizing: border-box;
-    font-size: 1.4rem; 
+    font-size: 1.5rem; 
 }
 
 :root {
-    --color-primary: #e00000;
+   --color-primary: #e00000;
     --color-secondary: #8D6767;
+
 
 
     --color-white: #fff;
     --color-black: #000;  
     --color-red: red;   
+    --color-light-grey: rgba(51, 51, 51, 0.788);   
+
+
     --color-grey: #b7b8b9;   
     --color-grey-2: #eee;   
+    --color-ccc: #ccc;   
+
+    --color-green: #149777;   
     
     --color-yellow: yellow;
     --color-aqua: aqua;
     --color-grey-ori: grey;
+
+    --color-link: #2196f3;
 
 
 
@@ -84,8 +91,32 @@ h1{
 .w-95{    
     width: 95% !important; 
 }
+.w-95{   
+    width: 95% !important; 
+}
 .w-90{   
     width: 90% !important; 
+}
+.w-86{   
+    width: 86% !important; 
+}
+.w-85{   
+    width: 85% !important; 
+}
+.w-85{   
+    width: 85% !important; 
+}
+.w-84{   
+    width: 84% !important; 
+}
+.w-83{   
+    width: 83% !important; 
+}
+.w-82{   
+    width: 82% !important; 
+}
+.w-81{   
+    width: 81% !important; 
 }
 .w-80{   
     width: 80% !important; 
@@ -98,6 +129,9 @@ h1{
 }
 .w-60{   
     width: 60% !important; 
+}
+.w-55{   
+    width: 55% !important; 
 }
 .w-50{   
     width: 50% !important; 
@@ -138,6 +172,9 @@ h1{
 .w-25{ 
     width: 25% !important; 
 }
+.w-18{    
+    width: 18% !important; 
+}
 .w-15{  
     width: 15% !important; 
 }
@@ -168,6 +205,41 @@ h1{
 }
 
 
+.font-6{
+    font-size: 6rem !important; 
+}
+
+.font-5-5{
+    font-size: 5.5rem !important; 
+}
+
+.font-5{
+    font-size: 5rem !important; 
+}
+
+.font-4-5{
+    font-size: 4.5rem !important; 
+}
+.font-4{
+    font-size: 4rem !important; 
+}
+
+.font-3-5{
+    font-size: 3.5rem !important; 
+}
+
+.font-3-4{
+    font-size: 3.4rem !important; 
+}
+.font-3-3{
+    font-size: 3.3rem !important; 
+}
+.font-3-2{
+    font-size: 3.2rem !important; 
+}
+.font-3-1{
+    font-size: 3.1rem !important; 
+}
 .font-3{
     font-size: 3rem !important; 
 }
@@ -233,6 +305,10 @@ h1{
     font-size: 1rem;  
 }
 
+.font-inherit{
+    font-size:inherit;
+}
+
 
 .gy-6{
     --bs-gutter-y: 4rem;
@@ -243,17 +319,64 @@ h1{
     margin-top: 7rem!important;
 
 }
+.mt-20{
+    margin-top: 20rem!important;
+
+}
+.mt-22{
+    margin-top: 22rem!important;
+
+}
+.mt-0-5-{
+    margin-top: -0.5rem;
+
+}
+
+
+
 
 .font-light{
     font-family: 'Roboto', sans-serif !important;
 }
 
+.font-family-cursive{
+    font-family: cursive !important;
+}
+
+
+
+
+
+
+.display-inline{   
+    display: inline !important;
+}
+
+.display-inline-block{   
+    display: inline-block !important;
+}
+
+.background-hover:hover{
+    background: var(--color-grey-2);
+}
+
+@media(max-width:600px){     
+    .background-hover:hover{
+        background: inherit;
+    }
+}
 
 
 .display-flex{   
     display: flex !important;
 }
+.flex-1{   
+    flex: 1;
+}
 .display-flex-direction-column{   
+    flex-direction: column;
+}
+.flex-direction-column{   
     flex-direction: column;
 }
 .display-flex-j-c{
@@ -273,11 +396,51 @@ h1{
 .justify-content-center{
     justify-content: center;
 }
+
+/* text-sm-end */
+
+@media (min-width: 576px){
+    .justify-content-sm-center{
+        justify-content: center;
+    
+    }
+}
+@media (min-width:768px){
+    .justify-content-md-center{
+        justify-content: center;
+    
+    }
+}
+@media (min-width: 992px){
+    .justify-content-lg-center{
+        justify-content: center;
+    
+    }
+}
+@media (min-width: 1200px){
+    .justify-content-lg-center{
+        justify-content: center;
+    
+    }
+}
+@media (min-width: 1400px){
+    .justify-content-lg-center{
+        justify-content: center;
+    
+    }
+}
+
+
+
 .justify-content-space-between{
     justify-content: space-between;
 }
 .justify-content-space-around{
     justify-content: space-around;
+}
+
+.justify-content-end{
+    justify-content: end;
 }
 
 
@@ -294,13 +457,20 @@ h1{
 }
 
 .display-none{
-    display: none;   
+    display: none !important;   
+}
+
+
+.box-shadow-normal{
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.1);
 }
 
 
 .border-bottom{
     border-bottom: 1px solid var(--color-grey);
 }
+
+
 
 
 .border-radius-5{
@@ -315,16 +485,35 @@ h1{
 .border-radius-20{  
     border-radius: 20px;
 }
+.border-radius-25{  
+    border-radius: 25px;
+}
 .border-radius-circle{  
     border-radius: 50%;
+}
+
+
+.border-grey {
+   border: 1px solid #0e0e0e26;
+}
+
+
+.border-grey-light {
+    border: 1px solid #0e0e0e26;
 }
 
 
 .background-primary{
     background-color: var(--color-primary);
 }
+.background-secondary{
+    background-color: var(--color-secondary);
+}
 .background-white{
     background-color: var(--color-white);
+}
+.background-transparent{
+    background-color: transparent;
 }
 .background-black{
     background-color: var(--color-black);
@@ -335,8 +524,26 @@ h1{
 .background-aqua{
     background-color: var(--color-aqua);
 }
+.background-green{
+    background-color: var(--color-green);
+}
+.background-red{
+    background-color: var(--color-red);
+}
+
+
+.background-transparent{
+    background-color: transparent;
+}
+
+
+
+
 .text-color-primary{
     color: var(--color-primary);
+}
+.text-color-secondary{
+    color: var(--color-secondary);
 }
 
 .text-color-grey{
@@ -345,16 +552,30 @@ h1{
 .text-color-grey-2{
     color: var(--color-grey-2);
 }
+.text-color-grey-light{
+    color: var(--color-light-grey);
+}
 .text-color-grey-ori{
     color: var(--color-grey-ori);
 }
 
+
+.text-color-black{
+    color: var(--color-black);
+}
 
 .text-color-white{
     color: var(--color-white);
 }
 .text-color-red{  
     color: var(--color-red);
+}
+
+.text-color-link{  
+    color: var(--color-link);
+}
+.text-color-ccc{  
+    color: var(--color-ccc);
 }
 
 
@@ -375,6 +596,13 @@ h1{
     overflow-y: hidden;
 }
 
+
+.hide-scroll-bar::-webkit-scrollbar {  
+    width: 0 !important;   /* hide scroll bar  */
+}
+
+
+
 .input{
     border: none;
     /* background: transparent;    */
@@ -394,12 +622,24 @@ h1{
 a{
     color: inherit;
 }
+
+
+.a:hover{
+    /* color: inherit; */
+}
+
 .a{
     text-decoration: none;
     /* color: inherit; */
 }
+
 .a:active{  
     color: inherit;
+}
+
+
+.li{
+    list-style: none;
 }
 
 .cursor-p{
@@ -433,7 +673,7 @@ a{
 @media   (max-width: 1329px) {   
        
     :root {    
-        --page-content-width: 90%;   
+        --page-content-width: 84%;   
     }
 }
 @media   (max-width: 1030px) {   
@@ -447,7 +687,7 @@ a{
 @media   (max-width: 394px) {   
        
     html {       
-        font-size: 53%;
+        /* font-size: 53%; */
     }
 }
 
