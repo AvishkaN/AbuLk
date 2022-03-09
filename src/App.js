@@ -5,6 +5,7 @@ import PropertPage from './Pages/ProperyPage/PropertPage';
 import ProductItem from './Pages/ProductItem/ProductItem';
 import ClassifiedPage from './Pages/Classified/ClassifiedPage';
 import MyAccountPage from './Pages/MyAccount/MyAccountPage';
+import AllBuissnessPage from './Pages/AllBuissness/AllBuissness';
 
 
 import NavBar from './Components/Nav/NavBar';
@@ -59,6 +60,8 @@ function App() {
                 <div className="app-content">
                           <div className="clear"></div>
                         <Routes>
+
+                                    {/* Home */}
                                     <Route path="/" element={ 
                                       <>
                                       <NavBar></NavBar>
@@ -70,6 +73,8 @@ function App() {
                                       </>
                                     } />
 
+
+                                    {/* Properties */}
                                     <Route path="/properties" element={ 
                                       <>
                                        <NavBar></NavBar>
@@ -81,6 +86,8 @@ function App() {
                                       </>
                                     } />
 
+
+                                      {/* single produts */}
                                     <Route path="/product-item/:prodcuctId" element={ 
                                       <>
                                       <NavBar></NavBar>
@@ -93,6 +100,7 @@ function App() {
                                     } />
 
 
+                                    {/* classifiesd */}
                                     <Route path="/classified" element={ 
                                       <>
                                             <NavBar></NavBar>
@@ -104,6 +112,8 @@ function App() {
                                       </>
                                     } />
 
+
+                                      {/* My Account */}
                                     <Route path="/myaccount/*" element={ 
                                       <>
                                             <NavBar></NavBar>
@@ -116,6 +126,20 @@ function App() {
                                     } />
 
 
+                                            {/* ALL buissness */}
+                                            <Route path="/allBusiness/" element={ 
+                                      <>
+                                            <NavBar></NavBar>
+                                          <MobielNavBar></MobielNavBar>
+
+                                        <AllBuissnessPage></AllBuissnessPage>
+                                        <Footer className='mt-6'></Footer>
+
+                                      </>
+                                         } />
+
+
+                                    {/* Register */}
                                     <Route path="/register" element={ 
                                       <> 
 
@@ -123,6 +147,9 @@ function App() {
 
                                       </>
                                     } />
+
+
+                                    {/* Login */}
                                     <Route path="/login" element={ 
                                       <> 
 
@@ -130,6 +157,9 @@ function App() {
 
                                       </>
                                     } />
+
+
+                                    
 
 
 

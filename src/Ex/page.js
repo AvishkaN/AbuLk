@@ -6,7 +6,7 @@ function Page({className=""}) {
   return (
     <DIV className={`${className}`}>
          <div className="Page-wrapper">
-                
+           
          </div>
     </DIV>
   );

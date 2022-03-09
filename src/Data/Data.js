@@ -1,85 +1,46 @@
-const obj=[
-    {
-        id:'1'+Math.random(),
-        name:"E commerce Project",
-        IsBuilding:true,
-        backgroundImage:"https://raw.githubusercontent.com/AvishkaN/portfolio-web-page/master/src/assets/img/1-EcommerceProjectImage.png",
-        description:"I decide simple build e commerce web app",
-        sections:[
-            {
-                title:"What technologies I use for this ?",
-                list:[
-                    "React js",
-                    "styled component",
-                    "react redux",
-                    "pwa",
-                    "firebase firestore",
-                    "firebase storage",
-                    "firebase auth",
-                ]
-            },
-            {
-                title:"What features this project have ?",
-                list:[
-                    "sign in / sign up / log out",
-                    "log in with google",
-                    "log in with twitter",
-                    "cart add/ remove",
-                    "wishlistg add/remove",
-                    "file uploading ",
-                    "buy product ",
-                    "responsive design",
-                    "product add",
-                ]
-            },
-            // {
-            //     title:"Project Description",
-            //     list:[],
-            //     paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, totam doloribus eius ea laudantium provident ut? Laudantium modi aliquid harum nostrum fugit",
-                
-            // },
-            {
-                title:"Project Progress",
-                list:[],
-                // paragraph:"Lor",
-                showProgress:true,
-                ProgressPercentage:80,
-                
-            },
-            // {
-            //     title:"Demo Video",
-            //     list:[],
-            //     paragraph:"",
-            //     video:true,
-            //     videoLink:'https://www.youtube.com/embed/gwJjJ6VSmRM'
-                
-            // },
-            {
-                title:"Source File",
-                list:[],
-                paragraph:"",
-                sourcefile:true,
-                sourceFileLink:"https://github.com/AvishkaN/e-commerrce-project-PP",
-                
-            },
-            {
-                title:"Porject View",
-                list:[],
-                paragraph:"",
-                ProjectView:true,
-                ProjectViewLink:"https://e-commerceweb20.netlify.app/",
-                
-            },
-      
-
-        ]
+export const AllbuissnessData=[
+   { 
+       buissnessImage:"https://images.unsplash.com/photo-1516146544193-b54a65682f16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+       buissnessName:"Art & Design",
+       description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium optio consectetur repudiandae perspiciatis commodi quidem facere iste mollitia iusto.",
+       location:"Negambo,Colombo",
+       number:"079 586 8345",
+       website:"www.myArtq.lk",
+       ratingsStarCount:"4.5",
+       reviewsCount:"27",
     },
 
-    
   
 ]
 
-export default obj;
+
+export const AllDistricts= [  
+    'Ampara',
+  'Anuradhapura',
+  'Badulla',
+  'Batticaloa',
+  'Colombo',
+  'Galle',
+  'Hambantota', 
+  'Jaffna',
+  'Kaluta',
+   'Kandy', 
+   'Kegalle', 
+   'Kilinochchi', 
+  'Kurunegala', 
+   'Mannar', 
+   'Matale', 
+   'Matara', 
+   'Monaragala', 
+   'Mullaitivu',
+  'Nuwara Eliළිය',
+  'Polonnaruwa',
+   'Puttalam',
+   'Ratnapura',
+   'Trincomalee', 
+  'Vavuniva', 
+  ];
+
 
 
 

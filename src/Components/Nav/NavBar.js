@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Logo from '../Logo/Logo';
-import Select from '../Select/Select';
+import Select from '../UI/Select/Select';
 import NavRight from '../Nav/NavRight/NavRight';
 import Row2 from '../Nav/Row2/Row2';
 import SmallScreen from '../Nav/SmallScreen/SmallScreen';

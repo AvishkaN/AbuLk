@@ -1,0 +1,8 @@
+.pageFixed{
+    margin-top: 10rem;   /*only HomePage */ 
+    
+    
+    @media (max-width: 1000px){
+      // margin-top: 1rem;    
+    }  
+}
