@@ -196,6 +196,10 @@ function HomePage({className=""}) {
                                 <h1>  My Account  </h1>
                           </Link>
 
+                          <Link to="/allbusiness">
+                                <h1>  All Buisness  </h1>
+                          </Link>
+
 
           </div>
 

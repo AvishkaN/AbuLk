@@ -3,11 +3,13 @@ import {createSlice} from '@reduxjs/toolkit';
 export const clickSlice=createSlice({
     name:"clicks",
     initialState:{  
-        showOverlay:false, 
+        showOverlay:true, 
         showMobileNav:false, 
 
         showLocationPopUp:false, 
         showCategoryPopUp:false, 
+
+        showAllBuissnessPageFilter:true, 
 
         showPostAd:false, 
 
@@ -59,6 +61,12 @@ export const clickSlice=createSlice({
             state.classifiedPageSelectedCategory=action.payload;    
         },
 
+
+        ShowAllBuissnessPageFilterFN:(state)=>{     
+
+            state.showAllBuissnessPageFilter=true;    
+        },
+
         
         ShowHideAllFN:(state)=>{     
 
@@ -90,6 +98,8 @@ export const {
 
                             ShowCategoryPopupFN,
                             ShowLocationPopupFN,
+
+                            ShowAllBuissnessPageFilterFN,
 
                             SetShowPostAdFN,
 

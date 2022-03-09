@@ -4,6 +4,8 @@ import CallIconSvg from '@mui/icons-material/Call';
 import WorldIconSvg from '@mui/icons-material/Language';
 
 import FavoriteIconSvg from '@mui/icons-material/FavoriteBorder';
+import FavIcon from '../../Components/UI/FavIcon/FavIcon';
+import StarSection from '../../Components/UI/StarSection/StarSection';
 
 
 function BuissnessItemCard({
@@ -17,11 +19,12 @@ function BuissnessItemCard({
     website,
     ratingsStarCount,
     reviewsCount,
+    IsFavourited=false,
 }) {
   return (
     <DIV className={`row ${className} text-color-grey-light  border-radius-5 `}>
         {/* Image */}
-        <div className="col-3 image pe-0 ">
+        <div className="col-3 image pe-0 ps-0">
             <img src={buissnessImage} className=" border-bottom-left-radius-5 border-top-left-radius-5 " alt="" />    
         </div>
 
@@ -34,20 +37,27 @@ function BuissnessItemCard({
                     
 
                     {/* Favourite Icon */}
-                            <FavoriteIconSvg className='p-2 font-3-5 text-color-red   box-shadow-red border-radius-circle cursor-p  '></FavoriteIconSvg>    
-                  
+                        <FavIcon className='font-3-5' filled={IsFavourited} ></FavIcon>
                 </div>    
                 
                 {/* Details with icons */}
                 <div className="mt-4 ps-3">
-                            <div className=""><LocationIconSvg></LocationIconSvg>{location}</div>    
-                            <div className=""><CallIconSvg></CallIconSvg>{number}</div>    
-                            <div className=""><WorldIconSvg></WorldIconSvg>{website}</div>    
+                            <div className=""><LocationIconSvg className='pe-2 font-2-3'  ></LocationIconSvg>{location}</div>    
+                            <div className=""><CallIconSvg className='pe-2 font-2-3'  ></CallIconSvg>{number}</div>    
+                            <div className=""><WorldIconSvg className='pe-2 font-2-3'  ></WorldIconSvg>{website}</div>    
                 </div>
 
                     {/* Card bottom */}
                 <div className="card-bottom display-flex  justify-content-between background-yello mt-auto border-grey-light-top pt-3  ps-3">
-                        <div className="">{reviewsCount} Reviews</div>    
+                        
+                        <div className="display-flex ">
+                            <StarSection fillStars={ratingsStarCount} className="me-2"></StarSection>
+                            {`${reviewsCount}   `} 
+                            <div className="ms-2">
+                                  Reviews
+                            </div>
+                        </div>   
+
                         <div className="text-color-red cursor-p   ">CLICK NOW</div>    
                 
                 </div>
@@ -61,7 +71,7 @@ const DIV=styled.div`
     width: 100%;
 
     .image{
-        height: 42vh;
+        height: 39vh;
         img{
             width:100%;
             height:100%;
