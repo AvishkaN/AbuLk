@@ -25,12 +25,12 @@ function BuissnessItemCard({
   return (
     <DIV className={`row ${className} text-color-grey-light  border-radius-5  ps-0 pe-0`}>
         {/* Image */}
-        <div className="col-md-3 image pe-0 ps-0">
+        <div className="col-3 image pe-0 ps-0">
             <img src={buissnessImage} className=" border-bottom-left-radius-5 border-top-left-radius-5 " alt="" />    
         </div>
 
         {/* Detaiails */}
-        <div className="col-md-9 details display-flex  flex-direction-column  ps-1 pb-3 background-re">
+        <div className="col details display-flex  flex-direction-column  ps-1 pb-3 background-re">
                     
                     {/*Buissness Name  */}
                 <div className="text-color-black fw-bold  font-1-6   ps-3 mt-md-0 mt-1">{buissnessName}</div>    
@@ -77,7 +77,7 @@ function BuissnessItemCard({
 const DIV=styled.div`
     /* width: 100%; */
     @media(max-width:768px){     
-                      flex-direction: column;
+                      /* flex-direction: column; */
                       position: relative;
         }
 
@@ -99,8 +99,20 @@ const DIV=styled.div`
         height: 39vh;
         
         
-        @media(max-width:380px){     
-            height: 33vh;
+        
+        @media(max-width:728px){     
+            height: 30vh;
+            width: 28.333333%;
+        }
+
+
+        @media(max-width:507px){     
+             width: 39.333333%;
+        }
+        @media(max-width:507px){     
+             /* width: 36%;
+             height: 28vh; */
+
         }
         img{
             width:100%;

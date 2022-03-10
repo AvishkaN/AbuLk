@@ -44,7 +44,7 @@ function AllBuissnessPage({className=""}) {
 
 
         {/* All buissness list*/}
-        <div className="col-12 col-lg-9   background-gree row" id="buissness-card-container">
+        <div className="col-12 col-lg-9   background-gree row  ps-0 pe-0" id="buissness-card-container">
           {
             AllbuissnessData.map(dataObj=>(
               <BuissnessItemCard  key={Math.random()} {...dataObj}   className=" buissnessItemCard  col-md-12 mt-4 ms-1  box-shadow-normal box-shadow-normal-hover cursor-p  " ></BuissnessItemCard>
@@ -81,20 +81,20 @@ const DIV=styled.div`
         .buissnessItemCard{
           
               @media(max-width:768px){     
-                  width:48%;
+                  /* width:48%; */
               }
           
               @media(max-width:600px){     
-                width: 64%;
+                /* width: 64%; */
                 margin-left: auto !important;
                 margin-right: auto;
-                margin-bottom: 3rem!important;
+                margin-bottom: 1rem!important;
               }
               @media(max-width:462px){     
-                width: 75%;
+                /* width: 75%; */
               }
               @media(max-width:380px){     
-                width: 87%;
+                /* width: 87%; */
               }
         }
         
