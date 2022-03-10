@@ -6,6 +6,7 @@ import LocationPopUp from './LocationPopUp/LocationPopUp';
 import CategoryPopUp from './CategoryPopUp/CategoryPopUp';
 import PostAdPopUp from './PostAdPopUp/PostAdPopUp';
 import AllBuissnessPageFilterPopUp from './AllBuissnessPageFilterPopUp/AllBuissnessPageFilterPopUp';
+import { useEffect } from 'react';
 
 
 
@@ -14,6 +15,10 @@ function Overlay({className=""}) {
 
   const dispatch=useDispatch();
   const clicks=useSelector(selectClicks);
+
+  useEffect(()=>{
+    window.scroll(0,0)
+  });
 
 
 

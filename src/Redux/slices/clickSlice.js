@@ -3,13 +3,13 @@ import {createSlice} from '@reduxjs/toolkit';
 export const clickSlice=createSlice({
     name:"clicks",
     initialState:{  
-        showOverlay:true, 
+        showOverlay:false, 
         showMobileNav:false, 
 
         showLocationPopUp:false, 
         showCategoryPopUp:false, 
 
-        showAllBuissnessPageFilter:true, 
+        showAllBuissnessPageFilter:false, 
 
         showPostAd:false, 
 

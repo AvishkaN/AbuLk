@@ -9,7 +9,7 @@ function Filter({className=""}) {
     <DIV className={`${className}`}>
                          
                   {/* Sort results by */}
-              <div className="Filter-row p-3 box-shadow-normal ms-3 mt-4 mb-2 border-radius-5">
+              <div className="Filter-row p-3 box-shadow-normal ms-3 mt-4 mb-2 border-radius-5   me-2">
                     <div className="font-1-5 border-grey-light-bottom pb-2 fw-bold">Sort results by</div>
                     <CheckBoxItem className='mt-3 text-color-grey-light   w-95  pb-2  ms-auto me-auto  border-grey-light-2-bottom '  checkmarkClassName="w-2-5rem h-2-5rem"    >  <div className='font-1-4'>Newest on top</div> </CheckBoxItem>
                     <CheckBoxItem  className='mt-3 text-color-grey-light    w-95  pb-2  ms-auto me-auto border-grey-light-2-bottom '  checkmarkClassName="w-2-5rem h-2-5rem "  >  <div className='font-1-4'>Oldest on top</div> </CheckBoxItem>
@@ -17,7 +17,7 @@ function Filter({className=""}) {
 
 
                   {/* Categories */}
-              <div className="Filter-row p-3 box-shadow-normal ms-3 mt-4 mb-2 border-radius-5">
+              <div className="Filter-row p-3 box-shadow-normal ms-3 mt-4 mb-2 border-radius-5 me-2">
                     <div className="font-1-5 border-grey-light-bottom pb-2 fw-bold">Categories</div>
                     <CheckBoxItem className='mt-3 text-color-grey-light   w-95  pb-2  ms-auto me-auto  border-grey-light-2-bottom '  checkmarkClassName="w-2-5rem h-2-5rem"    ><div className='font-1-4'>Resturants</div> </CheckBoxItem>
                     <CheckBoxItem  className='mt-3 text-color-grey-light    w-95  pb-2  ms-auto me-auto border-grey-light-2-bottom '  checkmarkClassName="w-2-5rem h-2-5rem "  ><div className='font-1-4'>Univercities</div> </CheckBoxItem>
@@ -27,7 +27,7 @@ function Filter({className=""}) {
               </div>
 
                   {/* Location */}
-              <div className="Filter-row p-3 box-shadow-normal ms-3 mt-4 mb-2 border-radius-5">
+              <div className="Filter-row p-3 box-shadow-normal ms-3 mt-4 mb-2 border-radius-5 me-2">
                     <div className="font-1-5 border-grey-light-bottom pb-2 fw-bold">Location</div>
                 
                       {

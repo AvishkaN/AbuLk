@@ -12,7 +12,7 @@ function AllBuissnessPage({className=""}) {
          <div className="AllBuissnessPage-wrapper row">
 
         {/* Filter */}
-        <div className="col-md-3 background-yello ">
+        <div className="display-lg-none  col-lg-3  background-yello ">
 
             <Filter></Filter>
           
@@ -20,10 +20,10 @@ function AllBuissnessPage({className=""}) {
 
 
         {/* All buissness list*/}
-        <div className="col-md-9  background-gree ">
+        <div className="col-12 col-lg-9   background-gree row" id="buissness-card-container">
           {
             AllbuissnessData.map(dataObj=>(
-              <BuissnessItemCard  key={Math.random()} {...dataObj} className="mt-4 ms-1  box-shadow-normal box-shadow-normal-hover cursor-p  " ></BuissnessItemCard>
+              <BuissnessItemCard  key={Math.random()} {...dataObj}   className=" buissnessItemCard  col-md-12 mt-4 ms-1  box-shadow-normal box-shadow-normal-hover cursor-p  " ></BuissnessItemCard>
 
             ))
           }
@@ -44,6 +44,27 @@ const DIV=styled.div`
       width: var(--page-content-width);
         margin-left: auto;
         margin-right: auto; 
+
+
+        #buissness-card-container{
+           
+        @media(max-width:768px){     
+               
+             justify-content: space-between;
+        }     
+
+
+        .buissnessItemCard{
+           
+        @media(max-width:768px){     
+             width:48%;
+        }
+        }
+        
+        }
+
+
+        }
 
     }
 `;

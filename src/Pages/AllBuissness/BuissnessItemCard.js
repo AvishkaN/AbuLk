@@ -6,6 +6,7 @@ import WorldIconSvg from '@mui/icons-material/Language';
 import FavoriteIconSvg from '@mui/icons-material/FavoriteBorder';
 import FavIcon from '../../Components/UI/FavIcon/FavIcon';
 import StarSection from '../../Components/UI/StarSection/StarSection';
+// import StarSection from '../../Components/UI/StarSection/StarSection';
 
 
 function BuissnessItemCard({
@@ -22,14 +23,14 @@ function BuissnessItemCard({
     IsFavourited=false,
 }) {
   return (
-    <DIV className={`row ${className} text-color-grey-light  border-radius-5 `}>
+    <DIV className={`row ${className} text-color-grey-light  border-radius-5  ps-0 pe-0`}>
         {/* Image */}
-        <div className="col-3 image pe-0 ps-0">
+        <div className="col-md-3 image pe-0 ps-0">
             <img src={buissnessImage} className=" border-bottom-left-radius-5 border-top-left-radius-5 " alt="" />    
         </div>
 
         {/* Detaiails */}
-        <div className="col-9 display-flex  flex-direction-column  ps-1 pb-3 ">
+        <div className="col-md-9 display-flex  flex-direction-column  ps-1 pb-3 ">
                 <div className="text-color-black fw-bold  font-1-6   ps-3">{buissnessName}</div>    
                 <div className="ps-3 display-flex ">
                     {/* Description text  */}
@@ -58,7 +59,7 @@ function BuissnessItemCard({
                             </div>
                         </div>   
 
-                        <div className="text-color-red cursor-p   ">CLICK NOW</div>    
+                        <Button className="text-color-red cursor-p   ">CLICK NOW</div>    
                 
                 </div>
         </div>
@@ -68,7 +69,7 @@ function BuissnessItemCard({
 
 
 const DIV=styled.div`
-    width: 100%;
+    /* width: 100%; */
 
     .image{
         height: 39vh;

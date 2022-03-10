@@ -16,17 +16,16 @@ function LocationPopUp({className=""}) {
            <PopUp to="/">
 
                <div className="display-flex ">
-                            <h2>Filter Result</h2>
+                            <h2 className='fw-bold'>Filter Result</h2>
                 </div>
 
 
                     <div className="col-11 background-yello ">
 
                             <Filter></Filter>
-                            {/* <Button className="" >Filter </Button> */}
-                            {/* <div className="text-right mt-4">
+                            <div className="text-right mt-4">
                                     <Button text={" "} className='background-primary text-color-white  font-1-5 border-radius-20 ps-4 ps-4'>Filter Now</Button> 
-                            </div> */}
+                            </div>
 
                         
                     </div>
