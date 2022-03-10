@@ -109,9 +109,8 @@ const DIV=styled.div`
         @media(max-width:507px){     
              width: 39.333333%;
         }
-        @media(max-width:507px){     
-             /* width: 36%;
-             height: 28vh; */
+        @media(max-width:367px){     
+            height: 27vh;
 
         }
         img{
