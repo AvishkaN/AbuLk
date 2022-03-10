@@ -33,7 +33,7 @@ function BuissnessItemCard({
         <div className="col-md-9 details display-flex  flex-direction-column  ps-1 pb-3 background-re">
                     
                     {/*Buissness Name  */}
-                <div className="text-color-black fw-bold  font-1-6   ps-3">{buissnessName}</div>    
+                <div className="text-color-black fw-bold  font-1-6   ps-3 mt-md-0 mt-1">{buissnessName}</div>    
                
                     {/* Buissness Description with fav icon */}
                 <div className="ps-3 display-flex description">
@@ -105,6 +105,10 @@ const DIV=styled.div`
         img{
             width:100%;
             height:100%;
+
+            @media(max-width:768px){     
+                border-bottom-left-radius: 0px;
+            }
         }
     }
 
