@@ -6,7 +6,7 @@ import WorldIconSvg from '@mui/icons-material/Language';
 import FavoriteIconSvg from '@mui/icons-material/FavoriteBorder';
 import FavIcon from '../../Components/UI/FavIcon/FavIcon';
 import StarSection from '../../Components/UI/StarSection/StarSection';
-// import StarSection from '../../Components/UI/StarSection/StarSection';
+import Button from '../../Components/UI/Button/Button';
 
 
 function BuissnessItemCard({
@@ -30,15 +30,19 @@ function BuissnessItemCard({
         </div>
 
         {/* Detaiails */}
-        <div className="col-md-9 display-flex  flex-direction-column  ps-1 pb-3 ">
+        <div className="col-md-9 details display-flex  flex-direction-column  ps-1 pb-3 background-re">
+                    
+                    {/*Buissness Name  */}
                 <div className="text-color-black fw-bold  font-1-6   ps-3">{buissnessName}</div>    
-                <div className="ps-3 display-flex ">
+               
+                    {/* Buissness Description with fav icon */}
+                <div className="ps-3 display-flex description">
                     {/* Description text  */}
                             {description}
                     
 
                     {/* Favourite Icon */}
-                        <FavIcon className='font-3-5' filled={IsFavourited} ></FavIcon>
+                        <FavIcon id="fav-icon" className='font-3-5 ms-auto fav-icon' filled={IsFavourited} ></FavIcon>
                 </div>    
                 
                 {/* Details with icons */}
@@ -49,18 +53,20 @@ function BuissnessItemCard({
                 </div>
 
                     {/* Card bottom */}
-                <div className="card-bottom display-flex  justify-content-between background-yello mt-auto border-grey-light-top pt-3  ps-3">
+                <div className="card-bottom row   justify-content-between background-yello mt-auto border-grey-light-top pt-3  ps-3">
                         
-                        <div className="display-flex ">
-                            <StarSection fillStars={ratingsStarCount} className="me-2"></StarSection>
+                        {/* Reviews  */}
+                        <div className="display-flex   col-md-9">
+                            <StarSection fillStars={ratingsStarCount} className="me-4 me-md-2"></StarSection>
                             {`${reviewsCount}   `} 
                             <div className="ms-2">
                                   Reviews
                             </div>
                         </div>   
 
-                        <Button className="text-color-red cursor-p   ">CLICK NOW</div>    
-                
+                        <Button id="click-here-btn" className="col   text-color-red cursor-p   font-1-5 ">CLICK NOW</Button>    
+                        {/* <Button text={" "} className='col background-primary text-color-white  font-1-5 border-radius-20 ps-4 ps-4'>Filter Now</Button>  */}
+
                 </div>
         </div>
     </DIV>
@@ -70,9 +76,32 @@ function BuissnessItemCard({
 
 const DIV=styled.div`
     /* width: 100%; */
+    @media(max-width:768px){     
+                      flex-direction: column;
+                      position: relative;
+        }
+
+
+        .fav-icon{
+                @media(max-width:768px){     
+                         position: absolute;
+                         top:0 ;
+                         right:0 ;
+                }
+        }
+
+
+    .details{
+        /* flex-direction:column ; */
+    }
 
     .image{
         height: 39vh;
+        
+        
+        @media(max-width:380px){     
+            height: 33vh;
+        }
         img{
             width:100%;
             height:100%;
@@ -89,6 +118,35 @@ const DIV=styled.div`
             box-shadow:-2px 2px 12px 3px rgba(255, 11, 11, 0.33);
         }
     }
+
+    #click-here-btn{
+        @media(max-width:768px){     
+                      display: none;
+        }
+
+    }
+
+    .description{
+        min-height: 4rem;
+
+          
+        @media(max-width:768px){     
+                    display: block; /* Fallback for non-webkit */
+                    display: -webkit-box;
+                    height: 2.6em; /* Fallback for non-webkit, line-height * 2 */
+                    line-height: 1.3em;
+                    -webkit-line-clamp: 2; /* if you change this, make sure to change the fallback line-height and height */
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+        }
+
+
+
+
+    }
+
+
     
    
 `;

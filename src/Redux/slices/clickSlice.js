@@ -64,6 +64,7 @@ export const clickSlice=createSlice({
 
         ShowAllBuissnessPageFilterFN:(state)=>{     
 
+            state.showOverlay=true;    
             state.showAllBuissnessPageFilter=true;    
         },
 
