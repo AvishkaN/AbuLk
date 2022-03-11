@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import {AllResturantData} from '../../Data/Data';
 import { useDispatch } from 'react-redux';
-import ResturantCardItem from './AllResturantCard';
+// import ResturantCardItem from './AllResturantCard';
+import AllResturantCardMobile from './Mobile/AllResturantCardMobile';
 
 
 
@@ -17,7 +18,7 @@ function AllResturantPage({className=""}) {
                     <div className="mt-4 row justify-content-between">
                           {
                             AllResturantData.map(dataObj=>(
-                              <ResturantCardItem  key={Math.random()} {...dataObj}   className="reaturant-cart-item " ></ResturantCardItem>
+                              <AllResturantCardMobile  key={Math.random()} {...dataObj}   className="reaturant-cart-item " ></AllResturantCardMobile>
 
                             ))
                           }
