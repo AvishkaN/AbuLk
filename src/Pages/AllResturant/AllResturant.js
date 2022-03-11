@@ -12,15 +12,16 @@ function AllResturantPage({className=""}) {
 
   return (
     <DIV className={`${className} pageFixed`} >
-         <div className="AllResturantPage-wrapper row">
-                    <h1>all Resturant</h1>
+         <div className="AllResturantPage-wrapper ">
                     {/* All Resturants  */}
-                    {
-                      AllResturantData.map(dataObj=>(
-                        <ResturantCardItem  key={Math.random()} {...dataObj}   className="reaturant-cart-item" ></ResturantCardItem>
+                    <div className="mt-4 row justify-content-between">
+                          {
+                            AllResturantData.map(dataObj=>(
+                              <ResturantCardItem  key={Math.random()} {...dataObj}   className="reaturant-cart-item " ></ResturantCardItem>
 
-                      ))
-                    }
+                            ))
+                          }
+                    </div>
          </div>
     </DIV>
   );
@@ -37,6 +38,12 @@ const DIV=styled.div`
 
         .reaturant-cart-item{
           width: 30%;
+          
+          
+          @media(max-width:992px){     
+            width: 100%;
+        }
+
         }
 
     }
