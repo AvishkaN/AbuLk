@@ -6,6 +6,7 @@ import ProductItem from './Pages/ProductItem/ProductItem';
 import ClassifiedPage from './Pages/Classified/ClassifiedPage';
 import MyAccountPage from './Pages/MyAccount/MyAccountPage';
 import AllBuissnessPage from './Pages/AllBuissness/AllBuissness';
+import AllResturantPage from './Pages/AllResturant/AllResturant';
 
 
 import NavBar from './Components/Nav/NavBar';
@@ -133,6 +134,19 @@ function App() {
                                           <MobielNavBar></MobielNavBar>
 
                                         <AllBuissnessPage></AllBuissnessPage>
+                                        <Footer className='mt-6'></Footer>
+
+                                      </>
+                                         } />
+
+
+                                            {/* ALL Resturant Page*/}
+                                            <Route path="/allResturant/" element={ 
+                                      <>
+                                            <NavBar></NavBar>
+                                          <MobielNavBar></MobielNavBar>
+
+                                        <AllResturantPage></AllResturantPage>
                                         <Footer className='mt-6'></Footer>
 
                                       </>
