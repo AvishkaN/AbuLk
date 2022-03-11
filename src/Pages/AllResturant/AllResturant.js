@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import {AllResturantData} from '../../Data/Data';
 import { useDispatch } from 'react-redux';
-// import ResturantCardItem from './AllResturantCard';
+import ResturantCardItem from './AllResturantCard';
 import AllResturantCardMobile from './Mobile/AllResturantCardMobile';
+import ScreenWidthCalc from '../../Functions/DOM/CalcScreenWidth';
 
 
 
@@ -16,12 +17,23 @@ function AllResturantPage({className=""}) {
          <div className="AllResturantPage-wrapper ">
                     {/* All Resturants  */}
                     <div className="mt-lg-4 row justify-content-between">
+
+                      {
+                        (ScreenWidthCalc() >= 991) &&  AllResturantData.map(dataObj=>(
+                          <ResturantCardItem  key={Math.random()} {...dataObj}   className="reaturant-cart-item " ></ResturantCardItem>
+
+                        ))
+                      }
+
+
+                          {/* Mobile */}
                           {
-                            AllResturantData.map(dataObj=>(
+                            (ScreenWidthCalc() <= 991) && AllResturantData.map(dataObj=>(
                               <AllResturantCardMobile  key={Math.random()} {...dataObj}   className="reaturant-cart-item " ></AllResturantCardMobile>
 
                             ))
                           }
+
                     </div>
          </div>
     </DIV>

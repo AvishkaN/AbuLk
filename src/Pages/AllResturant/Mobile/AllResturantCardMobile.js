@@ -44,7 +44,7 @@ function ResturantCardItem({
 
                         {/* category button */}
                         {/* <Button className={`font-1-2 text-color-white ms-auto  `} >{isOpenNow ?'OPEN':"CLOSE"}</Button> */}
-                        <div className="font-1-2">{isOpenNow ?'OPEN':"CLOSE"}</div>
+                        {/* <div className="font-1-2">{isOpenNow ?'OPEN':"CLOSE"}</div> */}
 
             </div>
 
@@ -126,8 +126,13 @@ box-shadow:-8px 6px 9px 0 rgba(0 ,0 ,0 ,0.1);
 
 .category-row{
     background-color:#FED74E;
-    clip-path: polygon(56% 0, 100% 100%, 57% 100%, 0 100%, 0 0);
-    
+    /* clip-path: polygon(56% 0, 100% 100%, 57% 100%, 0 100%, 0 0);
+
+    clip-path: polygon(56% 0, 100% 41%, 100% 100%, 0 100%, 0 0); */
+    /* clip-path: polygon(86.15% 1px, 100.22% 101%, 100% 100%, 0px 100%, 0px 0px); */
+    /* clip-path: polygon(86.15% 1px, 86.11% -1.5%, 97.63% 97.50%, 0px 100%, 0px 0px); */
+    clip-path: polygon(55.35% 1px, 90.09% 1%, 97.63% 97.5%, 0px 100%, 0px 0px);
+
     .category-icon{
         background-color:#FE3350;
         outline: #fdfdfd solid 2px;
