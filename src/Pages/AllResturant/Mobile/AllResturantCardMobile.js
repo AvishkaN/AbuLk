@@ -55,7 +55,7 @@ function ResturantCardItem({
         <div className="cart-container row">
 
                     {/* Image */}
-                    <div className="col-4 col-lg-12 ps-0 pe-0 ">
+                    <div className="image col-4 col-lg-12 ps-0 pe-0 ">
                             <img src={image} alt="" className='w-100 h-100' />    
                     </div>
 
@@ -64,9 +64,9 @@ function ResturantCardItem({
                     
 
                             {/* Other Details */}
-                        <div className="ps-3 pe-2  pb-3">
+                        <div className="ps-3 pe-2  pb-1">
                                         {/* Resturant Name */}
-                                        <div className="fw-bold font-1-7 mt-1">{Name}</div>
+                                        <div className="fw-bold  mt-1">{Name}</div>
 
                                         {/* Reviews Section */}
                                         <div className="display-flex">
@@ -75,24 +75,24 @@ function ResturantCardItem({
                                         </div>
 
                                         {/* Price Range */}
-                                        <div className="mt-1">
-                                                <span className=''>{Currency}{startPirce}</span>
-                                                <span className='ms-2'>-</span>
-                                                <span className='ms-2'>{Currency}{endPrice}</span>
+                                        <div className="mt-1 font-1-4">
+                                                <span className='font-inherit '>{Currency}{startPirce}</span>
+                                                <span className='ms-2 font-inherit '>-</span>
+                                                <span className='ms-2 font-inherit '>{Currency}{endPrice}</span>
                                         </div>
 
                                         {/* Mobile Phone Number */}
-                                        <div className="text-color-grey-light display-flex align-items-center mt-1 mb-2">
+                                        <div className="text-color-grey-light display-flex align-items-center mt-1 mb-1">
                                             <PhoneIphoneIconSvg className=''></PhoneIphoneIconSvg>    
-                                            <div className="">{phoneNumber}</div>
+                                            <div className="font-1-3">{phoneNumber}</div>
                                         </div>
 
                                         {/* Resturant Card Bottom */}
                                         <div className="border-top ">
                                                 
-                                                    <div className="display-flex align-items-center text-color-grey-light  pt-2">
-                                                            <LocationIconSvg className=' font-2-3 text-color-primary  '></LocationIconSvg>
-                                                            <div className="">{loacation}</div>
+                                                    <div className="display-flex align-items-center text-color-grey-light  pt-1">
+                                                            <LocationIconSvg className=' font-1-3 text-color-primary  '></LocationIconSvg>
+                                                            <div className="font-1-3">{loacation}</div>
 
                                                             <FavoriteIconSvg className='ms-auto font-2-2 text-color-primary  me-2 fav-icon'></FavoriteIconSvg>
                                             
@@ -126,11 +126,6 @@ box-shadow:-8px 6px 9px 0 rgba(0 ,0 ,0 ,0.1);
 
 .category-row{
     background-color:#FED74E;
-    /* clip-path: polygon(56% 0, 100% 100%, 57% 100%, 0 100%, 0 0);
-
-    clip-path: polygon(56% 0, 100% 41%, 100% 100%, 0 100%, 0 0); */
-    /* clip-path: polygon(86.15% 1px, 100.22% 101%, 100% 100%, 0px 100%, 0px 0px); */
-    /* clip-path: polygon(86.15% 1px, 86.11% -1.5%, 97.63% 97.50%, 0px 100%, 0px 0px); */
     clip-path: polygon(55.35% 1px, 90.09% 1%, 97.63% 97.5%, 0px 100%, 0px 0px);
 
     .category-icon{
@@ -148,6 +143,40 @@ box-shadow:-8px 6px 9px 0 rgba(0 ,0 ,0 ,0.1);
 
 .cart-container{
     position: relative;
+
+
+    .image{
+
+        @media(max-width:465px){     
+                      width: 132px;
+                      height: 106px;
+                      display:flex; 
+
+                      
+        }
+
+        @media(max-width:377px){     
+                    width: 117px;
+                     height: 86px;
+                      
+        }
+
+        @media(max-width:341px){     
+            width: 108px;
+            height: 77px;
+                      
+        }
+        
+        img{
+            @media(max-width:465px){     
+            }
+
+        }
+
+
+
+
+    }
 }
 
 .fav-icon{
