@@ -15,7 +15,7 @@ function AllResturantPage({className=""}) {
     <DIV className={`${className} pageFixed`} >
          <div className="AllResturantPage-wrapper ">
                     {/* All Resturants  */}
-                    <div className="mt-4 row justify-content-between">
+                    <div className="mt-lg-4 row justify-content-between">
                           {
                             AllResturantData.map(dataObj=>(
                               <AllResturantCardMobile  key={Math.random()} {...dataObj}   className="reaturant-cart-item " ></AllResturantCardMobile>
