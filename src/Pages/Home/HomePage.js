@@ -200,6 +200,10 @@ function HomePage({className=""}) {
                                 <h1>  All Buisness  </h1>
                           </Link>
 
+                          <Link to="/allResturant">
+                                <h1>  All Resturant  </h1>
+                          </Link>
+
 
           </div>
 
