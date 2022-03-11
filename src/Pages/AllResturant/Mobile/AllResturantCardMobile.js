@@ -43,7 +43,9 @@ function ResturantCardItem({
                         <div className="ms-3 fw-bold">{category}</div>
 
                         {/* category button */}
-                        <Button className={`font-1-2 text-color-white ms-auto  `} >{isOpenNow ?'OPEN':"CLOSE"}</Button>
+                        {/* <Button className={`font-1-2 text-color-white ms-auto  `} >{isOpenNow ?'OPEN':"CLOSE"}</Button> */}
+                        <div className="font-1-2">{isOpenNow ?'OPEN':"CLOSE"}</div>
+
             </div>
 
 
@@ -108,6 +110,7 @@ const DIV=styled.div`
 
 .category-row{
     background-color:#FED74E;
+    clip-path: polygon(56% 0, 100% 100%, 57% 100%, 0 100%, 0 0);
     
     .category-icon{
         background-color:#FE3350;
