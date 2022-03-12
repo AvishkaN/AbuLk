@@ -7,6 +7,7 @@ import ClassifiedPage from './Pages/Classified/ClassifiedPage';
 import MyAccountPage from './Pages/MyAccount/MyAccountPage';
 import AllBuissnessPage from './Pages/AllBuissness/AllBuissness';
 import AllResturantPage from './Pages/AllResturant/AllResturant';
+import SingleResturantPage from './Pages/SingleResturant/SingleResturant';
 
 
 import NavBar from './Components/Nav/NavBar';
@@ -147,6 +148,19 @@ function App() {
                                           <MobielNavBar></MobielNavBar>
 
                                         <AllResturantPage></AllResturantPage>
+                                        <Footer className='mt-6'></Footer>
+
+                                      </>
+                                         } />
+
+
+                                            {/* Single Resturant Page*/}
+                                            <Route path="/single-resturant/*" element={ 
+                                      <>
+                                            <NavBar></NavBar>
+                                          <MobielNavBar></MobielNavBar>
+
+                                        <SingleResturantPage></SingleResturantPage>
                                         <Footer className='mt-6'></Footer>
 
                                       </>
