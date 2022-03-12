@@ -1,13 +1,31 @@
+import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
-
+import SingleResturantNav from './SingleResturantNav/SingleResturantNav';
+import Starters from './Contents/Starters';
+import MainDishesh from './Contents/MainDishesh';
+import Desserts from './Contents/Desserts';
+import { SingleResturantData } from '../../Data/Data';
 
 
 function SingleResturantPage({className=""}) {
   return (
     <DIV className={`${className} pageFixed`}>
          <div className="SingleResturantPage-wrapper ">
-                single resturant
+
                 {/* single Resturant nav */}
+                <SingleResturantNav className='mb-4 mt-2'></SingleResturantNav>
+                
+                <Routes>
+                      <Route path="/" element={<Starters {...SingleResturantData}/>} />
+                </Routes>
+
+                <Routes>
+                      <Route path="/main-dishes" element={<MainDishesh {...SingleResturantData}/>} />
+                </Routes>
+
+                <Routes>
+                      <Route path="/desserts" element={<Desserts {...SingleResturantData}/>} />
+                </Routes>
                 
          </div>
     </DIV>
@@ -23,6 +41,14 @@ const DIV=styled.div`
       width: var(--page-content-width);
         margin-left: auto;
         margin-right: auto; 
+
+
+        .text-color-primary-this-comp{
+          color:#9F978A;
+        }
+        .background-primary-this-comp{
+          background:#9F978A;
+        }
 
     }
 `;

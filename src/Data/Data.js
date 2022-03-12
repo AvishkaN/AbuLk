@@ -55,6 +55,26 @@ export const AllResturantData=[
 
 
 
+export const SingleResturantData={
+      resturantName:"Happy Hour",
+      resturantBannerImg:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      resturantBannerText:{
+          line1:"staeters special offer",
+          line2:"mix starters menu $18 only",
+          line3:"hamburger, chips,Mix sausages, Beer,Muffin ",
+      },
+      AllRecipes:[
+          {
+              recipeImg:"https://th.bing.com/th/id/R.c0a34b217c80b6fbed2832a259b36872?rik=TH5sJnXQNjsGkg&riu=http%3a%2f%2frasamalaysia.com%2fwp-content%2fuploads%2fuploaded_images%2fsoft_shell_crab_s.jpg&ehk=JzusFACnIX27x6uY7KN1WG6LLaJIAzvg8sMtQEuy%2bCY%3d&risl=&pid=ImgRaw&r=0",
+              recipeName:"Soft Shell crab",
+              recipeDescription:"chicken,potato,salad",
+              recipePrice:"$14",
+          }
+      ],
+  };
+
+
+
 export const AllbuissnessData=[
    { 
        buissnessImage:"https://images.unsplash.com/photo-1516146544193-b54a65682f16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
