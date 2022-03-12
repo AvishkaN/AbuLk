@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import RecipeItem from './RecipeItem';
 
 
 
@@ -39,7 +40,14 @@ function StarterPage({
             </div>
 
             {/* All recipes */}
-            <div className="col-12"></div>
+            <div className="row  col-12 gy-3  justify-content-between">
+              {
+                AllRecipes.map(recipe=>(
+                  <RecipeItem {...recipe} className="col-6 "></RecipeItem>
+                ))
+              }
+                        
+            </div>
     </DIV>
   );
 }

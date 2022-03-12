@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 import SingleResturantNav from './SingleResturantNav/SingleResturantNav';
-import Starters from './Contents/Starters';
+import Starters from './Contents/Starters/Starters';
 import MainDishesh from './Contents/MainDishesh';
 import Desserts from './Contents/Desserts';
 import { SingleResturantData } from '../../Data/Data';

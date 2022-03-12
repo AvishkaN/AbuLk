@@ -67,9 +67,27 @@ export const SingleResturantData={
           {
               recipeImg:"https://th.bing.com/th/id/R.c0a34b217c80b6fbed2832a259b36872?rik=TH5sJnXQNjsGkg&riu=http%3a%2f%2frasamalaysia.com%2fwp-content%2fuploads%2fuploaded_images%2fsoft_shell_crab_s.jpg&ehk=JzusFACnIX27x6uY7KN1WG6LLaJIAzvg8sMtQEuy%2bCY%3d&risl=&pid=ImgRaw&r=0",
               recipeName:"Soft Shell crab",
-              recipeDescription:"chicken,potato,salad",
+              recipeIngredients:"chicken,potato,salad",
               recipePrice:"$14",
-          }
+          },
+          {
+              recipeImg:"https://th.bing.com/th/id/R.c0a34b217c80b6fbed2832a259b36872?rik=TH5sJnXQNjsGkg&riu=http%3a%2f%2frasamalaysia.com%2fwp-content%2fuploads%2fuploaded_images%2fsoft_shell_crab_s.jpg&ehk=JzusFACnIX27x6uY7KN1WG6LLaJIAzvg8sMtQEuy%2bCY%3d&risl=&pid=ImgRaw&r=0",
+              recipeName:"Soft Shell crab",
+              recipeIngredients:"chicken,potato,salad",
+              recipePrice:"$14",
+          },
+          {
+              recipeImg:"https://th.bing.com/th/id/R.c0a34b217c80b6fbed2832a259b36872?rik=TH5sJnXQNjsGkg&riu=http%3a%2f%2frasamalaysia.com%2fwp-content%2fuploads%2fuploaded_images%2fsoft_shell_crab_s.jpg&ehk=JzusFACnIX27x6uY7KN1WG6LLaJIAzvg8sMtQEuy%2bCY%3d&risl=&pid=ImgRaw&r=0",
+              recipeName:"Soft Shell crab",
+              recipeIngredients:"chicken,potato,salad",
+              recipePrice:"$14",
+          },
+          {
+              recipeImg:"https://th.bing.com/th/id/R.c0a34b217c80b6fbed2832a259b36872?rik=TH5sJnXQNjsGkg&riu=http%3a%2f%2frasamalaysia.com%2fwp-content%2fuploads%2fuploaded_images%2fsoft_shell_crab_s.jpg&ehk=JzusFACnIX27x6uY7KN1WG6LLaJIAzvg8sMtQEuy%2bCY%3d&risl=&pid=ImgRaw&r=0",
+              recipeName:"Soft Shell crab",
+              recipeIngredients:"chicken,potato,salad",
+              recipePrice:"$14",
+          },
       ],
   };
 
