@@ -11,7 +11,7 @@ function CheckboxItem(props) {
                         </div>
                         {/* <div className={` ms-4  ${textClassName} `}>{text}</div> */}
                         <input type="checkbox"  />
-                        <span className={`checkmark border-radius-5 ${props.checkmarkClassName}`} />
+                        <span className={`checkmark  ${props.checkmarkClassName}`} />
                 </label>
     </DIV>
   );

@@ -15,8 +15,6 @@ function AllBuissnessPage({className=""}) {
 
   const handleClick=(e)=>{
       const filterIcon=e.target.closest('.filter-icon');
-      // console.log(e.target.closest('.filter-icon'));
-      console.log(filterIcon);
 
       if(filterIcon){
         dispatch(ShowAllBuissnessPageFilterFN());

@@ -198,5 +198,222 @@ export const AllDistricts= [
   ];
 
 
+// All JOBS PAGE
 
 
+// filter --> 
+
+export const AllJobsFilterByTitle=[
+        {
+            Text:"Web Designer",
+            number:"12",
+
+        },
+        {
+            Text:"3D Graphic Designer",
+            number:"12",
+
+        },
+        {
+            Text:"Graphic Designer",
+            number:"17",
+
+        },
+        {
+            Text:"Electronics Technician",
+            number:"12",
+
+        },
+        {
+            Text:"Web/Graphic Designer",
+            number:"15",
+
+        },
+        {
+            Text:"Brand Maneger",
+            number:"33",
+
+        },
+    ];
+
+
+
+export const AllJobsFilterByCity= [  
+    {
+        number:20,
+            Text:'Ampara'
+            },
+    
+        
+        {number:20,
+        Text:'Anuradhapura'
+        },
+    
+    {
+        number:20,
+    Text:'Badulla'},
+        
+
+    {
+        number:20,
+    Text:'Batticaloa'
+    },
+        
+
+    {
+        number:20,
+    Text:'Colombo'
+    },
+        
+
+    {
+        number:20,
+            Text:'Galle'
+    },
+        
+
+    
+    {
+        Number:20, 
+        Text:'Hambantota'}, 
+    
+        {
+            Number:20, 
+    Text:'Jaffna'},
+            
+            
+    {
+        Number:20, 
+    Text:'Kaluta'},
+        
+        
+    {
+        Number:20, 
+        Text:'Kandy'
+    }, 
+    
+    {
+        Number:20, 
+        Text:'Kegalle'
+    }, 
+    
+    {
+        Number:20, 
+        Text:'Kilinochchi'
+    }, 
+    
+    {
+        Number:20, 
+        Text:'Kurunegala'
+    }, 
+    
+    {
+        Number:20, 
+        Text:'Mannar'
+    }, 
+    
+    {
+        Number:20, 
+        Text:'Matale'
+    }, 
+    
+    {
+        Number:20, 
+        Text:'Matara'
+    }, 
+    
+    {
+        Number:20, 
+        Text:'Monaragala'
+    }, 
+    
+    {
+        Number:20, 
+        Text:'Mullaitivu'
+    },
+    {
+
+        Number:20,
+        Text: 'Nuwara Eliya',
+    },
+
+    
+    {
+        Number:20, 
+    Text:'Polonnaruwa'},
+    
+    {
+        Number:20, 
+    Text:'Puttalam'},
+    
+    {
+        Number:20, 
+    Text:'Ratnapura'},
+    
+    {
+        Number:20, 
+    Text:'Trincomalee'}, 
+    
+    {
+        Number:20, 
+    Text:'Vavuniva'}, 
+
+
+    ];
+
+
+
+export const AllJobsFilterByExperince=[
+{
+    Text:"Full Time/Permenet",
+    number:"12",
+},
+{
+    Text:"Contract",
+    number:"33",
+},
+{
+    Text:"Part TIme",
+    number:"33",
+},
+{
+    Text:"IntenShip",
+    number:"33",
+},
+
+];
+
+// all profiles details 
+
+export const AllJobProfiles=[
+    {
+      personImg:"https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-professional-attire.jpg?auto=webp&format=jpg&width=944",
+      personName:"Jhon Doe",
+      job:"Java Developer",
+      location:"Colombo,Sri lanka",
+      price:"$5000",
+      priceDuration:"month",
+      Description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, eos vel temporibus expedita fugit at praesentium iure est nostrum corrupti.eos vel temporibus expedita fugit at praesentium iure est nostrum corrupti`,
+
+    },
+    {
+      personImg:"https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-professional-attire.jpg?auto=webp&format=jpg&width=944",
+      personName:"Jhon Doe",
+      job:"Java Developer",
+      location:"Colombo,Sri lanka",
+      price:"$5000",
+      priceDuration:"month",
+      Description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, eos vel temporibus expedita fugit at praesentium iure est nostrum corrupti.`,
+
+    },
+    {
+      personImg:"https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-professional-attire.jpg?auto=webp&format=jpg&width=944",
+      personName:"Jhon Doe",
+      job:"Java Developer",
+      location:"Colombo,Sri lanka",
+      price:"$5000",
+      priceDuration:"month",
+      Description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, eos vel temporibus expedita fugit at praesentium iure est nostrum corrupti.`,
+
+    },
+]

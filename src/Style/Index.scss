@@ -11,6 +11,8 @@
 @import "Margins/margin";
 @import "MediaQuaries/MediaQuaries";
 @import "Display/Display";
+@import "Animation/Animation";
+@import "Buttons/Button";
 
 
 
@@ -300,6 +302,14 @@ h1{
 }
 
 
+.limit-text-line-2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
 
 
 

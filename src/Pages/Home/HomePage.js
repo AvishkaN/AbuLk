@@ -205,6 +205,15 @@ function HomePage({className=""}) {
                           </Link>
 
 
+                          <Link to="/single-resturant/">
+                                <h1>  Single Resturant  </h1>
+                          </Link>
+
+                          <Link to="/allJobs">
+                                <h1>  All Jobs  </h1>
+                          </Link>
+
+
           </div>
 
 

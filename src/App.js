@@ -5,7 +5,8 @@ import PropertPage from './Pages/ProperyPage/PropertPage';
 import ProductItem from './Pages/ProductItem/ProductItem';
 import ClassifiedPage from './Pages/Classified/ClassifiedPage';
 import MyAccountPage from './Pages/MyAccount/MyAccountPage';
-import AllBuissnessPage from './Pages/AllBuissness/AllBuissness';
+import AllJobsPage from './Pages/AllJobs/AllJobsPage';
+import AllBuissness from './Pages/AllBuissness/AllBuissness';
 import AllResturantPage from './Pages/AllResturant/AllResturant';
 import SingleResturantPage from './Pages/SingleResturant/SingleResturant';
 
@@ -129,12 +130,25 @@ function App() {
 
 
                                             {/* ALL buissness */}
-                                            <Route path="/allBusiness/" element={ 
+                                            <Route path="/allBusiness" element={ 
                                       <>
                                             <NavBar></NavBar>
                                           <MobielNavBar></MobielNavBar>
 
-                                        <AllBuissnessPage></AllBuissnessPage>
+                                        <AllBuissness></AllBuissness>
+                                        <Footer className='mt-6'></Footer>
+
+                                      </>
+                                         } />
+
+
+                                            {/* ALL Jobs */}
+                                            <Route path="/allJobs" element={ 
+                                      <>
+                                            <NavBar></NavBar>
+                                          <MobielNavBar></MobielNavBar>
+
+                                        <AllJobsPage></AllJobsPage>
                                         <Footer className='mt-6'></Footer>
 
                                       </>

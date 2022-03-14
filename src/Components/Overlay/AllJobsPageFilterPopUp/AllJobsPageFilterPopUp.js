@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import PopUp from '../PopUp/PopUp';
-import Filter from '../../../Pages/AllBuissness/Filter/Filter';
+import AllJobsFilter from '../../../Pages/AllJobs/AlllJobsFilter/AllJobsFilter';
 import Button from '../../UI/Button/Button';
 import { ShowHideAllFN } from '../../../Redux/slices/clickSlice';
 import { useDispatch } from 'react-redux';
@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux';
 
 
 
-function LocationPopUp({className=""}) {
+function AllJobsPageFilterPopUp({className=""}) {
   const dispatch=useDispatch();
 
 
@@ -20,15 +20,15 @@ function LocationPopUp({className=""}) {
            <PopUp to="/">
 
                <div className="display-flex ">
-                            <h2 className='fw-bold'>Filter Result</h2>
+                            <h2 className='fw-bold'>Filter Jobs</h2>
                 </div>
 
 
-                    <div className="col-11 background-yello ">
+                    <div className=" background-yello ">
 
-                            <Filter></Filter>
+                            <AllJobsFilter></AllJobsFilter>
                             <div className="text-right mt-4">
-                                    <Button   id={"filter-btn"} text={" "} className='background-primary text-color-white  font-1-5 border-radius-20 ps-4 ps-4'>Filter Now</Button> 
+                                    <Button  text={" "} className='background-primary text-color-white  font-1-5 border-radius-20 ps-4 ps-4'>Filter Now</Button> 
                             </div>
 
                         
@@ -43,9 +43,9 @@ function LocationPopUp({className=""}) {
 
 const DIV=styled.div`
     width: 100%;
-    /* margin-top: var(--margin-top-fix-nav);  */  /*only LocationPopUp */
+    /* margin-top: var(--margin-top-fix-nav);  */  /*only AllJobsPageFilterPopUp */
     
 
 `;
 
-export default LocationPopUp;
+export default AllJobsPageFilterPopUp;

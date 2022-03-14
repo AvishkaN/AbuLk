@@ -9,7 +9,8 @@ export const clickSlice=createSlice({
         showLocationPopUp:false, 
         showCategoryPopUp:false, 
 
-        showAllBuissnessPageFilter:false, 
+        showAllBuissnessPageFilter:false,  
+        showAllJobsPageFilter:false, 
 
         showPostAd:false, 
 
@@ -68,6 +69,12 @@ export const clickSlice=createSlice({
             state.showAllBuissnessPageFilter=true;    
         },
 
+        ShowAllJobsPageFilterFN:(state)=>{     
+
+            state.showOverlay=true;    
+            state.showAllJobsPageFilter=true;    
+        },
+
         
         ShowHideAllFN:(state)=>{     
 
@@ -101,6 +108,7 @@ export const {
                             ShowLocationPopupFN,
 
                             ShowAllBuissnessPageFilterFN,
+                            ShowAllJobsPageFilterFN,
 
                             SetShowPostAdFN,
 

@@ -6,6 +6,7 @@ import LocationPopUp from './LocationPopUp/LocationPopUp';
 import CategoryPopUp from './CategoryPopUp/CategoryPopUp';
 import PostAdPopUp from './PostAdPopUp/PostAdPopUp';
 import AllBuissnessPageFilterPopUp from './AllBuissnessPageFilterPopUp/AllBuissnessPageFilterPopUp';
+import AllJobsPageFilterPopUp from './AllJobsPageFilterPopUp/AllJobsPageFilterPopUp';
 import { useEffect } from 'react';
 
 
@@ -27,8 +28,8 @@ function Overlay({className=""}) {
     const IsSelectOverlay=(e.target.classList[0]=='Overlay-wrapper');
 
     const closeBtn=e.target.closest('#closeIcon');
+    const filterBtn=e.target.closest('#filter-btn');
 
-    console.log(closeBtn);
     
 
     if(IsSelectOverlay){ // hide mobile nav and overlay
@@ -36,6 +37,10 @@ function Overlay({className=""}) {
         dispatch(ShowHideAllFN());
     }
     if(closeBtn){ // hide mobile nav and overlay
+        dispatch(ShowHideAllFN());
+    }
+
+    if(filterBtn){ // hide mobile nav and overlay
         dispatch(ShowHideAllFN());
     }
 
@@ -51,6 +56,7 @@ function Overlay({className=""}) {
              {clicks.showCategoryPopUp &&    <CategoryPopUp className='w-65  overlay-inside-popup  ms-auto me-auto mt-5'></CategoryPopUp>}
              {clicks.showPostAd &&    <PostAdPopUp className='w-65  overlay-inside-popup-post-ad  ms-auto me-auto mt-5'></PostAdPopUp>}
              {clicks.showAllBuissnessPageFilter &&    <AllBuissnessPageFilterPopUp className='w-65  overlay-inside-popup-post-ad  ms-auto me-auto mt-5'></AllBuissnessPageFilterPopUp>}
+             {clicks.showAllJobsPageFilter &&    <AllJobsPageFilterPopUp className='w-65  overlay-inside-popup-post-ad  ms-auto me-auto mt-5'></AllJobsPageFilterPopUp>}
      
      
      
