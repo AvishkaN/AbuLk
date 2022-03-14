@@ -1,15 +1,21 @@
 import styled from 'styled-components';
 import { AllJobProfiles} from '../../Data/Data';
 import Filter from './AlllJobsFilter/AllJobsFilter';
+import ScrollWindowTop from './../../Functions/DOM/ScrollWindowTop';
 import JobItemCard from './JobItemCard';
 import { ShowAllJobsPageFilterFN } from '../../Redux/slices/clickSlice';
 import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 
 
 function AllJobsPage({className=""}) {
 
   const dispatch=useDispatch();
+
+  useEffect(()=>{
+    ScrollWindowTop();
+  },[])
 
 
   const handleClick=(e)=>{

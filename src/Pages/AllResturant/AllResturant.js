@@ -2,14 +2,21 @@ import styled from 'styled-components';
 import {AllResturantData} from '../../Data/Data';
 import { useDispatch } from 'react-redux';
 import ResturantCardItem from './AllResturantCard';
+import ScrollWindowTop from './../../Functions/DOM/ScrollWindowTop';
 import AllResturantCardMobile from './Mobile/AllResturantCardMobile';
 import ScreenWidthCalc from '../../Functions/DOM/CalcScreenWidth';
+import { useEffect } from 'react';
 
 
 
 function AllResturantPage({className=""}) {
 
   const dispatch=useDispatch();
+
+  useEffect(()=>{
+    ScrollWindowTop();
+  },[])
+
 
 
   return (

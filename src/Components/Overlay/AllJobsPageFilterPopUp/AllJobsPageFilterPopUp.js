@@ -28,7 +28,7 @@ function AllJobsPageFilterPopUp({className=""}) {
 
                             <AllJobsFilter></AllJobsFilter>
                             <div className="text-right mt-4">
-                                    <Button  text={" "} className='background-primary text-color-white  font-1-5 border-radius-20 ps-4 ps-4'>Filter Now</Button> 
+                                    <Button id={"filter-btn"}  text={" "} className='background-primary text-color-white  font-1-5 border-radius-20 ps-4 ps-4'>Filter Now</Button> 
                             </div>
 
                         

@@ -12,6 +12,8 @@ import SingleResturantPage from './Pages/SingleResturant/SingleResturant';
 
 
 import NavBar from './Components/Nav/NavBar';
+import ScrollWindowTop from './Functions/DOM/ScrollWindowTop';
+
 import Login from './Pages/Login/Login';
 import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
 import Footer from './Components/Footer/Footer';

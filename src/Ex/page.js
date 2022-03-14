@@ -1,8 +1,19 @@
 import styled from 'styled-components';
+import ScrollWindowTop from './../Functions/DOM/ScrollWindowTop';
+
+
 
 
 
 function Page({className=""}) {
+
+  useEffect(()=>{
+    
+    //Scroll To Top
+    ScrollWindowTop();
+  },[])
+
+
   return (
     <DIV className={`${className}`}>
          <div className="Page-wrapper">

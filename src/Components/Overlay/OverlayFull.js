@@ -24,6 +24,9 @@ function Overlay({className=""}) {
 
 
   const handleClick=(e)=>{
+
+    console.log(e.target);
+    console.log(e.target.closest('#filter-btn'));
     
     const IsSelectOverlay=(e.target.classList[0]=='Overlay-wrapper');
 

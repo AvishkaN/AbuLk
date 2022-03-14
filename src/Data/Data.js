@@ -239,6 +239,7 @@ export const AllJobsFilterByTitle=[
 
 
 export const AllJobsFilterByCity= [  
+
     {
         number:20,
             Text:'Ampara'
@@ -274,88 +275,90 @@ export const AllJobsFilterByCity= [
 
     
     {
-        Number:20, 
-        Text:'Hambantota'}, 
+        number:20, 
+        Text:'Hambantota'
+    }, 
+
+    {
+        number:20, 
+        Text:'Jaffna'}, 
     
-        {
-            Number:20, 
-    Text:'Jaffna'},
-            
+      
             
     {
-        Number:20, 
+        number:20, 
     Text:'Kaluta'},
         
         
     {
-        Number:20, 
+        number:20, 
         Text:'Kandy'
     }, 
     
     {
-        Number:20, 
+        number:20, 
         Text:'Kegalle'
     }, 
     
     {
-        Number:20, 
+        number:20, 
         Text:'Kilinochchi'
     }, 
     
     {
-        Number:20, 
+        number:20, 
         Text:'Kurunegala'
     }, 
     
     {
-        Number:20, 
+        number:20, 
         Text:'Mannar'
     }, 
     
     {
-        Number:20, 
+        number:20, 
         Text:'Matale'
     }, 
     
     {
-        Number:20, 
+        number:20, 
         Text:'Matara'
     }, 
     
     {
-        Number:20, 
+        number:20, 
         Text:'Monaragala'
     }, 
     
     {
-        Number:20, 
+        number:20, 
         Text:'Mullaitivu'
     },
     {
 
-        Number:20,
+        number:20,
         Text: 'Nuwara Eliya',
     },
 
     
     {
-        Number:20, 
+        number:20, 
     Text:'Polonnaruwa'},
     
     {
-        Number:20, 
+        number:20, 
     Text:'Puttalam'},
     
     {
-        Number:20, 
+        number:20, 
     Text:'Ratnapura'},
     
     {
-        Number:20, 
+        number:20, 
     Text:'Trincomalee'}, 
     
     {
-        Number:20, 
+        number:20, 
     Text:'Vavuniva'}, 
 
 

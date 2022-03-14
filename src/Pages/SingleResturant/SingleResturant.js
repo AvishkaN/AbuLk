@@ -5,9 +5,19 @@ import Starters from './Contents/Starters/Starters';
 import MainDishesh from './Contents/MainDishesh';
 import Desserts from './Contents/Desserts';
 import { SingleResturantData } from '../../Data/Data';
+import ScrollWindowTop from './../../Functions/DOM/ScrollWindowTop';
+import { useEffect } from 'react';
+
 
 
 function SingleResturantPage({className=""}) {
+
+      useEffect(()=>{
+        ScrollWindowTop();
+      },[])
+
+
+
   return (
     <DIV className={`${className} pageFixed`}>
          <div className="SingleResturantPage-wrapper ">
