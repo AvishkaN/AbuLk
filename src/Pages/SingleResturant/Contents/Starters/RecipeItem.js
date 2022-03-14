@@ -10,7 +10,7 @@ function RecipeItem({
     recipePrice,
 }) {
   return (
-    <DIV className={`${className} display-flex align-item-center`}>
+    <DIV className={`${className} display-flex align-item-center cursor-p`}>
         {/* Rounded Image  */}
         <div className="col-2">
             <img src={recipeImg} alt="" className='w-100 border-radius-circle' />

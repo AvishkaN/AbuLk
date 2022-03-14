@@ -88,6 +88,18 @@ export const SingleResturantData={
               recipeIngredients:"chicken,potato,salad",
               recipePrice:"$14",
           },
+          {
+              recipeImg:"https://images.unsplash.com/photo-1625944228741-cf30983ecb91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=581&q=80",
+              recipeName:"Soft Shell crab",
+              recipeIngredients:"chicken,potato,salad",
+              recipePrice:"$14",
+          },
+          {
+              recipeImg:"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+              recipeName:"Soft Shell crab",
+              recipeIngredients:"chicken,potato,salad",
+              recipePrice:"$14",
+          },
       ],
   };
 

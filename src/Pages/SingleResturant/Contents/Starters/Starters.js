@@ -19,7 +19,7 @@ function StarterPage({
                       
                       {/* left txt */}
                       <div className="">
-                          <div className="text-color-white font-1-3 text-transform-uppercase fw-bold mt-0-5-">{resturantBannerText.line1}</div>
+                          <div className="text-color-white font-1-3 text-transform-uppercase fw-bold ">{resturantBannerText.line1}</div>
                           <div className="text-color-white font-3 text-transform-capitalize fw-bold mt-0-5-">{resturantBannerText.line2}</div>
                           <div className="text-color-white font-2 mt-0-5- text-transform-capitalize  Dancing-script-font-family">{resturantBannerText.line3}</div>
                       </div>
