@@ -29,7 +29,7 @@ function StarterPage({
                         {/* <div className="text-left  ms-auto w-20">
                           <div className="font-4 Colonna-font-family text-color-white"> {resturantName}</div>
                         </div> */}
-                          <div className="font-4 Colonna-font-family text-color-white text-left  ms-auto w-15"> 
+                          <div className="font-4 Colonna-font-family text-color-white text-left  ms-auto w-15 display-lg-none"> 
                                 {/* <div className="">//Monday//</div> */}
                                 {resturantName}
                                 {/* <div className="">//5PM till 9PM//</div> */}
@@ -40,10 +40,10 @@ function StarterPage({
             </div>
 
             {/* All recipes */}
-            <div className="row  col-12 gy-3  justify-content-between">
+            <div className="col-12 row gy-5 gx-5  justify-content-between">
               {
                 AllRecipes.map(recipe=>(
-                  <RecipeItem {...recipe} className="col-6 "></RecipeItem>
+                  <RecipeItem {...recipe} className="col-sm-6 "></RecipeItem>
                 ))
               }
                         
@@ -57,7 +57,7 @@ const DIV=styled.div`
     width: 100%;
 
     .image{
-      min-height: 27rem; 
+      min-height: 28rem; 
       /* background:${props => props.resturantBannerImg}; */
 
 
