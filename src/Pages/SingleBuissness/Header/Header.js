@@ -98,17 +98,17 @@ function Header({className="",SingleBuissnessData}) {
         {/* bottom */}
         <div className="bottom  mt-auto pt-2 pb-2">
 
-            <div className="w-85 ms-auto me-auto row ">
+            <div className="bottom-w w-85 ms-auto me-auto display-flex">
 
                     {/* location */}
-                    <div className="display-flex align-items-center  col">
+                    <div className="display-flex align-items-center  mb-2 mb-sm-0">
                             <LocationIcon className="icon p-2 font-3-4 border-radius-circle me-2"></LocationIcon>
                             <div className="">{SingleBuissnessData.location}</div>
                     </div>
 
 
                     {/* phone number */}
-                        <div className="display-flex align-items-center ms-auto ">
+                        <div className="display-flex align-items-center ms-sm-auto   ">
                                 <PhoneIcon className="icon p-2 font-3-4 border-radius-circle me-2"></PhoneIcon>
                                 <div className="font-1-6">{SingleBuissnessData.phoneNumber}</div>
                         </div>
@@ -172,6 +172,18 @@ const DIV=styled.div`
 
     .bottom{
         background:rgba(0, 0, 0, 0.2);
+
+        .bottom-w{
+
+            
+                    @media(max-width:576px){     
+                               flex-direction:column;
+                    }
+        }
+
+
+
+
 
 
         .icon{
