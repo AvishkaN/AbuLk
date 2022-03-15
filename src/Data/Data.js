@@ -449,13 +449,25 @@ export const SingleBuissnessData={
     location:"malabe,colombo,sri lanka",
     phoneNumber:"077 2456 790",
     imgSliderSection:{
-        images:[],
-        iconsSection:[
-            {
-                svgIcon:"",
-                text:"Education"
-            },
+        images:[
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed1.jpg",
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed2.jpg",
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed9.jpg",
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed8.jpg",
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed1.jpg",
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed2.jpg",
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed10.jpg",
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed9.jpg",
+            "https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed10.jpg",
         ],
+        buissnessDescriptionTop:{
+            category:"Education",
+            location:"Sri lanka",
+            time:"5 hours ago",
+            views:"765",
+            reviews:"4.0",
+            favCount:"135",
+        },
         price:"$539",
         overView:"$539",
         contactSection:[

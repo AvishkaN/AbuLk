@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Header from './Header/Header';
+import Content from './Content/Content';
 import {SingleBuissnessData} from './../../Data/Data';
 import styled from 'styled-components';
 import ScrollWindowTop from './../../Functions/DOM/ScrollWindowTop';
@@ -29,7 +30,7 @@ function SingleBuissness({className=""}) {
 
 
                 {/* Content */}
-
+                  <Content SingleBuissnessData={SingleBuissnessData}></Content>
 
          </div>
     </DIV>
@@ -40,7 +41,8 @@ function SingleBuissness({className=""}) {
 const DIV=styled.div`
     width: 100%;
     /* margin-top: var(--margin-top-fix-nav);  */  /*only SingleBuissness */
-    
+      background-color:#f7f7fb;
+
     .SingleBuissness-wrapper{
         width: var(--page-content-width);
         margin-left: auto;
