@@ -72,20 +72,20 @@ function Header({className="",SingleBuissnessData}) {
                 </div>
 
              {/* buttons */}
-             <div className="display-flex align-items mt-4">
+             <div className="buttonss display-flex align-items mt-4">
 
                  {/* Add wishlist  */}
-                 <Button className="display-flex pt-2 pb-2  align-items-center text-color-white this-comp-blue">
+                 <Button className="display-flex justify-content-center  pt-2 pb-2  align-items-center text-color-white this-comp-blue">
                      <FavoriteIcon className=''></FavoriteIcon>
                      <div className='font-1-6  ms-1 '>Add Wishlist</div>
                  </Button>
                  
-                 <Button className="display-flex ms-2 pt-2 pb-2  align-items-center text-color-white this-comp-green">
+                 <Button className="display-flex justify-content-center  ms-2 pt-2 pb-2  align-items-center text-color-white this-comp-green">
                      <StarIcon className=''></StarIcon>
                      <div className='font-1-6  ms-1 '> Write Review</div>
                  </Button>
                  
-                 <Button className="display-flex ms-2 pt-2 pb-2  align-items-center text-color-white this-comp-red">
+                 <Button className="display-flex justify-content-center  ms-2 pt-2 pb-2  align-items-center text-color-white this-comp-red">
                      <InfoIcon className=''></InfoIcon>
                      <div className='font-1-6  ms-1 '> Report Abuse</div>
                  </Button>
@@ -98,17 +98,17 @@ function Header({className="",SingleBuissnessData}) {
         {/* bottom */}
         <div className="bottom  mt-auto pt-2 pb-2">
 
-            <div className="w-85 ms-auto me-auto display-flex">
+            <div className="w-85 ms-auto me-auto row ">
 
                     {/* location */}
-                    <div className="display-flex align-items-center ">
+                    <div className="display-flex align-items-center  col">
                             <LocationIcon className="icon p-2 font-3-4 border-radius-circle me-2"></LocationIcon>
                             <div className="">{SingleBuissnessData.location}</div>
                     </div>
 
 
                     {/* phone number */}
-                        <div className="display-flex align-items-center ms-auto">
+                        <div className="display-flex align-items-center ms-auto ">
                                 <PhoneIcon className="icon p-2 font-3-4 border-radius-circle me-2"></PhoneIcon>
                                 <div className="font-1-6">{SingleBuissnessData.phoneNumber}</div>
                         </div>
@@ -146,8 +146,27 @@ const DIV=styled.div`
 
     .social-media-icons{
         .icon{ 
+
             background-color:rgba(0, 0, 0, 0.35);
         }
+    }
+
+    .buttonss{
+
+        @media(max-width:440px){     
+            flex-wrap:wrap;
+            justify-content: space-around;
+        }
+
+        button{
+
+            @media(max-width:440px){     
+                width: 48%;
+                margin-bottom: 1rem; 
+                margin-left:0 !important;
+            }
+        }
+
     }
 
 
