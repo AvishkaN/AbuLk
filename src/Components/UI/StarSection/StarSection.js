@@ -55,6 +55,7 @@ const Style = {
 const DIV=styled.div`     
        .icon{ 
          fill: #FB9903;
+         fill: #f1c40f;
          cursor: pointer;
 	   }
        .icon-empty-star{ 

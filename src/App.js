@@ -9,6 +9,7 @@ import AllJobsPage from './Pages/AllJobs/AllJobsPage';
 import AllBuissness from './Pages/AllBuissness/AllBuissness';
 import AllResturantPage from './Pages/AllResturant/AllResturant';
 import SingleResturantPage from './Pages/SingleResturant/SingleResturant';
+import SingleBuissnessPage from './Pages/SingleBuissness/SingleBuissnessPage';
 
 
 import NavBar from './Components/Nav/NavBar';
@@ -133,14 +134,28 @@ function App() {
 
                                             {/* ALL buissness */}
                                             <Route path="/allBusiness" element={ 
-                                      <>
+                                             <>
                                             <NavBar></NavBar>
                                           <MobielNavBar></MobielNavBar>
 
                                         <AllBuissness></AllBuissness>
                                         <Footer className='mt-6'></Footer>
 
-                                      </>
+                                          </>
+                                         } />
+
+
+
+                                            {/* Single buissness */}
+                                            <Route path="/singleBuissness" element={ 
+                                             <>
+                                            <NavBar></NavBar>
+                                          <MobielNavBar></MobielNavBar>
+
+                                        <SingleBuissnessPage></SingleBuissnessPage>
+                                        <Footer className='mt-6'></Footer>
+
+                                          </>
                                          } />
 
 

@@ -432,3 +432,51 @@ export const AllJobProfiles=[
 
     },
 ]
+
+
+// Single Buissness
+
+export const SingleBuissnessData={
+    BuissnessName:"Bizdire University",
+    ReviewsCount:4,
+    socialMediaLinks:{
+        facebook:"",
+        twitter:"",
+        rss:"",
+        youtube:"",
+        linkdin:"",
+    },
+    location:"malabe,colombo,sri lanka",
+    phoneNumber:"077 2456 790",
+    imgSliderSection:{
+        images:[],
+        iconsSection:[
+            {
+                svgIcon:"",
+                text:"Education"
+            },
+        ],
+        price:"$539",
+        overView:"$539",
+        contactSection:[
+            {
+                svgIcon:"",
+                text:"Mp-214, New York, NY 10012"
+            },
+        ],
+
+        moreBuissness:[
+            {
+                text:"Established Year",
+                info:"1981"
+            },
+        ],
+
+
+
+    },
+
+
+
+}; 
+

@@ -217,6 +217,11 @@ function HomePage({className=""}) {
                           </Link>
 
 
+                          <Link to="/singleBuissness">
+                                <h1>  Single Buissness  </h1>
+                          </Link>
+
+
           </div>
 
 
