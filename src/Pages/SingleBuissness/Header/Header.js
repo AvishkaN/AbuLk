@@ -133,15 +133,7 @@ const DIV=styled.div`
             /* background-position: 48% 47%; */
 
 
-    .this-comp-blue{
-        background-color:#0ab2e6;
-    }
-    .this-comp-green{
-        background-color:#10d403;
-    }
-    .this-comp-red{
-        background-color:#d60f02;
-    }
+
 
 
     .social-media-icons{

@@ -2,6 +2,14 @@ import ResturantIconSvg from '@mui/icons-material/LocalDiningOutlined';
 import MuseumIconSvg from '@mui/icons-material/MuseumOutlined';
 import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
 
+
+// Contact info icons
+import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
+import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
+import LinkOutlinedIcon from '@mui/icons-material/InsertLinkOutlined';
+
+
 export const Currency="Rs.";
 
 export const AllResturantData=[
@@ -469,20 +477,101 @@ export const SingleBuissnessData={
             favCount:"135",
         },
         price:"$539",
-        overView:"$539",
+        overView:`
+                              
+                   
+                    porro earum consequatur? Delectus ut eos aut, cumque eligendi vel odio quibusdam ipsa accusantium commodi in error quos deleniti. Earum.
+                    porro earum consequatur? Delectus ut eos aut, cumque eligendi vel odio quibusdam ipsa accusantium commodi in error quos deleniti. Earum.
+                    porro earum consequatur? Delectus ut eos aut, cumque eligendi vel odio quibusdam ipsa accusantium commodi in error quos deleniti. Earum.
+
+                    porro earum consequatur? Delectus ut eos aut, cumque eligendi vel odio quibusdam ipsa accusantium commodi in error quos deleniti. Earum.
+                    porro earum consequatur? Delectus ut eos aut, cumque eligendi vel odio quibusdam ipsa accusantium commodi in error quos deleniti. Earum.
+                
+
+        `,
         contactSection:[
             {
-                svgIcon:"",
+                svgIcon:<MapOutlinedIcon className='contact-icon  border-radius-circle p-1 font-2-7 '></MapOutlinedIcon>,
+                text:"Mp-214, New York, NY 10012"
+            },
+
+            {
+                svgIcon:<CallOutlinedIcon className='contact-icon  border-radius-circle p-1 font-2-7 '></CallOutlinedIcon>,
+                text:"Mp-214, New York, NY 10012"
+            },
+            {
+                svgIcon:<MailOutlinedIcon className='contact-icon  border-radius-circle p-1 font-2-7 '></MailOutlinedIcon>,
+                text:"Mp-214, New York, NY 10012"
+            },
+            {
+                svgIcon:<LinkOutlinedIcon className='contact-icon  border-radius-circle p-1 font-2-7 '></LinkOutlinedIcon>,
                 text:"Mp-214, New York, NY 10012"
             },
         ],
 
-        moreBuissness:[
+        moreBuissnessInfo:[
             {
                 text:"Established Year",
                 info:"1981"
             },
+            {
+                text:"Services",
+                info:"Education, courses"
+            },
+            {
+                text:"payment methods",
+                info:"visa,master,discovery,american express"
+            },
+            {
+                text:"fax",
+                info:"+25 485-9865-85"
+            },
+            {
+                text:"TollFree",
+                info:"+25 458-9865-85"
+            },
+            {
+                text:"certififaction",
+                info:"ISO certified"
+            },
         ],
+
+        buissnessId:'#8256358',
+        postedDate:'21 Des 2019',
+
+
+        RelatedPost:[
+            {
+                "image":"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed1.jpg",
+                "category":"Education",
+                "reviewStarCount":3,
+                "BuissnesName":"Record Writing",
+                "isVerfiifed":true,
+                "otherInfo":{
+                    "location":"sri lanka",
+                    "createdTime":"2 hours ago",
+                    "owner":"Clara perera",
+                    "phone":"076 589 5246",
+
+                },
+                
+            },
+            {
+                "image":"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed2.jpg",
+                "category":"Education",
+                "reviewStarCount":3,
+                "BuissnesName":"Record Writing",
+                "isVerfiifed":true,
+                "otherInfo":{
+                    "location":"sri lanka",
+                    "createdTime":"2 hours ago",
+                    "owner":"Clara perera",
+                    "phone":"076 589 5246",
+
+                },
+                
+            },
+        ]
 
 
 

@@ -14,10 +14,10 @@ function Content({className="",SingleBuissnessData}) {
     <DIV className={`${className} row`}>
 
         {/* COL-1 */}
-            <Col1   className='col-8  box-shadow-normal ms-4 mt-2  border-radius-20 p-4' SingleBuissnessData={SingleBuissnessData}></Col1>            
+            <Col1   className='col-8    ' SingleBuissnessData={SingleBuissnessData}></Col1>            
 
         {/* COL-2*/}
-            <Col2 className='col-4  box-shadow-normal ms-4 mt-2  border-radius-20 p-3'  SingleBuissnessData={SingleBuissnessData}></Col2>            
+            <Col2 className='col-4    border-radius-20 p-3'  SingleBuissnessData={SingleBuissnessData}></Col2>            
 
     </DIV>
   );
