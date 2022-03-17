@@ -5,6 +5,8 @@ import ProductSlider from '../../../../Components/ProductSlider/ProductSlider';
 import Overview from './2Overview/Overview';
 import Rating from './4Ratings/Rating';
 import Comments from './5Comments/Comments';
+import AddReview from '../../../../Components/UI/AddReview/AddReview';
+import Input from '../../../../Components/UI/Input/Input';
 
 
 
@@ -68,8 +70,17 @@ function Col1({className="",SingleBuissnessData}) {
 
                 </div>
 
+
             
             {/* add review */}
+                <div className="box-shadow-normal ms-4 border-radius-20 p-4 mb-4">
+
+                        <div className="font-1-7 fw-bold  ps-3  border-grey-light-bottom pb-3 mb-5">add a review</div>
+
+                        <AddReview className=''></AddReview>
+
+                </div>
+
     </DIV>
   );
 }
