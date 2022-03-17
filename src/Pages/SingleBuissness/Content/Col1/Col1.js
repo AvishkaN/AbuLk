@@ -37,7 +37,7 @@ function Col1({className="",SingleBuissnessData}) {
 
 
                         {/* Overview */}
-                <div className="box-shadow-normal ms-4 border-radius-20 p-4 mb-4">
+                <div className="box-shadow-normal ms-4 border-radius-20 p-4 mt-5 mb-4">
 
                         <Overview 
                                 text={SingleBuissnessData.imgSliderSection.overView} 
@@ -57,7 +57,7 @@ function Col1({className="",SingleBuissnessData}) {
             </div>
 
             {/* ratings and reviews   | comments*/}
-                <div className="box-shadow-normal ms-4 border-radius-20 p-4 mb-4">
+                <div className="box-shadow-normal ms-4 border-radius-20 p-4 mt-4 mb-4">
                              <Rating className=''  RatingsAndReviews={SingleBuissnessData.imgSliderSection.RatingsAndReviews}></Rating>
 
 

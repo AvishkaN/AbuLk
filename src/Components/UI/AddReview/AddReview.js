@@ -25,7 +25,7 @@ function AdReviewSection({className=""}) {
 
             {/* Submit  */}
 
-            <Button className="this-comp-red text-color-white  font-1-5 mt-4 ps-4 pe-4">submit</Button>
+            <Button className="this-comp-red text-color-white  font-1-5 mt-4 ps-4 pe-4 border-radius-15">submit</Button>
 
     </DIV>
   );
