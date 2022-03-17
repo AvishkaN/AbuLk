@@ -55,11 +55,12 @@ function Col1({className="",SingleBuissnessData}) {
 
             {/* ratings and reviews */}
                 <div className="box-shadow-normal ms-4 border-radius-20 p-4 mb-4">
-                             <Rating className=''></Rating>
+                             <Rating className=''  RatingsAndReviews={SingleBuissnessData.imgSliderSection.RatingsAndReviews}></Rating>
 
                 </div>
 
             {/* comments */}
+            
             {/* add review */}
     </DIV>
   );

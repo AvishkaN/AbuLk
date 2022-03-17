@@ -3,13 +3,13 @@ import RatingChart from '../../../../../Components/UI/RatingChart/RatingChart';
 
 
 
-function Ratings({className=""}) {
+function Ratings({className="",RatingsAndReviews}) {
 
   return (
     <DIV className={`${className} `}>
                         <div className="font-1-7 fw-bold  ps-3  border-grey-light-bottom pb-3 mb-4">rating and reviews</div>
 
-                        <RatingChart className=''></RatingChart>
+                        <RatingChart  RatingsAndReviews={RatingsAndReviews} className=''></RatingChart>
     </DIV>
   );
 }

@@ -575,10 +575,37 @@ export const SingleBuissnessData={
 
         RatingsAndReviews:[
             {
-                rateComp:"",
+                rateComp:  5,
+                barContent: <div className='bar-content text-color-white fw-bold  font-1-2 '>19536556</div>,
                 ratingBarWidth:"90%",
                 color:"#10d403",
             },
+
+            {
+                rateComp:  4,
+                barContent: <div className='bar-content text-color-white fw-bold  font-1-2 '>195356</div>,
+                ratingBarWidth:"70%",
+                color:"#0ab2e6",
+            },
+            {
+                rateComp:  3,
+                barContent: <div className='bar-content text-color-white fw-bold  font-1-2 '>1956</div>,
+                ratingBarWidth:"40%",
+                color:"#ff8819",
+            },
+            {
+                rateComp:  2,
+                barContent: <div className='bar-content text-color-white fw-bold  font-1-2 '>1956</div>,
+                ratingBarWidth:"30%",
+                color:"#00148e",
+            },
+            {
+                rateComp:  1,
+                barContent: <div className='bar-content text-color-white fw-bold  font-1-2 '>1956</div>,
+                ratingBarWidth:"20%",
+                color:"#e67605",
+            },
+            
         ],  
 
 
