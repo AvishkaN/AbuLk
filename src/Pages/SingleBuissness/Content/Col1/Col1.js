@@ -4,6 +4,7 @@ import RealedPost from './3RealedtPosts/RealedPost';
 import ProductSlider from '../../../../Components/ProductSlider/ProductSlider';
 import Overview from './2Overview/Overview';
 import Rating from './4Ratings/Rating';
+import Comments from './5Comments/Comments';
 
 
 
@@ -53,13 +54,20 @@ function Col1({className="",SingleBuissnessData}) {
                     <RealedPost relatedPosts={SingleBuissnessData.imgSliderSection.RelatedPost} className=''></RealedPost>
             </div>
 
-            {/* ratings and reviews */}
+            {/* ratings and reviews   | comments*/}
                 <div className="box-shadow-normal ms-4 border-radius-20 p-4 mb-4">
                              <Rating className=''  RatingsAndReviews={SingleBuissnessData.imgSliderSection.RatingsAndReviews}></Rating>
 
+
+                              {/* comments */}
+                              <div className="mt-5">
+                                        <div className="font-1-7 fw-bold  ps-3  border-grey-light-bottom pb-3 mb-5">{SingleBuissnessData.imgSliderSection.Comments.length} reviews</div>
+                                        <Comments className="mt-4"   comments={SingleBuissnessData.imgSliderSection.Comments} ></Comments>
+                              </div>
+
+
                 </div>
 
-            {/* comments */}
             
             {/* add review */}
     </DIV>

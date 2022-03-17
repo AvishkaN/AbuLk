@@ -608,6 +608,37 @@ export const SingleBuissnessData={
             
         ],  
 
+        Comments:[
+            {
+                img:"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/faces/male/1.jpg",
+                profileName:"Joanne Scott",
+                isVerfiifed:true,
+                time:"2 hours ago",
+                commentDescription:" Lorem ipsum dolor sit amet, quis Neque porro quisquam est, nostrud exercitation ullamco laboris commodo consequat. ",
+            },
+            {
+                img:"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/faces/male/1.jpg",
+                profileName:"Joanne Scott",
+                isVerfiifed:true,
+                time:"2 hours ago",
+                commentDescription:" Lorem ipsum dolor sit amet, quis Neque porro quisquam est, nostrud exercitation ullamco laboris commodo consequat. ",
+            },
+            {
+                img:"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/faces/male/1.jpg",
+                profileName:"Joanne Scott",
+                isVerfiifed:true,
+                time:"2 hours ago",
+                commentDescription:" Lorem ipsum dolor sit amet, quis Neque porro quisquam est, nostrud exercitation ullamco laboris commodo consequat. ",
+            },
+            {
+                img:"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/faces/male/1.jpg",
+                profileName:"Joanne Scott",
+                isVerfiifed:true,
+                time:"2 hours ago",
+                commentDescription:" Lorem ipsum dolor sit amet, quis Neque porro quisquam est, nostrud exercitation ullamco laboris commodo consequat. ",
+            },
+        ],
+
 
 
     },
