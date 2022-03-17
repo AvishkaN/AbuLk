@@ -51,6 +51,11 @@ const DIV=styled.div`
         background-color:#10d403;
     }
 
+
+    .this-comp-grey{
+        background-color: #e5e5f0;
+    }
+
     .this-comp-green-text{
         color:#10d403;
     }

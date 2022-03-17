@@ -2,21 +2,41 @@ import styled from 'styled-components';
 
 
 
-function RatingBar({className="",color,width}) {
+function RatingBar(props) {
 
   return (
-    <DIV className={`${className}`}>
-            <div className="">{props.children}</div>
+    <DIV className={`${props.className}`} color={props.color} width={props.width} minHeigh={props.minHeigh}>
 
-            
+        <div className="bar border-radius-10" >
+           {props.barContent}
+        </div>
+
     </DIV>
   );
 }
 
 
 const DIV=styled.div`
-    width: 100%;
+    width: 99%;
+    outline:2px solid ${props => props.color};
     /* margin-top: var(--margin-top-fix-nav);  */  /*only RatingBar */
+
+    .bar{
+        background:${props => props.color};
+        width:${props => props.width};
+        min-height:${props => props.minHeigh?props.minHeigh:"1.8rem"};
+        position: relative;
+
+        .bar-content{
+            position: absolute;
+            top: 50%;
+            left:${props => props.width};
+            left:50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+    }
     
  
 `;

@@ -571,7 +571,15 @@ export const SingleBuissnessData={
                 },
                 
             },
-        ]
+        ],
+
+        RatingsAndReviews:[
+            {
+                rateComp:"",
+                ratingBarWidth:"90%",
+                color:"#10d403",
+            },
+        ],  
 
 
 
