@@ -639,9 +639,93 @@ export const SingleBuissnessData={
             },
         ],
 
-
-
+        
+        
     },
+
+
+    col2Data:{
+        buissnessName:"Robert McLean",
+        buissnessImgLogo:"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/other/logo.png",
+        listenDate:"November 2008",
+        listenId:"3645452",
+        
+        ContactDetails:{
+            location:"malabe,colombo,sri lanka",
+            emial:"spruko123@gmail.com",
+            phone:"076 5462 496",
+            webSiteLink:"https://spruko.com/",
+
+        },
+        
+        timings:[
+            {
+                day:"Monday",
+                time:"9.00am-9.00pm"
+            },
+            {
+                day:"Tuesday",
+                time:"9.00am-9.00pm"
+            },
+            {
+                day:"Wednesday",
+                time:"9.00am-9.00pm"
+            },
+            {
+                day:"Friday",
+                time:"9.00am-9.00pm"
+            },
+            {
+                day:"Saturday",
+                time:"9.00am-9.00pm"
+            },
+            {
+                day:"Sunday",
+                time:"9.00am-9.00pm"
+            },
+
+        ],
+
+        location:"",
+
+        ownerDetails:{
+            ownerImg:"",
+
+            facebookLink:"",
+            twitterLink:"",
+            pinterestLink:"",
+            mobileNum:"",
+        },
+
+        searchList:[
+            "Real state",
+            "resturant",
+            "beauty",
+            "jobs",
+            "services",
+            "event",
+            "travel",
+        ],
+
+        recentPost: {
+            image:"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/products/products/ed1.jpg",
+            category:"Education",
+            reviewStarCount:3,
+            BuissnesName:"Record Writing",
+            isVerfiifed:true,
+            otherInfo:{
+                location:"sri lanka",
+                createdTime:"2 hours ago",
+                owner:"Clara perera",
+                phone:"076 589 5246",
+
+            },
+            
+        },
+
+
+        
+    }
 
 
 

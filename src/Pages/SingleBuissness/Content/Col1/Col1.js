@@ -15,6 +15,7 @@ function Col1({className="",SingleBuissnessData}) {
   return (
     <DIV className={`${className} `}>
 
+                        {/* img slider  */}
                 <div className="box-shadow-normal ms-4 mt-2  mb-4 border-radius-20 p-4">
                     
                                 {/* Buissness Name */}
