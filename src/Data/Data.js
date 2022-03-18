@@ -448,8 +448,8 @@ export const SingleBuissnessData={
     BuissnessName:"Bizdire University",
     ReviewsCount:4,
     socialMediaLinks:{
-        facebook:"",
-        twitter:"",
+        facebook:"https://www.facebook.com/computerprofessionals/",
+        twitter:"https://twitter.com/Oozoids",
         rss:"",
         youtube:"",
         linkdin:"",
@@ -690,12 +690,17 @@ export const SingleBuissnessData={
         locationUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31687.082210248744!2d79.94787966641846!3d6.904320329140168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256d59601df81%3A0x31a1dd96e8d49ba!2sMalabe!5e0!3m2!1sen!2slk!4v1647616453082!5m2!1sen!2slk",
 
         ownerDetails:{
-            ownerImg:"",
+            ownerImg:"https://www.spruko.com/demo/bizdire/Bizdire/assets/images/faces/female/13.jpg",
+            ownerName:"Lilly Jones ",
+            ownerRank:"Listing Owner",
 
-            facebookLink:"",
-            twitterLink:"",
-            pinterestLink:"",
-            mobileNum:"",
+            facebookLink:"https://www.facebook.com/computerprofessionals/",
+            twitterLink:"https://www.facebook.com/computerprofessionals/",
+            youtubeLink:"https://www.facebook.com/computerprofessionals/",
+            pinterestLink:"https://www.pinterest.com/pin/1032239177062470147/",
+         
+         
+            mobileNum:"https://www.facebook.com/computerprofessionals/",
         },
 
         searchList:[

@@ -28,7 +28,7 @@ function ListingLocartion({className="",location}) {
 
 
 
-        <Button className="display-flex justify-content-center  ms-2 pt-2 pb-2  align-items-center text-color-white this-comp-orange font-1-3 mt-4 border-radius-5">
+        <Button className="display-flex justify-content-center  ms-2 pt-2 pb-2  align-items-center text-color-white this-comp-orange font-1-4 mt-4 border-radius-5">
                   Get Direction
         </Button>
 

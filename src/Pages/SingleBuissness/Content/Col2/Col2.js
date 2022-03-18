@@ -3,6 +3,7 @@ import {SingleBuissnessData} from '../../../../Data/Data';
 import CommonComp from './CommonComp';
 import CompanyDetails from './1CompanyDetails/CompanyDetails';
 import ListingLocation from './2ListingLocation/ListingLocation';
+import OwnerDetails from './3OwnerDetails/OwnerDetails';
 
 
 
@@ -24,7 +25,7 @@ function Col2({className=""}) {
             </CommonComp>
 
             
-          {/* Company componnets */}
+          {/* Location componnets */}
             <CommonComp className="mt-5" Title={"Listing Location"}>
 
                            <ListingLocation className='ps-5 pe-5'   
@@ -33,6 +34,17 @@ function Col2({className=""}) {
                                       contactSection={SingleBuissnessData.imgSliderSection.contactSection} >
 
                           </ListingLocation>
+
+            </CommonComp>
+
+
+          {/* Owner componnets */}
+            <CommonComp className="mt-5" Title={"Listing Owner"}>
+
+                           <OwnerDetails className='ps-3 pe-2'   
+                                    {...SingleBuissnessData.col2Data.ownerDetails}   >
+
+                          </OwnerDetails>
 
             </CommonComp>
 

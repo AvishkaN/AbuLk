@@ -46,23 +46,23 @@ function Header({className="",SingleBuissnessData}) {
                         </a>
 
                             {/* Twitter */}
-                        <a className='a ms-auto' href={SingleBuissnessData.socialMediaLinks.facebook}>
+                        <a className='a ms-auto' href={SingleBuissnessData.socialMediaLinks.twitter}>
                         <TwitterIcon className='icon p-2 font-2-7 border-radius-circle'></TwitterIcon>
                         </a>
 
                             {/* Rss */}
-                        <a className='a ms-auto' href={SingleBuissnessData.socialMediaLinks.facebook}>
+                        <a className='a ms-auto' href={SingleBuissnessData.socialMediaLinks.rss}>
                         <RssFeedIcon className='icon p-2 font-2-7 border-radius-circle'></RssFeedIcon>
                         </a>
 
                             {/* YouTube */}
-                        <a className='a ms-auto' href={SingleBuissnessData.socialMediaLinks.facebook}>
+                        <a className='a ms-auto' href={SingleBuissnessData.socialMediaLinks.youtube}>
                         <YouTubeIcon className='icon p-2 font-2-7 border-radius-circle'></YouTubeIcon>
                         </a>
 
 
                             {/* Linkding */}
-                        <a className='a ms-auto' href={SingleBuissnessData.socialMediaLinks.facebook}>
+                        <a className='a ms-auto' href={SingleBuissnessData.socialMediaLinks.linkdin}>
                         <LinkedInIcon className='icon p-2 font-2-7 border-radius-circle'></LinkedInIcon>
                         </a>
 
