@@ -86,9 +86,7 @@ const DIV=styled.div`
     width: 100%;
     /* margin-top: var(--margin-top-fix-nav);  */  /*only OverView */
 
-    .contact-icon{
-      background-color:#e5e5f0;
-    }
+    
     
  
 `;

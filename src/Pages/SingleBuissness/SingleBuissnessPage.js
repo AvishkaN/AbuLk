@@ -63,6 +63,21 @@ const DIV=styled.div`
         background-color:#d60f02;
     }
 
+
+    .this-comp-orange{
+        background-color:#ff8819;
+    }
+
+
+    .this-comp-grey{
+        background-color:#f5f5f9;
+    }
+
+
+    .contact-icon{
+      background-color:#e5e5f0;
+    }  
+
     .SingleBuissness-wrapper{
         width: var(--page-content-width);
         margin-left: auto;

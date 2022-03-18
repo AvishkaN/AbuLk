@@ -491,21 +491,21 @@ export const SingleBuissnessData={
         `,
         contactSection:[
             {
-                svgIcon:<MapOutlinedIcon className='contact-icon  border-radius-circle p-1 font-2-7 '></MapOutlinedIcon>,
+                svgIcon:<MapOutlinedIcon className='contact-icon  border-radius-circle p-2 font-2-9 '></MapOutlinedIcon>,
                 text:"Mp-214, New York, NY 10012"
             },
 
             {
-                svgIcon:<CallOutlinedIcon className='contact-icon  border-radius-circle p-1 font-2-7 '></CallOutlinedIcon>,
-                text:"Mp-214, New York, NY 10012"
+                svgIcon:<CallOutlinedIcon className='contact-icon  border-radius-circle p-2 font-2-9 '></CallOutlinedIcon>,
+                text:"076 5842 789"
             },
             {
-                svgIcon:<MailOutlinedIcon className='contact-icon  border-radius-circle p-1 font-2-7 '></MailOutlinedIcon>,
-                text:"Mp-214, New York, NY 10012"
+                svgIcon:<MailOutlinedIcon className='contact-icon  border-radius-circle p-2 font-2-9 '></MailOutlinedIcon>,
+                text:"spruko123@gmail.com"
             },
             {
-                svgIcon:<LinkOutlinedIcon className='contact-icon  border-radius-circle p-1 font-2-7 '></LinkOutlinedIcon>,
-                text:"Mp-214, New York, NY 10012"
+                svgIcon:<LinkOutlinedIcon className='contact-icon  border-radius-circle p-2 font-2-9 '></LinkOutlinedIcon>,
+                text:"spruko123@gmail.com"
             },
         ],
 
@@ -657,7 +657,7 @@ export const SingleBuissnessData={
             webSiteLink:"https://spruko.com/",
 
         },
-        
+
         timings:[
             {
                 day:"Monday",

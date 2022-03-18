@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import {SingleBuissnessData} from '../../../../Data/Data';
+import CommonComp from './CommonComp';
+import CompanyDetails from './1CompanyDetails/CompanyDetails';
 
 
 
@@ -7,13 +10,16 @@ function Col2({className=""}) {
   return (
     <DIV className={`${className}`}>
 
-            {/* Company Details */}
-            <div className="box-shadow-normal ms-4 border-radius-20 p-4 mb-4">
+          
 
-              
-                    <div className="font-1-7 fw-bold  ps-3  border-grey-light-bottom pb-3 mb-5">Company user</div>
+            <CommonComp className="" Title={"company user"}>
 
-            </div>
+                      <div className="">
+                           <CompanyDetails className='' col2Data={SingleBuissnessData.col2Data}  contactSection={SingleBuissnessData.imgSliderSection.contactSection} ></CompanyDetails>
+
+                      </div>
+
+            </CommonComp>
 
 
     </DIV>
