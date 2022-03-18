@@ -71,7 +71,7 @@ function CompanyDetails({className="",col2Data,contactSection}) {
             </div>
 
             {/* Bottom */}
-            <div className="buttonss display-flex align-items mt-4 ps-4">
+            <div className="buttonss display-flex align-items mt-4 ps-5 ps-5 border-top pt-4 mt-5">
 
                 {/* Add wishlist  */}
                 <Button className="display-flex justify-content-center  pt-2 pb-2  align-items-center text-color-white this-comp-blue">
