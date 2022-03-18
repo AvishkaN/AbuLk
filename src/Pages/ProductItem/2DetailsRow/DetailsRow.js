@@ -3,7 +3,7 @@ import PropertFirstDescription from './PropertyFirstDescription/PropertFirstDesc
 import Description from '../1SliderRow/Description/Description';
 import Ameties from './Amenties/Ameties';
 import PropertyInfo from './PropertInfo/PropertyInfo';
-import Map from './Map/Map';
+import Map from '../../../Components/UI/Map/Map';
 import Form from '../2DetailsRow/Form/Form';
 import ItemOverview from './ItemOverview/ItemOverview';
 
@@ -20,6 +20,7 @@ function DetailsRow({className="",product,AmetiesList}) {
             <Description className='mt-6'></Description>
             <Ameties  list={AmetiesList} className='mt-6'></Ameties>
             <Map  className='mt-6 cusor-p'></Map>
+
             <Form  className='mt-6 '></Form>
          </div>
     </DIV>
