@@ -100,7 +100,7 @@ function App() {
                                       <MobielNavBar></MobielNavBar>
 
                                       <ProductItem></ProductItem>
-                                      <Footer className='mt-6'></Footer>
+                                      <Footer className=''></Footer>
 
                                       </>
                                     } />

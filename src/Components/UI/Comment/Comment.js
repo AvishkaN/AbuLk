@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import CheckIcon from '@mui/icons-material/CheckCircle';
 import ClockIcon from '@mui/icons-material/AccessTime';
 
+import { Avatar } from '@mui/material';
+
 
 
 function Comment({
@@ -20,6 +22,7 @@ function Comment({
             <div className="image-avatar col-md-1 col-2 pe-0">
                 <img src={img} alt="" className='w-100 border-radius-circle' />
             </div>
+
 
                 {/* Other details */}
             <div className="col">
