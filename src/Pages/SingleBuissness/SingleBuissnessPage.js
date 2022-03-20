@@ -30,7 +30,10 @@ function SingleBuissness({className=""}) {
 
 
                 {/* Content */}
-                  <Content SingleBuissnessData={SingleBuissnessData}></Content>
+                  <Content 
+                       SingleBuissnessData={SingleBuissnessData}
+                      className="mt-4"
+                       ></Content>
 
          </div>
     </DIV>
