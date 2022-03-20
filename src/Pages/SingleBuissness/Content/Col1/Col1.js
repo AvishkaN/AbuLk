@@ -15,14 +15,14 @@ function Col1({className="",SingleBuissnessData}) {
   return (
     <DIV className={`${className} `}>
 
-                        {/* img slider  */}
+                        {/* img slider */}
                 <div className="box-shadow-normal ms-4 mt-2  mb-4 border-radius-20 p-4">
                     
                                 {/* Buissness Name */}
                                         <div className="font-2-3 fw-bold mb-2 mt-1">{SingleBuissnessData.BuissnessName}</div>
 
                                 {/* Buissness Details */}
-                                        <BuissnessDescriprion {...SingleBuissnessData.imgSliderSection.buissnessDescriptionTop} className="mb-2"></BuissnessDescriprion>
+                                        <BuissnessDescriprion {...SingleBuissnessData.imgSliderSection.buissnessDescriptionTop} className="mb-3 "></BuissnessDescriprion>
 
 
 

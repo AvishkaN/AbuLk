@@ -41,13 +41,13 @@ const DIV=styled.div`
 
         .showBox{ 
           
-          height: 65vh;
+          /* height: 65vh; */
           /* background: black;   */
           position: relative;
           /* overflow-y: hidden; */
           
           @media(max-width:700px){
-            height: 42vh;
+            /* height: 42vh; */
 
           }
 
