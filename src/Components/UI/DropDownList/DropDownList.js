@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 
 
-function DropDownList({className="",filterList=[],selectedName,selectedColor}) {
+function DropDownList({className="",filterList=[],selectedName,selectedColor,classNameListItemClassName,DropDownclassName}) {
   return (
-    <DIV  selectedColor={selectedColor}>
+    <DIV  selectedColor={selectedColor} className={` ${className}`}>
 
 
            <div className="custom-list mt-1  border-radius-5 ">  
                         <div>        
                             {
                                 filterList.map(list=>(
-                                    <div   className={`cursor-p custom-list-item  font-1-3  ${className}   ${(list ==selectedName) && 'active-link'}`}>{list}</div>
+                                    <div   className={`cursor-p custom-list-item      ${(list ==selectedName) && 'active-link'}  ${classNameListItemClassName} `}>{list}</div>
 
                                 ))
                             }

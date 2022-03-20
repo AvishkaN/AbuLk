@@ -5,7 +5,16 @@ import { useState } from 'react';
 
 
 
-function FilterSelect({className="",border=false,DropDownListItemclassName,selectedColor="",filterList,filterDefaultSelectedText,ShowListProp,filterSelectTitleClassName}) {
+function FilterSelect({className="",
+                                        border=false,
+                                        DropDownclassName,
+                                        selectedColor="",
+                                        filterList,
+                                        filterDefaultSelectedText,
+                                        ShowListProp,
+                                        filterSelectTitleClassName,
+                                        selectedNameClassName,
+                                        classNameListItemClassName}) {
 
     const [showList,setShowList]=useState(false);
     const [selectedName,setSelectedName]=useState(filterDefaultSelectedText);
@@ -32,12 +41,21 @@ function FilterSelect({className="",border=false,DropDownListItemclassName,selec
     <DIV selectedColor={selectedColor}  className={`${className}`} IsShowList={showList} onClick={ShowListProp? ShowListProp:ShowListFN} border={border}>
          <div className="FilterSelect-wrapper " >
 
-         <FilterSelectTitle showList={showList}  className={`${filterSelectTitleClassName}`}  selectedName={selectedName}></FilterSelectTitle>
+         <FilterSelectTitle showList={showList}  selectedNameClassName={`${selectedNameClassName}`}  className="ps-2 pe-2 "  selectedName={selectedName}></FilterSelectTitle>
 
             {
                 showList && ( 
 
-                 <DropDownList className={DropDownListItemclassName}  selectedColor={selectedColor}  selectedName={selectedName}  filterList={filterList}></DropDownList>
+                 <DropDownList className={DropDownclassName}  
+                                selectedColor={selectedColor}  
+                                selectedName={selectedName}  
+                                filterList={filterList}
+                                
+                                
+                                selectedNameClassName={selectedNameClassName}
+                                classNameListItemClassName={classNameListItemClassName}
+                                
+                                ></DropDownList>
                 )
             }
              

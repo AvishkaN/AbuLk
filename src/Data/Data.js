@@ -704,6 +704,7 @@ export const SingleBuissnessData={
         },
 
         searchList:[
+            "-- Select Category --",
             "Real state",
             "resturant",
             "beauty",

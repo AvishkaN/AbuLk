@@ -3,13 +3,13 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 
-function FilterSelectTitle({className="",selectedName,showList}) {
+function FilterSelectTitle({className="",selectedName,showList,selectedNameClassName}) {
 
   return (
     <DIV IsShowList={showList} className={`${className}  selected-name cursor-p  border-radius-5 display-flex justify-content-space-between align-item-center background-white overflow-hidden`}  >
          
          
-            <div className="font-1-3">{selectedName}</div>        
+            <div className={`  ${selectedNameClassName}`}  >{selectedName}</div>        
             <KeyboardArrowDownIcon className='arrow-icon'></KeyboardArrowDownIcon>
     </DIV>
   );

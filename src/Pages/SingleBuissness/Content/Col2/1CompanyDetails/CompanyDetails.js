@@ -71,7 +71,7 @@ function CompanyDetails({className="",col2Data,contactSection}) {
             </div>
 
             {/* Bottom */}
-            <div className="buttonss display-flex align-items mt-4 ps-5 ps-5 border-top pt-4 mt-5">
+            <div className="buttonss display-flex align-items mt-4 ps-5 pe-5 border-top pt-4 mt-5">
 
                 {/* Add wishlist  */}
                 <Button className="display-flex justify-content-center  pt-2 pb-2  align-items-center text-color-white this-comp-blue">
@@ -101,14 +101,19 @@ const DIV=styled.div`
 
                 .buttonss{
 
-                @media(max-width:440px){     
+                @media(max-width:1300px){     
+                    flex-wrap:wrap;
+                    justify-content: space-around;
+                }
+
+                @media(max-width:1300px){     
                     flex-wrap:wrap;
                     justify-content: space-around;
                 }
 
                 button{
 
-                    @media(max-width:440px){     
+                    @media(max-width:1300px){     
                         width: 48%;
                         margin-bottom: 1rem; 
                         margin-left:0 !important;

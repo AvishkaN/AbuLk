@@ -26,7 +26,7 @@ function SingleBuissness({className=""}) {
          
          
          <div className="SingleBuissness-wrapper ">
-                <h1>Single Buissness  </h1>
+                {/* <h1>Single Buissness  </h1> */}
 
 
                 {/* Content */}
@@ -80,6 +80,16 @@ const DIV=styled.div`
 
     .SingleBuissness-wrapper{
         width: var(--page-content-width);
+        width: 85%;
+        
+        @media(max-width:1200px){     
+            width: 96%;
+        }
+
+        @media(max-width:1118px){     
+          
+        }
+
         margin-left: auto;
         margin-right: auto; 
 

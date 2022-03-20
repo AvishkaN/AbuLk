@@ -4,6 +4,8 @@ import CommonComp from './CommonComp';
 import CompanyDetails from './1CompanyDetails/CompanyDetails';
 import ListingLocation from './2ListingLocation/ListingLocation';
 import OwnerDetails from './3OwnerDetails/OwnerDetails';
+import SearchListing from './4SearchListing/SearchListing';
+import RecentBuissnessPost from './5RecentBuissnessPost/RecentBuissnessPost';
 
 
 
@@ -46,6 +48,23 @@ function Col2({className=""}) {
 
                           </OwnerDetails>
 
+            </CommonComp>
+
+
+          {/* Search Listing */}
+            <CommonComp className="mt-5" Title={"Search Listing"}>
+
+                <SearchListing className='pb-3 ' searchList={SingleBuissnessData.col2Data.searchList}></SearchListing>
+                        
+            </CommonComp>
+
+
+
+          {/* Recent Post */}
+            <CommonComp className="mt-5" Title={"Recent Buissness Post"}>
+
+                <RecentBuissnessPost className='pb-3 ' recentPost={SingleBuissnessData.col2Data.recentPost}></RecentBuissnessPost>
+                        
             </CommonComp>
 
 
