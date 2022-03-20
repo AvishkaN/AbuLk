@@ -9,7 +9,7 @@ function RecentBuissnessPost({className="",recentPost}) {
     <DIV className={` ps-3 pe-3 ps-xl-5 pe-xl-5 ${className}`}>
 
         <RealedPostItem    
-            className="border-grey border-radius-5  cursor-p "  
+            className="col-lg-12 col-md-8  col-11 ms-auto me-auto border-grey border-radius-5  cursor-p "  
             {...recentPost} ></RealedPostItem>
 
 

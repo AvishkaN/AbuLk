@@ -31,7 +31,7 @@ function Col1({className="",SingleBuissnessData}) {
                                         <ProductSlider className='' images={SingleBuissnessData.imgSliderSection.images}></ProductSlider>
 
                                             {/* Price */}
-                                            <div className="price  text-color-white font-3 pe-4 w-15 ps-3">{SingleBuissnessData.imgSliderSection.price}</div>
+                                            <div className="price  text-color-white font-3 pe-5  ps-3">{SingleBuissnessData.imgSliderSection.price}</div>
 
                                 </div>
                 </div>

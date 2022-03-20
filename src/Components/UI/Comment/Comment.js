@@ -17,7 +17,7 @@ function Comment({
     <DIV className={`${className}row `}>
 
             {/* Image Avatar */}
-            <div className="image-avatar col-1">
+            <div className="image-avatar col-md-1 col-2 pe-0">
                 <img src={img} alt="" className='w-100 border-radius-circle' />
             </div>
 
@@ -37,7 +37,7 @@ function Comment({
                     </div>
 
                     {/* Comment discription */}
-                    <div className="font-1-4">
+                    <div className="font-1-4  limit-text-line-2-max-width-sm">
                         {commentDescription}
                     </div>
 
@@ -53,6 +53,17 @@ const DIV=styled.div`
     width: 100%;
     /* margin-top: var(--margin-top-fix-nav);  */  /*only Comment */
     
+    @media(max-width:576px){      
+                      /* align-items:center; */
+    }
+    
+    
+    .image-avatar{
+        @media(max-width:576px){      
+            width: 20%;
+        }
+
+    }
  
 `;
 

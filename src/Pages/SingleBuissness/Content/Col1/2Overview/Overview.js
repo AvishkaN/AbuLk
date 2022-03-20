@@ -74,9 +74,9 @@ function OverView({
 
 
         {/* Bottom  line */}
-        <div className="mt-5 display-flex align-items-center border-grey-light-top border-grey-light-bottom pt-2 pb-2 ps-3">
+        <div className="bottom-line mt-5 display-flex align-items-center border-grey-light-top border-grey-light-bottom pt-2 pb-2 ps-3">
                       <div className="font-1-3  ">Buissness ID :  {buissnessId}</div>
-                      <div className="font-1-3  ms-auto">Posted By {postedDate}</div>
+                      <div className="font-1-3  ms-sm-auto">Posted By {postedDate}</div>
         </div>
 
     </DIV>
@@ -89,7 +89,14 @@ const DIV=styled.div`
     /* margin-top: var(--margin-top-fix-nav);  */  /*only OverView */
 
     
-    
+    .bottom-line{ 
+      
+      @media(max-width:576px){      
+
+          flex-direction: column;
+
+        }
+    }
  
 `;
 

@@ -14,7 +14,7 @@ function RealedPost({className="",relatedPosts}) {
 
                         {
                                 relatedPosts.map(relatedPostObj=>(
-                                    <RealedPostItem  key={Math.random()}  className="col-5 box-shadow-normal ms-4 mb-4 border-radius-5 p-0 cursor-p me-auto"  {...relatedPostObj}></RealedPostItem>
+                                    <RealedPostItem  key={Math.random()}  className="col-md-5 col-sm-8  col-11 box-shadow-normal ms-md-4 ms-auto mb-4 border-radius-5 p-0 cursor-p me-auto"  {...relatedPostObj}></RealedPostItem>
                                 ))
                             }
         </div>
