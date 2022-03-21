@@ -10,6 +10,18 @@ import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import LinkOutlinedIcon from '@mui/icons-material/InsertLinkOutlined';
 
 
+// single job page
+import LocationIcon from '@mui/icons-material/FmdGoodOutlined';
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
+// import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+
+
+
+
+
 export const Currency="Rs.";
 
 export const AllResturantData=[
@@ -793,7 +805,36 @@ export const SingleJobPageData={
     },
 
     Col2Data:{
-
+        location:{
+            title:"Location",
+            icon:<LocationIcon className='text-color-white this-comp-green border-radius-circle p-1 font-3 me-2 '></LocationIcon>,
+            list:[
+               { 
+                   icon:<LocationIcon className='font-2 '></LocationIcon>,
+                   text:"Package: 20K To 50/K Mouth",
+                },
+               { 
+                   icon:<LanguageOutlinedIcon className='font-2 '></LanguageOutlinedIcon>,
+                   text:"Package: 20K To 50/K Mouth",
+                },
+               { 
+                   icon:<PhoneAndroidOutlinedIcon className='font-2 '></PhoneAndroidOutlinedIcon>,
+                   text:"Package: 20K To 50/K Mouth",
+                },
+               { 
+                   icon:<MailOutlinedIcon className='font-2 '></MailOutlinedIcon>,
+                   text:"Package: 20K To 50/K Mouth",
+                },
+               { 
+                   icon:<SchoolOutlinedIcon className='font-2 '></SchoolOutlinedIcon>,
+                   text:"Package: 20K To 50/K Mouth",
+                },
+               { 
+                   icon:<CalendarMonthOutlinedIcon className='font-2 '></CalendarMonthOutlinedIcon>,
+                   text:"Package: 20K To 50/K Mouth",
+                },
+            ],
+        }
     },
 
 } ;

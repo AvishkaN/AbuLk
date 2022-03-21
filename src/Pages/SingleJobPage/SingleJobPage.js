@@ -38,9 +38,9 @@ function SingleJobPage({className=""}) {
 
                     {/* Col-1 */}
                     <Col1 className='col-8 '  Col1Data={SingleJobPageData.Col1Data}></Col1>
-                    {/* Col-2 */}
 
-                    {/* <Col className='col-8 background-yellow '  Col1Data={SingleJobPageData.Col2Data}></Col> */}
+                    {/* Col-2 */}
+                    <Col2 className='col-4 background-yello '  Col2Data={SingleJobPageData.Col2Data}></Col2>
 
                 </div>
 
