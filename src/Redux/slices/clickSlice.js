@@ -17,6 +17,9 @@ export const clickSlice=createSlice({
         classifiedPageSelectedLocation:"Location",
         classifiedPageSelectedCategory:"Category",
 
+
+        currentScrollY:"0%",
+
     },
     reducers:{
         ShowMobileNavFN:(state)=>{     
@@ -75,6 +78,14 @@ export const clickSlice=createSlice({
             state.showAllJobsPageFilter=true;    
         },
 
+
+
+        SetCurrentScrollYFN:(state,action)=>{     
+
+            state.currentScrollY=action.payload;    
+
+        },
+
         
         ShowHideAllFN:(state)=>{     
 
@@ -111,6 +122,8 @@ export const {
                             ShowAllJobsPageFilterFN,
 
                             SetShowPostAdFN,
+
+                            SetCurrentScrollYFN,
 
 
                             ShowHideAllFN,

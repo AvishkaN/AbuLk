@@ -14,6 +14,7 @@ import SingleBuissnessPage from './Pages/SingleBuissness/SingleBuissnessPage';
 
 import NavBar from './Components/Nav/NavBar';
 import ScrollWindowTop from './Functions/DOM/ScrollWindowTop';
+import ScrollIndicator from './Components/UI/ScrollIndicator/ScrollIndicator';
 
 import Login from './Pages/Login/Login';
 import MobielNavBar from './Components/Nav/MobileNavBar/MobielNavBar';
@@ -24,15 +25,16 @@ import RegisterPage from './Pages/Register/Register';
 
 import OverlayFull from './Components/Overlay/OverlayFull';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-import { useSelector } from 'react-redux';
-import { selectClicks } from './Redux/slices/clickSlice';
-import { useEffect } from 'react';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { selectClicks, SetCurrentScrollYFN } from './Redux/slices/clickSlice';
+import { useEffect ,useState} from 'react';
 
 
 function App() {
 
   const clicks=useSelector(selectClicks);
+  const dispatch=useDispatch();
+
 
 
   useEffect(()=>{
@@ -47,8 +49,33 @@ function App() {
   },[clicks.showOverlay]);
 
 
-  
+  const handleScroll=()=>{
 
+    console.log(`scroling `);
+
+
+  const  winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const  height = document.documentElement.scrollHeight - 		   
+  
+   document.documentElement.clientHeight;
+  
+  const  scrolled = (winScroll / height) * 100;
+  console.log( scrolled + "%");
+
+  //  dispatch( SetCurrentScrollYFN(scrolled + "%"));
+  };
+
+
+
+  // Add and remove event listner scrolling 
+
+  useEffect(() => {
+    // window.addEventListener("scroll", handleScroll);
+    // return () => {
+    //     window.removeEventListener("scroll", handleScroll);
+    // }
+}, []);
+  
 
 
 
@@ -148,14 +175,17 @@ function App() {
 
                                             {/* Single buissness */}
                                             <Route path="/singleBuissness" element={ 
-                                             <>
-                                            <NavBar></NavBar>
-                                          <MobielNavBar></MobielNavBar>
 
-                                        <SingleBuissnessPage></SingleBuissnessPage>
-                                        <Footer className='mt-6'></Footer>
+                                             <div onScroll={handleScroll}>
 
-                                          </>
+                                                    <ScrollIndicator className='' width={clicks.currentScrollY}></ScrollIndicator>
+                                                    <NavBar></NavBar>
+                                                    <MobielNavBar></MobielNavBar>
+
+                                                <SingleBuissnessPage></SingleBuissnessPage>
+                                                <Footer className='mt-6'></Footer>
+
+                                          </div>
                                          } />
 
 

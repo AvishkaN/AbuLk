@@ -15,7 +15,11 @@ function SingleBuissness({className=""}) {
     
     //Scroll To Top
     ScrollWindowTop();
+
+    
   },[])
+
+  
 
 
   return (
