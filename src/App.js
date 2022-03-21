@@ -10,6 +10,7 @@ import AllBuissness from './Pages/AllBuissness/AllBuissness';
 import AllResturantPage from './Pages/AllResturant/AllResturant';
 import SingleResturantPage from './Pages/SingleResturant/SingleResturant';
 import SingleBuissnessPage from './Pages/SingleBuissness/SingleBuissnessPage';
+import SingleJobPage from './Pages/SingleJobPage/SingleJobPage';
 
 
 import NavBar from './Components/Nav/NavBar';
@@ -186,6 +187,21 @@ function App() {
                                                 <Footer className='mt-6'></Footer>
 
                                           </div>
+                                         } />
+
+
+                                            {/* Single Job */}
+                                            <Route path="/singleJob" element={ 
+
+                                             <>
+
+                                                    <NavBar></NavBar>
+                                                    <MobielNavBar></MobielNavBar>
+
+                                                    <SingleJobPage></SingleJobPage>
+                                                    <Footer className='mt-6'></Footer>
+
+                                          </>
                                          } />
 
 

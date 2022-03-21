@@ -738,3 +738,67 @@ export const SingleBuissnessData={
 
 }; 
 
+
+//  Single Job
+
+export const SingleJobPageData={
+
+    Col1Data:{
+        jobDescription:{
+            title:"Job Description",
+
+            description:`
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.
+
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
+            `,
+        },
+
+        jobSkill:{
+            title:"Job Skill",
+
+            list:[
+                "Contrary to popular belief, Lorem Ipsum is not simply random text",
+                "Latin professor at Hampden-Sydney College in Virginia",
+                "looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage ideas",
+                "The standard chunk of Lorem Ipsum used since the 1500s is reproduced",
+                "accompanied by English versions from the 1914 translation by H. Rackham",
+            ]
+
+        },
+
+
+        location:{
+            title:"Location",
+            mapLink:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6861.138534662161!2d76.821472!3d30.702393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe4953728a502a8e2!2sChandigarh%20Junction%20railway%20station!5e0!3m2!1sen!2sin!4v1647861891675!5m2!1sen!2sin",
+
+        },
+
+        Requirments:{
+            title:"Requirments",
+
+            list:[
+                "There are many variations of passages of Lorem Ipsum available",
+                "the majority have suffered alteration in some form slightly",
+                "you need to be sure there isn't anything embarrassing hidden",
+                "generators on the Internet tend to repeat predefined chunks as necessary",
+                "There are many variations of passages of Lorem Ipsum available",
+                "the majority have suffered alteration in some form slightly",
+                "you need to be sure there isn't anything embarrassing hidden",
+                "making this the first true generator on the Internet It uses a dictionary",
+            ]
+
+        },
+
+    },
+
+    Col2Data:{
+
+    },
+
+} ;
+
+
+
+
+

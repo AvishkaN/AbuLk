@@ -222,6 +222,11 @@ function HomePage({className=""}) {
                           </Link>
 
 
+                          <Link to="/singleJob">
+                                <h1>  Single Job  </h1>
+                          </Link>
+
+
           </div>
 
 

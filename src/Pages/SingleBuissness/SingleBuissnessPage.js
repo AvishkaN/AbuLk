@@ -23,7 +23,7 @@ function SingleBuissness({className=""}) {
 
 
   return (
-    <DIV className={`${className}pageFixed`}>
+    <DIV className={`${className} pageFixed`}>
       
         {/* Header */}
           <Header SingleBuissnessData={SingleBuissnessData}></Header>
