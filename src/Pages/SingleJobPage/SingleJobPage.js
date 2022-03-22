@@ -33,14 +33,14 @@ function SingleJobPage({className=""}) {
 
          <div className="SingleJobPage-wrapper">
 
-                <div className="row">
+                <div className="row mt-5 ">
 
 
                     {/* Col-1 */}
-                    <Col1 className='col-8 '  Col1Data={SingleJobPageData.Col1Data}></Col1>
+                    <Col1 className='col-lg-8 '  Col1Data={SingleJobPageData.Col1Data}></Col1>
 
                     {/* Col-2 */}
-                    <Col2 className='col-4 background-yello '  Col2Data={SingleJobPageData.Col2Data}></Col2>
+                    <Col2 className='col-lg-4 background-yello '  Col2Data={SingleJobPageData.Col2Data}></Col2>
 
                 </div>
 
@@ -67,8 +67,14 @@ const DIV=styled.div`
 
     .SingleJobPage-wrapper{
          width: 90%;
-        margin-left: auto;
-        margin-right: auto; 
+         margin-left: auto;
+         margin-right: auto; 
+         
+         
+         @media(max-width:1065px){     
+           width: 99%;
+           
+        }
 
     }
 `;

@@ -14,13 +14,16 @@ import LinkOutlinedIcon from '@mui/icons-material/InsertLinkOutlined';
 import LocationIcon from '@mui/icons-material/FmdGoodOutlined';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
-// import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 
+import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
 
+import TimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 
+import PersonIcon from '@mui/icons-material/PersonOutlineOutlined';
 
+import FullscreenIcon from '@mui/icons-material/ScreenshotMonitorOutlined';
 
 export const Currency="Rs.";
 
@@ -755,7 +758,42 @@ export const SingleBuissnessData={
 
 export const SingleJobPageData={
 
+
+
     Col1Data:{
+        
+        jobDetails:{
+            jobImage:"http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+            jobName:"Web Designer",
+            jobAdress:"512 Big Tower, Sri lanka",
+            detailsList:[
+                { 
+                    icon:<CreditCardOutlinedIcon className='text-color-grey-light   font-1-8 '></CreditCardOutlinedIcon>,
+                    text:"Package: 20K To 50/K Mouth",
+                },
+                { 
+                    icon:<PhoneAndroidOutlinedIcon className='text-color-grey-light   font-1-8 '></PhoneAndroidOutlinedIcon>,
+                    text:"079 7483 653",
+                },
+                { 
+                    icon:<MailOutlinedIcon className='text-color-grey-light   font-1-8 '></MailOutlinedIcon>,
+                    text:"mail@example.com",
+                },
+                { 
+                    icon:<FullscreenIcon className='text-color-grey-light   font-1-8 '></FullscreenIcon>,
+                    text:"Full Time",
+                },
+                { 
+                    icon:<PersonIcon className='text-color-grey-light   font-1-8 '></PersonIcon>,
+                    text:"7 Open Posiiton",
+                },
+                { 
+                    icon:<CalendarMonthOutlinedIcon className='text-color-grey-light   font-1-8 '></CalendarMonthOutlinedIcon>,
+                    text:"3 Year Exp.",
+                },
+            ],
+        },
+
         jobDescription:{
             title:"Job Description",
 
@@ -807,7 +845,7 @@ export const SingleJobPageData={
     Col2Data:{
         location:{
             title:"Location",
-            icon:<LocationIcon className='text-color-white this-comp-green border-radius-circle p-1 font-3 me-2 '></LocationIcon>,
+            icon:<LocationIcon className='text-color-white this-comp-green border-radius-circle p-2 font-3-5 me-2 '></LocationIcon>,
             list:[
                { 
                    icon:<LocationIcon className='font-2 '></LocationIcon>,
@@ -834,7 +872,50 @@ export const SingleJobPageData={
                    text:"Package: 20K To 50/K Mouth",
                 },
             ],
-        }
+        },
+        openingHours:{
+            title:"Opening Hours",
+            icon:<TimeOutlinedIcon className='text-color-white this-comp-green border-radius-circle p-2 font-3-5 me-2 '></TimeOutlinedIcon>,
+            list:[
+
+             {
+                 text:"Monday",
+                 time:"9 AM - 5 PM",
+             },
+             {
+                 text:"Tuesday",
+                 time:"9 AM - 5 PM",
+             },
+             {
+                 text:"Wednesday",
+                 time:"9 AM - 5 PM",
+             },
+             {
+                 text:"Thursday",
+                 time:"9 AM - 5 PM",
+             },
+             {
+                 text:"Friday",
+                 time:"9 AM - 5 PM",
+             },
+             {
+                 text:"Saturday",
+                 time:"9 AM - 5 PM",
+             },
+             {
+                 text:"Sunday",
+                 time:"9 AM - 5 PM",
+             },
+
+            ],
+        },
+
+        locationCol2:{
+            title:"Location",
+            icon:<LocationIcon className='text-color-white this-comp-green border-radius-circle p-2 font-3-5 me-2 '></LocationIcon>,
+            mapLink:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31465.037656946886!2d80.01087411788409!3d9.66995710480245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe53fd7be66aa5%3A0xc7da0d9203baf512!2sJaffna!5e0!3m2!1sen!2slk!4v1647885549438!5m2!1sen!2slk",
+
+        },
     },
 
 } ;
