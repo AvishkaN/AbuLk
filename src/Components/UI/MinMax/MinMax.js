@@ -10,7 +10,7 @@ function MinMax({className="",minValuePlaceholder="1000",maxValuePlaceholder="50
 
              <div className="price-col-min">
                 <div className="Min font-1-2">{priceColVal1}</div>
-                <Input className='min-max-input  border-radius-5' type="Number" text={minValuePlaceholder}></Input>
+                <Input className='min-max-input  border-radius-5  border ps-2 ' type="Number" text={minValuePlaceholder}></Input>
 
              </div>
 
@@ -19,7 +19,7 @@ function MinMax({className="",minValuePlaceholder="1000",maxValuePlaceholder="50
      
             <div className="price-col-max">  
                 <div className="Min font-1-2 ">{priceColVal2}</div>
-                <Input className='min-max-input  border-radius-5' type="Number" text={maxValuePlaceholder}></Input>
+                <Input className='min-max-input  border-radius-5  border ps-2 ' type="Number" text={maxValuePlaceholder}></Input>
 
              </div>
 

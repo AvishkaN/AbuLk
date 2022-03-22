@@ -41,7 +41,7 @@ function FilterSelect({className="",
     <DIV selectedColor={selectedColor}  className={`${className}`} IsShowList={showList} onClick={ShowListProp? ShowListProp:ShowListFN} border={border}>
          <div className="FilterSelect-wrapper " >
 
-         <FilterSelectTitle showList={showList}  selectedNameClassName={`${selectedNameClassName}`}  className="ps-2 pe-2 "  selectedName={selectedName}></FilterSelectTitle>
+         <FilterSelectTitle showList={showList}  selectedNameClassName={`${filterSelectTitleClassName}`}  className="ps-2 pe-2 "  selectedName={selectedName}></FilterSelectTitle>
 
             {
                 showList && ( 

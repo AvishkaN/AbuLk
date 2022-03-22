@@ -16,7 +16,17 @@ function SeachFilterRow2({className="",selectedNav,SetSelectedNav}) {
          <div className="SeachFilterRow2-wrapper row display-flex gx-2">
                         <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'City'}</div>
-                            <FilterSelect  filterSectionTitle={"City"} filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} filterDefaultSelectedText={"Kandy"}  filterSelectTitleClassName='p-3'   DropDownListItemclassName="p-2"></FilterSelect>
+                          
+                          <FilterSelect  
+                                    filterSectionTitle={"City"} 
+                                    filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} 
+                                    filterDefaultSelectedText={"Kandy"}  
+                                    filterSelectTitleClassName='p-3'   
+                                    DropDownListItemclassName="p-2"
+                                    classNameListItemClassName="ps-3  pt-2 pb-2  "
+                                    >
+
+                          </FilterSelect>
 
                         </div>
                         <div className="col">  
@@ -33,6 +43,8 @@ function SeachFilterRow2({className="",selectedNav,SetSelectedNav}) {
                                   filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} 
                                   filterDefaultSelectedText={"Kandy"}
                                   DropDownListItemclassName={"p-2"}
+                                  classNameListItemClassName="ps-3  pt-2 pb-2"
+
                             ></FilterSelect>
 
 
@@ -58,6 +70,8 @@ function SeachFilterRow2({className="",selectedNav,SetSelectedNav}) {
                              filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} 
                              filterDefaultSelectedText={"Kandy"}
                              DropDownListItemclassName={"p-2"}
+                             classNameListItemClassName="ps-3  pt-2 pb-2  "
+
                              ></FilterSelect>
 
 
@@ -65,6 +79,7 @@ function SeachFilterRow2({className="",selectedNav,SetSelectedNav}) {
 
                        {selectedNav==="filter-nav-1" &&( <div className="col-1">  
                             <div className="select-title text-color-white font-1-2">{'Beds'}</div>
+                          
                             <MinMaxComp 
                             priceColVal1={"Min bedrooms"} 
                             priceColVal2={"Max bedrooms"}   
@@ -87,6 +102,8 @@ function SeachFilterRow2({className="",selectedNav,SetSelectedNav}) {
                               filterList={["colombo","kandy","matara","negambo","maharagama","kottawa","matara"]} 
                               filterDefaultSelectedText={"More"}
                               DropDownListItemclassName={"p-2"}
+                              classNameListItemClassName="ps-3  pt-2 pb-2  "
+
 
                               ></FilterSelect>
 
