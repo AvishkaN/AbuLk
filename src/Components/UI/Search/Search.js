@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Input from '../UI/Input/Input';
+import Input from '../..//UI/Input/Input';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import { useState } from 'react';
 

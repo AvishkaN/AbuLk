@@ -76,7 +76,7 @@ function ClassfiedPageComp({className=""}) {
                      <ClassifiedHeader></ClassifiedHeader>
              </div>
 
-             <div className="filter-icon ps-5 cursor-p">
+             {/* <div className="filter-icon ps-5 cursor-p">
                  <div className="row">
                         <div className="col p-3">
                            {  showFilter  && <FilterAltIcon className=' filter-icon-svg font-2-7 text-color-primary'></FilterAltIcon>}
@@ -84,7 +84,7 @@ function ClassfiedPageComp({className=""}) {
 
                         </div>
                  </div>
-             </div>
+             </div> */}
 
                <div className="row pe-4 ps-4  mt-3 ">
                   {showFilter &&(
